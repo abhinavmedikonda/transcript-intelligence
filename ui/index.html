@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aegis Cloud — Transcript Intelligence Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
-            --bg-dark: #020617; /* Very dark slate */
-            --card-bg: rgba(30, 41, 59, 0.85); /* Lighter slate with slight transparency */
-            --card-border: rgba(148, 163, 184, 0.2); /* Brighter border */
+            --bg-dark: #020617;
+            /* Very dark slate */
+            --card-bg: rgba(30, 41, 59, 0.85);
+            /* Lighter slate with slight transparency */
+            --card-border: rgba(148, 163, 184, 0.2);
+            /* Brighter border */
             --accent-blue: #3B82F6;
             --accent-glow: rgba(59, 130, 246, 0.15);
             --text-main: #F3F4F6;
             --text-muted: #9CA3AF;
-            
+
             --tag-support: #EF4444;
             --tag-external: #10B981;
             --tag-internal: #8B5CF6;
@@ -27,7 +33,7 @@
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
             scrollbar-width: thin;
-            scrollbar-color: rgba(255,255,255,0.1) transparent;
+            scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
         }
 
         body {
@@ -35,7 +41,7 @@
             color: var(--text-main);
             min-height: 100vh;
             overflow-x: hidden;
-            background-image: 
+            background-image:
                 radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
                 radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.05) 0px, transparent 50%);
         }
@@ -107,10 +113,11 @@
             background-repeat: no-repeat;
             background-position: right 0.75rem center;
             background-size: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        select:hover, select:focus {
+        select:hover,
+        select:focus {
             border-color: var(--accent-blue);
             box-shadow: 0 0 10px var(--accent-glow);
         }
@@ -139,7 +146,7 @@
             backdrop-filter: blur(8px);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
         }
 
         .kpi-card::before {
@@ -197,7 +204,7 @@
             border: 1px solid var(--card-border);
             border-radius: 0.75rem;
             backdrop-filter: blur(8px);
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -234,7 +241,7 @@
 
         .search-box input {
             width: 100%;
-            background: rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.3);
             border: 1px solid var(--card-border);
             color: var(--text-main);
             padding: 0.75rem 1rem;
@@ -269,7 +276,8 @@
             border-bottom: none;
         }
 
-        .call-item:hover, .call-item.active {
+        .call-item:hover,
+        .call-item.active {
             background: rgba(59, 130, 246, 0.05);
             border-left: 3px solid var(--accent-blue);
             padding-left: calc(1.5rem - 3px);
@@ -392,7 +400,7 @@
         }
 
         .info-box {
-            background: rgba(0,0,0,0.2);
+            background: rgba(0, 0, 0, 0.2);
             border: 1px solid var(--card-border);
             border-radius: 0.5rem;
             padding: 1rem;
@@ -422,7 +430,7 @@
         }
 
         .theme-tag {
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--card-border);
             padding: 0.25rem 0.5rem;
             border-radius: 0.25rem;
@@ -490,7 +498,7 @@
         .empty-icon {
             width: 4rem;
             height: 4rem;
-            background: rgba(255,255,255,0.03);
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--card-border);
             border-radius: 9999px;
             display: flex;
@@ -504,24 +512,28 @@
             width: 6px;
             height: 6px;
         }
+
         ::-webkit-scrollbar-track {
             background: transparent;
         }
+
         ::-webkit-scrollbar-thumb {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 9999px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(255,255,255,0.25);
+            background: rgba(255, 255, 255, 0.25);
         }
     </style>
 </head>
+
 <body>
 
     <header>
         <div class="logo-area">
             <div class="logo-icon"></div>
-            <div class="logo-text">Aegis Cloud — Transcript Intelligence</div>
+            <div class="logo-text">Transcript Intelligence</div>
         </div>
         <div class="date-selector-wrapper">
             <span class="selector-label">Analytics Segment:</span>
@@ -532,7 +544,7 @@
     </header>
 
     <div class="main-container">
-        
+
         <!-- KPIs Row -->
         <div class="kpi-grid">
             <div class="kpi-card">
@@ -559,15 +571,26 @@
 
         <!-- Dashboard Content Panels -->
         <div class="dashboard-content">
-            
+
             <!-- Left Side: Ingested Calls Browser -->
             <div class="panel">
                 <div class="panel-header">
                     <h2 class="panel-title">Ingested Call Logs</h2>
-                    <span id="call-count-label" style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;"></span>
+                    <div style="display:flex;align-items:center;gap:0.75rem;">
+                        <select id="category-select" onchange="applyFilters()"
+                            style="font-size:0.8rem;padding:0.35rem 1.75rem 0.35rem 0.75rem;">
+                            <option value="All">All Categories</option>
+                            <option value="Customer Support">Customer Support</option>
+                            <option value="External Customer">External Customer</option>
+                            <option value="Internal">Internal</option>
+                        </select>
+                        <span id="call-count-label"
+                            style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;"></span>
+                    </div>
                 </div>
                 <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Search by call title, host, or themes..." oninput="filterCalls(this.value)">
+                    <input type="text" id="search-input" placeholder="Search by call title, host, or themes..."
+                        oninput="applyFilters()">
                 </div>
                 <div class="call-list" id="call-list-container">
                     <!-- Loaded dynamically -->
@@ -583,7 +606,8 @@
                     <div class="empty-detail-state">
                         <div class="empty-icon">🔍</div>
                         <h3>Select a Call from the Log</h3>
-                        <p>Click on any meeting in the left browser panel to view its dynamic categorization reasoning, sentiment arcs, and C-Suite roadmap recommendations.</p>
+                        <p>Click on any meeting in the left browser panel to view its dynamic categorization reasoning,
+                            sentiment arcs, and C-Suite roadmap recommendations.</p>
                     </div>
                 </div>
             </div>
@@ -626,7 +650,7 @@
                 const opt = document.createElement('option');
                 opt.value = d;
                 // Format YYYYMMDD to YYYY-MM-DD
-                opt.textContent = `${d.substring(0,4)}-${d.substring(4,6)}-${d.substring(6,8)}`;
+                opt.textContent = `${d.substring(0, 4)}-${d.substring(4, 6)}-${d.substring(6, 8)}`;
                 select.appendChild(opt);
             });
 
@@ -637,8 +661,8 @@
         function loadDateSegment(date) {
             currentSegment = date;
             currentCalls = DASHBOARD_DATA[date] || [];
-            filteredCallsList = [...currentCalls];
-            
+            applyFilters();
+
             // Clear details panel
             resetDetailPanel();
 
@@ -646,7 +670,7 @@
             refreshKPIs();
             renderCallList();
             renderSentimentChart();
-            
+
             // Pre-select first call if available
             if (filteredCallsList.length > 0) {
                 showCallDetail(filteredCallsList[0].meetingId);
@@ -668,10 +692,10 @@
 
             // Sentiment Average
             const scores = currentCalls.map(c => c.sentiment.score);
-            const avgSentiment = scores.reduce((a,b) => a+b, 0) / totalCalls;
+            const avgSentiment = scores.reduce((a, b) => a + b, 0) / totalCalls;
             const sentimentKPI = document.getElementById('kpi-avg-sentiment');
             sentimentKPI.textContent = avgSentiment.toFixed(2);
-            
+
             const label = document.getElementById('kpi-sentiment-label');
             if (avgSentiment > 0.15) {
                 sentimentKPI.style.color = '#10B981';
@@ -691,7 +715,7 @@
 
             // Duration Average
             const durations = currentCalls.map(c => c.duration);
-            const avgDuration = durations.reduce((a,b) => a+b, 0) / totalCalls;
+            const avgDuration = durations.reduce((a, b) => a + b, 0) / totalCalls;
             document.getElementById('kpi-avg-duration').textContent = `${avgDuration.toFixed(1)}m`;
         }
 
@@ -707,11 +731,11 @@
             }
 
             filteredCallsList.forEach(c => {
-                const badgeClass = c.category === 'Customer Support' ? 'badge-support' : 
-                                   c.category === 'External Customer' ? 'badge-external' : 'badge-internal';
-                
-                const scoreColor = c.sentiment.score > 0.1 ? '#10B981' : 
-                                   c.sentiment.score < -0.1 ? '#EF4444' : '#F59E0B';
+                const badgeClass = c.category === 'Customer Support' ? 'badge-support' :
+                    c.category === 'External Customer' ? 'badge-external' : 'badge-internal';
+
+                const scoreColor = c.sentiment.score > 0.1 ? '#10B981' :
+                    c.sentiment.score < -0.1 ? '#EF4444' : '#F59E0B';
 
                 const item = document.createElement('div');
                 item.className = 'call-item';
@@ -739,13 +763,17 @@
             });
         }
 
-        function filterCalls(query) {
-            const q = query.toLowerCase();
-            filteredCallsList = currentCalls.filter(c => 
-                c.title.toLowerCase().includes(q) || 
-                c.host.toLowerCase().includes(q) ||
-                c.themes.some(t => t.toLowerCase().includes(q))
-            );
+        function applyFilters() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const category = document.getElementById('category-select').value;
+
+            filteredCallsList = currentCalls.filter(c => {
+                const matchesSearch = c.title.toLowerCase().includes(query) ||
+                    c.host.toLowerCase().includes(query) ||
+                    c.themes.some(t => t.toLowerCase().includes(query));
+                const matchesCategory = category === 'All' || c.category === category;
+                return matchesSearch && matchesCategory;
+            });
             renderCallList();
         }
 
@@ -754,11 +782,11 @@
             const container = document.getElementById('detail-container');
             if (!call) return;
 
-            const badgeClass = call.category === 'Customer Support' ? 'badge-support' : 
-                               call.category === 'External Customer' ? 'badge-external' : 'badge-internal';
+            const badgeClass = call.category === 'Customer Support' ? 'badge-support' :
+                call.category === 'External Customer' ? 'badge-external' : 'badge-internal';
 
-            const scoreColor = call.sentiment.score > 0.1 ? '#10B981' : 
-                               call.sentiment.score < -0.1 ? '#EF4444' : '#F59E0B';
+            const scoreColor = call.sentiment.score > 0.1 ? '#10B981' :
+                call.sentiment.score < -0.1 ? '#EF4444' : '#F59E0B';
 
             let themesHtml = call.themes.map(t => `<span class="theme-tag">${t}</span>`).join('');
             if (!themesHtml) themesHtml = `<span style="font-size:0.8rem; color:var(--text-muted)">None identified</span>`;
@@ -835,12 +863,12 @@
 
         function renderSentimentChart() {
             const ctx = document.getElementById('sentimentChart').getContext('2d');
-            
+
             // Prepare scores and labels
             const labels = currentCalls.map((c, i) => c.title.length > 25 ? c.title.substring(0, 25) + "..." : c.title);
             const sentimentScores = currentCalls.map(c => c.sentiment.score);
             const durations = currentCalls.map(c => c.duration);
-            
+
             if (chartInstance) {
                 chartInstance.destroy();
             }
@@ -874,7 +902,7 @@
                         },
                         tooltip: {
                             callbacks: {
-                                label: function(context) {
+                                label: function (context) {
                                     const index = context.dataIndex;
                                     const score = context.raw.toFixed(2);
                                     return `Sentiment Score: ${score} (${currentCalls[index].category})`;
@@ -912,4 +940,5 @@
         }
     </script>
 </body>
+
 </html>
