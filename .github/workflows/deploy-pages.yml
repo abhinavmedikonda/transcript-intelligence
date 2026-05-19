@@ -5,6 +5,10 @@ on:
     branches: ["main"]
     paths:
       - 'ui/**'
+  workflow_run:
+    workflows: ["Process Transcripts Pipeline"]
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
