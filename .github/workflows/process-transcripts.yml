@@ -53,6 +53,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in transcript processing results or UI data."
           else
-            git commit -m "chore: auto-update transcript analysis results [skip ci]"
+            git commit -m "chore: auto-update transcript analysis results"
             git push
           fi
