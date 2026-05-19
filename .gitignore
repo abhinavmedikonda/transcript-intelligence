@@ -1,0 +1,27 @@
+# ==========================================
+# TRANSCRIPT INTELLIGENCE .GITIGNORE
+# ==========================================
+
+# 1. Temporary & Intermediate Cache Files (Never Commit!)
+.tmp/
+
+# 2. Local Environment & Secret Keys (Crucial for Security!)
+.env
+.env.local
+
+# 3. Python Compiles & Runtime Caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# 4. OS & Editor Specific Files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,57 @@
+name: Process Transcripts Pipeline
+
+on:
+  push:
+    paths:
+      - 'datasets/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze-transcripts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r execution/requirements.txt
+
+      - name: Restore Pipeline Caching
+        uses: actions/cache@v3
+        with:
+          path: .tmp/cache
+          key: ${{ runner.os }}-pipeline-cache-${{ hashFiles('datasets/**/transcript.json') }}
+          restore-keys: |
+            ${{ runner.os }}-pipeline-cache-
+
+      - name: Run Processing Pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python execution/process_transcripts.py
+
+      - name: Commit and Push Results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/ ui/
+          # Only commit if changes exist
+          if git diff --staged --quiet; then
+            echo "No changes in transcript processing results or UI data."
+          else
+            git commit -m "chore: auto-update transcript analysis results [skip ci]"
+            git push
+          fi

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Cloud — Transcript Intelligence Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-dark: #0B0F19;
+            --card-bg: rgba(17, 24, 39, 0.7);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --accent-blue: #3B82F6;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --text-main: #F3F4F6;
+            --text-muted: #9CA3AF;
+            
+            --tag-support: #EF4444;
+            --tag-external: #10B981;
+            --tag-internal: #8B5CF6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255,255,255,0.1) transparent;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.05) 0px, transparent 50%);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--card-border);
+            background: rgba(11, 15, 25, 0.8);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 2rem;
+            height: 2rem;
+            background: linear-gradient(135deg, var(--accent-blue), #8B5CF6);
+            border-radius: 0.5rem;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(to right, #FFF, #9CA3AF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .date-selector-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .selector-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        select {
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 1px solid var(--card-border);
+            padding: 0.5rem 2rem 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.2s ease;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        select:hover, select:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .main-container {
+            max-width: 1600px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        /* KPI Grid */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .kpi-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-blue), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .kpi-card:hover::before {
+            opacity: 1;
+        }
+
+        .kpi-title {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #FFF;
+        }
+
+        .kpi-sub {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        /* Layout Panels */
+        .dashboard-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1.8fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        @media (max-width: 1024px) {
+            .dashboard-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 0.75rem;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #FFF;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Chart Area */
+        .chart-wrapper {
+            padding: 1.5rem;
+            height: 300px;
+            position: relative;
+        }
+
+        /* Call List */
+        .search-box {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .call-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .call-item {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .call-item:last-child {
+            border-bottom: none;
+        }
+
+        .call-item:hover, .call-item.active {
+            background: rgba(59, 130, 246, 0.05);
+            border-left: 3px solid var(--accent-blue);
+            padding-left: calc(1.5rem - 3px);
+        }
+
+        .call-meta-left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            min-width: 0;
+        }
+
+        .call-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #FFF;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .call-host {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .call-meta-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.35rem;
+            flex-shrink: 0;
+        }
+
+        .category-badge {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .badge-support {
+            background: rgba(239, 68, 110, 0.15);
+            color: var(--tag-support);
+            border: 1px solid rgba(239, 68, 110, 0.25);
+        }
+
+        .badge-external {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--tag-external);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+        }
+
+        .badge-internal {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--tag-internal);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+        }
+
+        .sentiment-pill {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* Detail Panel styling */
+        .detail-wrapper {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height: 100%;
+            overflow-y: auto;
+            max-height: 940px;
+        }
+
+        .detail-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 1.5rem;
+        }
+
+        .detail-host {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .detail-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #FFF;
+            line-height: 1.2;
+        }
+
+        .detail-badge-row {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .info-box {
+            background: rgba(0,0,0,0.2);
+            border: 1px solid var(--card-border);
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        .info-box-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.35rem;
+            letter-spacing: 0.05em;
+        }
+
+        .info-box-value {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #FFF;
+            line-height: 1.4;
+        }
+
+        .themes-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.35rem;
+        }
+
+        .theme-tag {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--card-border);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .insights-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .insights-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #FFF;
+            font-family: 'Space Grotesk', sans-serif;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 0.5rem;
+        }
+
+        .insight-item {
+            background: rgba(59, 130, 246, 0.03);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .insight-number {
+            width: 1.75rem;
+            height: 1.75rem;
+            background: var(--accent-blue);
+            color: #FFF;
+            font-weight: 700;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 0.85rem;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+        }
+
+        .insight-text {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-main);
+        }
+
+        .empty-detail-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 2rem;
+            color: var(--text-muted);
+            text-align: center;
+            gap: 1rem;
+            height: 100%;
+        }
+
+        .empty-icon {
+            width: 4rem;
+            height: 4rem;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        /* SVG and Scroll styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.1);
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.25);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <div class="logo-icon"></div>
+            <div class="logo-text">Aegis Cloud — Transcript Intelligence</div>
+        </div>
+        <div class="date-selector-wrapper">
+            <span class="selector-label">Analytics Segment:</span>
+            <select id="date-select" onchange="loadDateSegment(this.value)">
+                <!-- Dates loaded dynamically -->
+            </select>
+        </div>
+    </header>
+
+    <div class="main-container">
+        
+        <!-- KPIs Row -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-title">Ingested Transcripts</div>
+                <div class="kpi-value" id="kpi-total-calls">-</div>
+                <div class="kpi-sub">Processed segment calls</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Average Sentiment</div>
+                <div class="kpi-value" id="kpi-avg-sentiment">-</div>
+                <div class="kpi-sub" id="kpi-sentiment-label">System health tone</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Support Ratio</div>
+                <div class="kpi-value" id="kpi-support-ratio">-</div>
+                <div class="kpi-sub">Friction escalations</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Average Call Duration</div>
+                <div class="kpi-value" id="kpi-avg-duration">-</div>
+                <div class="kpi-sub">Active minutes per session</div>
+            </div>
+        </div>
+
+        <!-- Dashboard Content Panels -->
+        <div class="dashboard-content">
+            
+            <!-- Left Side: Ingested Calls Browser -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Ingested Call Logs</h2>
+                    <span id="call-count-label" style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;"></span>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search by call title, host, or themes..." oninput="filterCalls(this.value)">
+                </div>
+                <div class="call-list" id="call-list-container">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+
+            <!-- Right Side: Meeting Details Split -->
+            <div class="panel" style="min-height: 600px;">
+                <div class="panel-header">
+                    <h2 class="panel-title">Call Analytics & Insights</h2>
+                </div>
+                <div id="detail-container" style="flex-grow: 1;">
+                    <div class="empty-detail-state">
+                        <div class="empty-icon">🔍</div>
+                        <h3>Select a Call from the Log</h3>
+                        <p>Click on any meeting in the left browser panel to view its dynamic categorization reasoning, sentiment arcs, and C-Suite roadmap recommendations.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sentiment Timeline Panel -->
+        <div class="panel" style="margin-top: 1rem;">
+            <div class="panel-header">
+                <h2 class="panel-title">Sentiment Score Trajectory Timeline</h2>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="sentimentChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Load the pipeline data asset -->
+    <script src="data.js"></script>
+    <script>
+        let currentSegment = "";
+        let currentCalls = [];
+        let filteredCallsList = [];
+        let chartInstance = null;
+
+        // Initialize dashboard
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof DASHBOARD_DATA === 'undefined') {
+                console.error("DASHBOARD_DATA is missing. Run process_transcripts.py first.");
+                document.body.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;color:#FFF;text-align:center;gap:1rem;font-family:'Space Grotesk'"><h2>Dashboard Assets Not Found</h2><p>Please run the script <code>python execution/process_transcripts.py</code> first to generate the local visual data files.</p></div>`;
+                return;
+            }
+
+            const dates = Object.keys(DASHBOARD_DATA).sort().reverse();
+            if (dates.length === 0) return;
+
+            const select = document.getElementById('date-select');
+            dates.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d;
+                // Format YYYYMMDD to YYYY-MM-DD
+                opt.textContent = `${d.substring(0,4)}-${d.substring(4,6)}-${d.substring(6,8)}`;
+                select.appendChild(opt);
+            });
+
+            // Load latest segment
+            loadDateSegment(dates[0]);
+        });
+
+        function loadDateSegment(date) {
+            currentSegment = date;
+            currentCalls = DASHBOARD_DATA[date] || [];
+            filteredCallsList = [...currentCalls];
+            
+            // Clear details panel
+            resetDetailPanel();
+
+            // Refresh UI components
+            refreshKPIs();
+            renderCallList();
+            renderSentimentChart();
+            
+            // Pre-select first call if available
+            if (filteredCallsList.length > 0) {
+                showCallDetail(filteredCallsList[0].meetingId);
+                const firstItem = document.querySelector('.call-item');
+                if (firstItem) firstItem.classList.add('active');
+            }
+        }
+
+        function refreshKPIs() {
+            const totalCalls = currentCalls.length;
+            document.getElementById('kpi-total-calls').textContent = totalCalls;
+
+            if (totalCalls === 0) {
+                document.getElementById('kpi-avg-sentiment').textContent = "-";
+                document.getElementById('kpi-support-ratio').textContent = "-";
+                document.getElementById('kpi-avg-duration').textContent = "-";
+                return;
+            }
+
+            // Sentiment Average
+            const scores = currentCalls.map(c => c.sentiment.score);
+            const avgSentiment = scores.reduce((a,b) => a+b, 0) / totalCalls;
+            const sentimentKPI = document.getElementById('kpi-avg-sentiment');
+            sentimentKPI.textContent = avgSentiment.toFixed(2);
+            
+            const label = document.getElementById('kpi-sentiment-label');
+            if (avgSentiment > 0.15) {
+                sentimentKPI.style.color = '#10B981';
+                label.innerHTML = "😊 Highly Positive Arc";
+            } else if (avgSentiment < -0.15) {
+                sentimentKPI.style.color = '#EF4444';
+                label.innerHTML = "⚠️ Technical Friction Heavy";
+            } else {
+                sentimentKPI.style.color = '#F59E0B';
+                label.innerHTML = "😐 Neutral Stable Tone";
+            }
+
+            // Support volume ratio
+            const supportCalls = currentCalls.filter(c => c.category === 'Customer Support').length;
+            const ratioPercent = Math.round((supportCalls / totalCalls) * 100);
+            document.getElementById('kpi-support-ratio').textContent = `${ratioPercent}%`;
+
+            // Duration Average
+            const durations = currentCalls.map(c => c.duration);
+            const avgDuration = durations.reduce((a,b) => a+b, 0) / totalCalls;
+            document.getElementById('kpi-avg-duration').textContent = `${avgDuration.toFixed(1)}m`;
+        }
+
+        function renderCallList() {
+            const listContainer = document.getElementById('call-list-container');
+            listContainer.innerHTML = "";
+
+            document.getElementById('call-count-label').textContent = `${filteredCallsList.length} total`;
+
+            if (filteredCallsList.length === 0) {
+                listContainer.innerHTML = `<div style="padding:2rem;text-align:center;color:var(--text-muted);font-size:0.875rem;">No calls match your filters</div>`;
+                return;
+            }
+
+            filteredCallsList.forEach(c => {
+                const badgeClass = c.category === 'Customer Support' ? 'badge-support' : 
+                                   c.category === 'External Customer' ? 'badge-external' : 'badge-internal';
+                
+                const scoreColor = c.sentiment.score > 0.1 ? '#10B981' : 
+                                   c.sentiment.score < -0.1 ? '#EF4444' : '#F59E0B';
+
+                const item = document.createElement('div');
+                item.className = 'call-item';
+                item.setAttribute('data-id', c.meetingId);
+                item.onclick = () => {
+                    // Remove other active selections
+                    document.querySelectorAll('.call-item').forEach(el => el.classList.remove('active'));
+                    item.classList.add('active');
+                    showCallDetail(c.meetingId);
+                };
+
+                item.innerHTML = `
+                    <div class="call-meta-left">
+                        <span class="call-title" title="${c.title}">${c.title}</span>
+                        <span class="call-host" title="${c.host}">Host: ${c.host}</span>
+                    </div>
+                    <div class="call-meta-right">
+                        <span class="category-badge ${badgeClass}">${c.category}</span>
+                        <span class="sentiment-pill" style="color: ${scoreColor}; background: rgba(255,255,255,0.02)">
+                            Score: <strong>${c.sentiment.score.toFixed(1)}</strong>
+                        </span>
+                    </div>
+                `;
+                listContainer.appendChild(item);
+            });
+        }
+
+        function filterCalls(query) {
+            const q = query.toLowerCase();
+            filteredCallsList = currentCalls.filter(c => 
+                c.title.toLowerCase().includes(q) || 
+                c.host.toLowerCase().includes(q) ||
+                c.themes.some(t => t.toLowerCase().includes(q))
+            );
+            renderCallList();
+        }
+
+        function showCallDetail(meetingId) {
+            const call = currentCalls.find(c => c.meetingId === meetingId);
+            const container = document.getElementById('detail-container');
+            if (!call) return;
+
+            const badgeClass = call.category === 'Customer Support' ? 'badge-support' : 
+                               call.category === 'External Customer' ? 'badge-external' : 'badge-internal';
+
+            const scoreColor = call.sentiment.score > 0.1 ? '#10B981' : 
+                               call.sentiment.score < -0.1 ? '#EF4444' : '#F59E0B';
+
+            let themesHtml = call.themes.map(t => `<span class="theme-tag">${t}</span>`).join('');
+            if (!themesHtml) themesHtml = `<span style="font-size:0.8rem; color:var(--text-muted)">None identified</span>`;
+
+            let insightsHtml = call.strategic_insights.map((ins, index) => `
+                <div class="insight-item">
+                    <div class="insight-number">${index + 1}</div>
+                    <div class="insight-text">${ins}</div>
+                </div>
+            `).join('');
+
+            if (!insightsHtml) {
+                insightsHtml = `<div style="font-size:0.85rem; color:var(--text-muted)">No strategic recommendations synthesized for this call type.</div>`;
+            }
+
+            container.innerHTML = `
+                <div class="detail-wrapper">
+                    <div class="detail-header">
+                        <div class="detail-host">Meeting ID: <code>${call.meetingId}</code></div>
+                        <h1 class="detail-title">${call.title}</h1>
+                        <div class="detail-badge-row">
+                            <span class="category-badge ${badgeClass}">${call.category}</span>
+                            <span class="detail-host" style="margin-left: 0.5rem;">Host: <strong>${call.host}</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="info-grid">
+                        <div class="info-box">
+                            <div class="info-box-title">Duration</div>
+                            <div class="info-box-value">${call.duration} minutes</div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-box-title">Sentiment & Trajectory</div>
+                            <div class="info-box-value" style="color: ${scoreColor}; font-weight: 700; margin-bottom:0.25rem;">
+                                Score: ${call.sentiment.score.toFixed(2)}
+                            </div>
+                            <div style="font-size:0.75rem; color:var(--text-muted); line-height: 1.3;">
+                                ${call.sentiment.trajectory || "Stable trajectory."}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-title">Categorization Reasoning</div>
+                        <div class="info-box-value" style="font-size: 0.85rem; font-weight: 400; line-height: 1.5; color: var(--text-main)">
+                            ${call.reasoning}
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-title">Key Themes extracted</div>
+                        <div class="themes-list">
+                            ${themesHtml}
+                        </div>
+                    </div>
+
+                    <div class="insights-section">
+                        <h3 class="insights-title">🚀 Custom C-Suite Recommendations</h3>
+                        ${insightsHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        function resetDetailPanel() {
+            document.getElementById('detail-container').innerHTML = `
+                <div class="empty-detail-state">
+                    <div class="empty-icon">🔍</div>
+                    <h3>Select a Call from the Log</h3>
+                    <p>Click on any meeting in the left browser panel to view its dynamic categorization reasoning, sentiment arcs, and C-Suite roadmap recommendations.</p>
+                </div>
+            `;
+        }
+
+        function renderSentimentChart() {
+            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            
+            // Prepare scores and labels
+            const labels = currentCalls.map((c, i) => c.title.length > 25 ? c.title.substring(0, 25) + "..." : c.title);
+            const sentimentScores = currentCalls.map(c => c.sentiment.score);
+            const durations = currentCalls.map(c => c.duration);
+            
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Sentiment Score',
+                            data: sentimentScores,
+                            borderColor: '#3B82F6',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#FFF',
+                            pointBorderColor: '#3B82F6',
+                            pointHoverRadius: 6,
+                            fill: true,
+                            backgroundColor: 'rgba(59, 130, 246, 0.05)',
+                            tension: 0.35,
+                            yAxisID: 'y'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const index = context.dataIndex;
+                                    const score = context.raw.toFixed(2);
+                                    return `Sentiment Score: ${score} (${currentCalls[index].category})`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            min: -1.0,
+                            max: 1.0,
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.05)'
+                            },
+                            ticks: {
+                                color: '#9CA3AF'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#9CA3AF',
+                                font: {
+                                    size: 10
+                                },
+                                maxRotation: 45,
+                                minRotation: 45
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

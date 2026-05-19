@@ -1,0 +1,120 @@
+# Transcript Intelligence — Take-Home Assignment
+
+## Background
+
+You are working with a B2B enterprise SaaS company that captures call transcripts from across the organization, including:
+
+- **Customer Support Calls** — customers reporting issues or requesting help
+- **External Customer Calls** — account managers discussing renewals, adoption, feedback, and relationship management
+- **Internal Calls** — engineering syncs, escalations, planning discussions, and cross-functional coordination
+
+The company is building a product called **Transcript Intelligence** — a system that helps stakeholders across the business make better decisions using transcript data.
+
+Potential users include:
+
+- Support leaders
+- Sales managers
+- Product managers
+- Engineering leads
+
+You will receive approximately **100 sample transcripts** across the different call types as your initial dataset.
+
+Your objective is to explore the dataset, extract meaningful insights, and demonstrate your analytical and technical thinking.
+
+---
+
+# Objectives
+
+## 1. Build a Transcript Processing & Categorization Pipeline
+
+Create a pipeline that processes transcripts and categorizes them into meaningful topics or themes.
+
+Your solution should include:
+
+- The categories/themes you identified
+- Why those categories matter
+- The methodology you chose:
+  - LLM-based
+  - Clustering
+  - Rule-based
+  - Hybrid approach
+  - Or another approach of your choice
+- A clear explanation of your reasoning and tradeoffs
+- Example transcripts or excerpts for each category
+- How you evaluated or validated the quality of categorization
+
+Focus on demonstrating your thought process, not just the final output.
+
+---
+
+## 2. Perform Sentiment Analysis & Trend Discovery
+
+Analyze sentiment across the different call types and identify patterns or trends.
+
+Your analysis should include:
+
+- Sentiment distribution by call type
+- Notable trends or anomalies
+- Interpretation of what the trends may indicate
+- Why these insights would matter to business stakeholders
+
+Do not limit the work to charts or metrics — explain the business implications behind the findings.
+
+Examples of useful observations:
+
+- Rising frustration around a specific product area
+- Positive adoption signals from enterprise customers
+- Escalation-heavy internal discussions tied to operational bottlenecks
+- Correlation between sentiment and renewal risk
+
+---
+
+## 3. Identify Additional High-Value Insights
+
+Go beyond the required tasks and identify additional insights that could make the Transcript Intelligence product more valuable.
+
+Think from the perspective of different stakeholders across the organization.
+
+Document at least **2–3 additional insight ideas**, including:
+
+- What the insight is
+- Who would benefit from it
+- Why it matters
+- How it could be implemented
+
+You may implement these ideas or describe them conceptually with strong reasoning.
+
+Potential directions include (but are not limited to):
+
+- Churn or renewal risk detection
+- Feature request clustering
+- Escalation prediction
+- Customer health scoring
+- Product adoption signals
+- Internal operational bottlenecks
+- Competitive intelligence extraction
+- Action item extraction
+- Root cause trend analysis
+
+---
+
+# Deliverables
+
+Provide:
+
+- Your code and/or notebooks
+- Documentation of your approach
+- Key findings and insights
+- Assumptions and tradeoffs
+- Visualizations where useful
+- Clear explanations of methodology and reasoning
+
+The emphasis is on:
+
+- Analytical thinking
+- Product intuition
+- Technical decision-making
+- Communication clarity
+- Insight quality
+
+Not just model accuracy or polished dashboards.
