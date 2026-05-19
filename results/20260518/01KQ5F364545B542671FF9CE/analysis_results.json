@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ5F364545B542671FF9CE",
+  "title": "Support Case #3546 - Meridian Capital SCIM Provisioning Request",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 21.3,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "marcus.williams@aegiscloud.com",
+    "j.hoffman@meridiancapital.com",
+    "s.nakamura@meridiancapital.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific support case (Case #3546) related to SCIM provisioning for Meridian Capital. The attendees include representatives from both Aegis Cloud and Meridian Capital, indicating a direct customer support interaction. The dialogue revolves around troubleshooting and discussing technical requirements for automating user provisioning and deprovisioning, which aligns with the Customer Support category.",
+  "themes": [
+    "SCIM Provisioning Request",
+    "Automated User Provisioning",
+    "Compliance and Deprovisioning Controls",
+    "API Integration Options"
+  ],
+  "sentiment": {
+    "score": 0.4,
+    "trajectory": "The meeting began with a clear identification of the challenges faced by Meridian Capital regarding their identity infrastructure, leading to a slightly negative tone due to compliance concerns. However, as Sarah and Marcus provided potential solutions, particularly the API approach, the tone shifted to a more positive outlook, with Jason expressing appreciation for the clarity and actionable next steps. The conversation ended on a constructive note, with a commitment to follow up on the feature request and roadmap discussions, indicating a productive engagement."
+  },
+  "strategic_insights": [
+    "Implement a dedicated SCIM 2.0 integration feature for Aegis Identity, prioritizing it based on the regulatory needs expressed by Meridian Capital and similar clients in the financial services sector. Product Management should take ownership of this initiative, as it addresses the critical gap in automated provisioning and deprovisioning controls that is becoming increasingly necessary for compliance. This will not only enhance customer satisfaction but also position Aegis Cloud as a more competitive player in the IAM market.",
+    "Develop a comprehensive, self-service resource on the Aegis Cloud Developer Portal specifically for API integration with Okta, including detailed guides, best practices, and example workflows for SCIM provisioning via REST API. This should be managed by the Engineering team, leveraging the existing documentation and community knowledge. Providing these resources will empower clients like Meridian Capital to implement interim solutions effectively while awaiting the full SCIM integration, thereby reducing operational bottlenecks in user management."
+  ]
+}

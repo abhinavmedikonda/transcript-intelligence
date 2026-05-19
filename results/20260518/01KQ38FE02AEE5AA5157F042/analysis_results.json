@@ -1,0 +1,26 @@
+{
+  "meetingId": "01KQ38FE02AEE5AA5157F042",
+  "title": "Support Case #3296 - Pinnacle Insurance Comply v2 Report Formatting Issue",
+  "host": "marcus.williams@aegiscloud.com",
+  "duration": 14.1,
+  "allEmails": [
+    "marcus.williams@aegiscloud.com",
+    "o.grant@pinnacleins.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it involves troubleshooting a specific technical issue related to a formatting problem in the Aegis Comply v2 reports. The dialogue focuses on resolving a support case (Case #3296) where the customer, Oliver Grant from Pinnacle Insurance, is experiencing issues with report generation, which is a direct operational concern. The interaction is centered around identifying the problem, confirming details, and discussing next steps for resolution, which aligns with the Customer Support category.",
+  "themes": [
+    "Report Formatting Issue",
+    "PDF Export Bug",
+    "SOC 2 Compliance Reporting",
+    "Urgent Fix Timeline"
+  ],
+  "sentiment": {
+    "score": -0.1,
+    "trajectory": "The meeting began with Oliver expressing frustration over formatting issues in the newly launched Aegis Comply v2 reports, indicating a negative emotional state. As Marcus acknowledged the problems and confirmed them on his end, the tone shifted towards a more collaborative atmosphere, with Oliver feeling reassured by Marcus's commitment to escalate the issue. However, the urgency of the timeline for an internal audit review kept a slight tension in the conversation, resulting in a slightly negative sentiment overall, but with a sense of hope for resolution."
+  },
+  "strategic_insights": [
+    "Implement a dedicated PDF rendering QA process within the Aegis Comply product module, specifically targeting the SOC 2 report format. This should involve the Product Management team working closely with Engineering to create test cases that include various control category names and pagination scenarios to ensure that all potential formatting issues are caught before future releases. This proactive measure will address the root cause of the current PDF export bug and prevent similar issues from affecting customers during critical audits.",
+    "Develop a temporary customer-facing feature that allows users to preview the PDF report formatting directly in the Comply dashboard before finalizing the export. This should be owned by the Engineering team, with input from Product Management on UI design. By giving users the ability to see how their reports will look prior to export, we can mitigate the impact of formatting issues and improve user confidence in the reporting process, especially in urgent scenarios like compliance audits."
+  ]
+}

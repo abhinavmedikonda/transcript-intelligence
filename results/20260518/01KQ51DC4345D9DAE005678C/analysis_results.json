@@ -1,0 +1,27 @@
+{
+  "meetingId": "01KQ51DC4345D9DAE005678C",
+  "title": "Aegis / Redwood Clinical - Product Feedback Session",
+  "host": "daniel.okafor@aegiscloud.com",
+  "duration": 40.3,
+  "allEmails": [
+    "daniel.okafor@aegiscloud.com",
+    "lisa.park@aegiscloud.com",
+    "t.hargrove@redwoodclinical.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a feedback session with a client (Redwood Clinical) regarding the Aegis Comply product. The discussion focuses on specific feature requests and pain points related to compliance reporting, which indicates a high-level engagement with the client about their experience and needs. The presence of an external attendee from Redwood Clinical further supports the classification as External Customer, as the conversation revolves around product feedback and potential improvements rather than internal operations.",
+  "themes": [
+    "HIPAA Reporting Improvements",
+    "Automated Report Delivery",
+    "Executive Summary for Compliance Reports",
+    "Feature Feedback for Aegis Comply"
+  ],
+  "sentiment": {
+    "score": 0.3,
+    "trajectory": "The meeting began with a neutral tone, as both parties acknowledged the relevance of the discussion. As Thomas expressed specific pain points regarding the Comply tool, the sentiment shifted slightly negative due to frustrations with reporting limitations. However, the conversation ended on a slightly positive note, with Thomas acknowledging the reliability of other products and expressing willingness to engage further, indicating a potential for resolution and continued partnership."
+  },
+  "strategic_insights": [
+    "Implement a granular filtering feature for HIPAA and SOC 2 reports within Aegis Comply, allowing users to drill down into specific control areas without exporting data. This should be owned by the Product Management team to ensure it aligns with user needs. By addressing this, we can eliminate the manual effort currently required for auditors, thereby enhancing the user experience and increasing customer satisfaction.",
+    "Develop an automated report delivery system that allows users to schedule and send compliance reports to designated stakeholders without manual intervention. This initiative should be led by the Engineering team to ensure seamless integration with existing workflows. This will reduce the operational overhead for compliance officers like Priya, ensuring timely and efficient communication of compliance status to executives, which is critical for maintaining trust and compliance."
+  ]
+}

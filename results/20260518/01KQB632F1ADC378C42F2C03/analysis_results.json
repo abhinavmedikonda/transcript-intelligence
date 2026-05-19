@@ -1,0 +1,27 @@
+{
+  "meetingId": "01KQB632F1ADC378C42F2C03",
+  "title": "Support Case #7570 - Silverline Brands Comply v2 License Upgrade",
+  "host": "david.kim@aegiscloud.com",
+  "duration": 16.3,
+  "allEmails": [
+    "david.kim@aegiscloud.com",
+    "m.tan@silverlinebrands.com",
+    "d.flores@silverlinebrands.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific billing discrepancy related to the Comply v2 license upgrade for Silverline Brands. The attendees from Silverline Brands are discussing a support case with David Kim from Aegis Cloud Security, indicating that they are seeking assistance with a technical issue regarding their billing. The dialogue includes troubleshooting the billing error and confirming the correct charges, which aligns with the Customer Support category.",
+  "themes": [
+    "Billing Discrepancy",
+    "Comply v2 License Upgrade",
+    "Proration Calculation",
+    "Credit Issuance"
+  ],
+  "sentiment": {
+    "score": 0.5,
+    "trajectory": "The meeting began with a billing discrepancy that caused initial concern for Michelle and Dominic, leading to a slightly negative tone. However, as David clarified the issue and confirmed the correct proration calculation, the mood shifted positively. By the end, the customers felt reassured with a resolution plan in place, expressing satisfaction with the support received and the functionality of the product."
+  },
+  "strategic_insights": [
+    "Implement a tiered proration calculation feature in the billing system to ensure that upgrades like Comply v2 automatically apply the correct proration based on the upgrade date rather than the start of the billing cycle. This should be owned by the Engineering team to address the root cause of the miscalculation issue observed in this call and prevent future billing discrepancies for all customers who upgrade mid-cycle.",
+    "Create a dedicated FAQ and notification system for customers upgrading to Comply v2 that clearly outlines potential billing changes and expected timelines for credit issuance. This can be owned by Product Management, ensuring that customers like Silverline Brands have clear expectations and can maintain compliance with their internal accounting practices, thus enhancing overall customer satisfaction."
+  ]
+}

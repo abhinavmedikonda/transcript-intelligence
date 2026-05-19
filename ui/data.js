@@ -1,4 +1,336 @@
 const DASHBOARD_DATA = {
+  "20260518": [
+    {
+      "meetingId": "01KQ351E141926AB7CAB668D",
+      "title": "Aegis / Northstar Pharma - Urgent: Detect Outage Impact",
+      "host": "maria.santos@aegiscloud.com",
+      "duration": 48.1,
+      "allEmails": [
+        "maria.santos@aegiscloud.com",
+        "g.yoon@northstarpharma.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting involves a direct discussion between Aegis Cloud and Northstar Pharma regarding a significant outage affecting Northstar's security monitoring capabilities. The dialogue focuses on troubleshooting the outage, understanding its impact, and discussing remediation steps. The presence of a customer from Northstar Pharma indicates that this is a support-related call, specifically addressing a critical operational issue that needs resolution.",
+      "themes": [
+        "Outage Impact Analysis",
+        "Event Processing Failure",
+        "SLA Review and Commitment",
+        "Regulatory Compliance Concerns"
+      ],
+      "sentiment": {
+        "score": -0.4,
+        "trajectory": "The meeting began with Grace expressing frustration over a significant outage that left her team without visibility into their security monitoring, indicating a highly negative emotional state. As Maria acknowledged the issues and proposed concrete remediation steps, including a call with the VP of Engineering and a commitment to a detailed incident report, the tone shifted slightly towards a more constructive dialogue. However, Grace remained concerned and skeptical about the reliability of the service, reflecting a slightly negative sentiment by the end, as she emphasized the urgency of her needs before the upcoming renewal."
+      },
+      "strategic_insights": [
+        "Implement an automated alerting system that triggers notifications to both customers and internal teams when event processing failures occur, ensuring immediate awareness and transparency. This should be owned by the Engineering team, with collaboration from Product Management to define the alert criteria and escalation paths. This solution addresses the root cause of the lack of visibility during outages, providing customers like Northstar with real-time updates and reducing anxiety during critical periods.",
+        "Revise the current SLA structure for enterprise customers to include explicit commitments around uptime, incident response times, and penalties for non-compliance. This should be led by the Account Management team in partnership with Product Management to ensure the SLA meets the compliance needs of regulated industries like healthcare. This recommendation directly addresses Grace's concerns about regulatory exposure and builds confidence in Aegis Cloud's commitment to service reliability."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQ5F364545B542671FF9CE",
+      "title": "Support Case #3546 - Meridian Capital SCIM Provisioning Request",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 21.3,
+      "allEmails": [
+        "sarah.chen@aegiscloud.com",
+        "marcus.williams@aegiscloud.com",
+        "j.hoffman@meridiancapital.com",
+        "s.nakamura@meridiancapital.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is focused on resolving a specific support case (Case #3546) related to SCIM provisioning for Meridian Capital. The attendees include representatives from both Aegis Cloud and Meridian Capital, indicating a direct customer support interaction. The dialogue revolves around troubleshooting and discussing technical requirements for automating user provisioning and deprovisioning, which aligns with the Customer Support category.",
+      "themes": [
+        "SCIM Provisioning Request",
+        "Automated User Provisioning",
+        "Compliance and Deprovisioning Controls",
+        "API Integration Options"
+      ],
+      "sentiment": {
+        "score": 0.4,
+        "trajectory": "The meeting began with a clear identification of the challenges faced by Meridian Capital regarding their identity infrastructure, leading to a slightly negative tone due to compliance concerns. However, as Sarah and Marcus provided potential solutions, particularly the API approach, the tone shifted to a more positive outlook, with Jason expressing appreciation for the clarity and actionable next steps. The conversation ended on a constructive note, with a commitment to follow up on the feature request and roadmap discussions, indicating a productive engagement."
+      },
+      "strategic_insights": [
+        "Implement a dedicated SCIM 2.0 integration feature for Aegis Identity, prioritizing it based on the regulatory needs expressed by Meridian Capital and similar clients in the financial services sector. Product Management should take ownership of this initiative, as it addresses the critical gap in automated provisioning and deprovisioning controls that is becoming increasingly necessary for compliance. This will not only enhance customer satisfaction but also position Aegis Cloud as a more competitive player in the IAM market.",
+        "Develop a comprehensive, self-service resource on the Aegis Cloud Developer Portal specifically for API integration with Okta, including detailed guides, best practices, and example workflows for SCIM provisioning via REST API. This should be managed by the Engineering team, leveraging the existing documentation and community knowledge. Providing these resources will empower clients like Meridian Capital to implement interim solutions effectively while awaiting the full SCIM integration, thereby reducing operational bottlenecks in user management."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQA0F0BE68E74D66EB4171",
+      "title": "Competitive Response Strategy",
+      "host": "james.mitchell@aegiscloud.com",
+      "duration": 34.3,
+      "allEmails": [
+        "james.mitchell@aegiscloud.com",
+        "rachel.torres@aegiscloud.com",
+        "tom.bradley@aegiscloud.com",
+        "jordan.whitfield@aegiscloud.com",
+        "kevin.obrien@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal discussion among team members. The conversation revolves around competitive strategies, technical remediation, and product positioning, which are typical topics for internal strategy sessions rather than customer-facing discussions.",
+      "themes": [
+        "Competitive Positioning Against SentinelShield",
+        "Technical Remediation from March Outage",
+        "Comply v2 Differentiation",
+        "Action Items for Customer Engagement"
+      ],
+      "sentiment": {
+        "score": -0.1,
+        "trajectory": "The meeting began with a sense of concern regarding competitive pressure from SentinelShield, particularly due to past outages. As the team discussed technical improvements and strategies to address customer concerns, the tone shifted towards a more collaborative and proactive approach, especially with the introduction of Comply v2 as a differentiator. By the end, while there was still some apprehension about the competitive landscape, the team left with actionable plans and a sense of cautious optimism about their positioning."
+      },
+      "strategic_insights": [
+        "Develop a competitive positioning framework specifically addressing the reliability concerns raised by SentinelShield, which should include a one-pager outlining the March remediation and the architectural improvements made. This document should be owned by Tom Bradley and be ready for distribution to the sales team. By providing a clear narrative on the technical upgrades, we can build trust with prospects and counteract any negative perceptions stemming from the outage.",
+        "Create a targeted engagement strategy for Hartfield Manufacturing that leverages their current SOC 2 audit status. This should involve a technical call with Kevin O'Brien to demonstrate the on-demand SOC 2 reporting capabilities of Comply v2. Rachel Torres should lead this initiative, as it directly addresses a critical pain point for the prospect and showcases our unique value proposition, differentiating Aegis Cloud from competitors who lack integrated compliance solutions."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQ51DC4345D9DAE005678C",
+      "title": "Aegis / Redwood Clinical - Product Feedback Session",
+      "host": "daniel.okafor@aegiscloud.com",
+      "duration": 40.3,
+      "allEmails": [
+        "daniel.okafor@aegiscloud.com",
+        "lisa.park@aegiscloud.com",
+        "t.hargrove@redwoodclinical.com"
+      ],
+      "category": "External Customer",
+      "reasoning": "The meeting involves a feedback session with a client (Redwood Clinical) regarding the Aegis Comply product. The discussion focuses on specific feature requests and pain points related to compliance reporting, which indicates a high-level engagement with the client about their experience and needs. The presence of an external attendee from Redwood Clinical further supports the classification as External Customer, as the conversation revolves around product feedback and potential improvements rather than internal operations.",
+      "themes": [
+        "HIPAA Reporting Improvements",
+        "Automated Report Delivery",
+        "Executive Summary for Compliance Reports",
+        "Feature Feedback for Aegis Comply"
+      ],
+      "sentiment": {
+        "score": 0.3,
+        "trajectory": "The meeting began with a neutral tone, as both parties acknowledged the relevance of the discussion. As Thomas expressed specific pain points regarding the Comply tool, the sentiment shifted slightly negative due to frustrations with reporting limitations. However, the conversation ended on a slightly positive note, with Thomas acknowledging the reliability of other products and expressing willingness to engage further, indicating a potential for resolution and continued partnership."
+      },
+      "strategic_insights": [
+        "Implement a granular filtering feature for HIPAA and SOC 2 reports within Aegis Comply, allowing users to drill down into specific control areas without exporting data. This should be owned by the Product Management team to ensure it aligns with user needs. By addressing this, we can eliminate the manual effort currently required for auditors, thereby enhancing the user experience and increasing customer satisfaction.",
+        "Develop an automated report delivery system that allows users to schedule and send compliance reports to designated stakeholders without manual intervention. This initiative should be led by the Engineering team to ensure seamless integration with existing workflows. This will reduce the operational overhead for compliance officers like Priya, ensuring timely and efficient communication of compliance status to executives, which is critical for maintaining trust and compliance."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQ560FF1570C5E7F71D752",
+      "title": "Aegis / Coastal Living Co - Protect Module Expansion",
+      "host": "kevin.obrien@aegiscloud.com",
+      "duration": 45.7,
+      "allEmails": [
+        "kevin.obrien@aegiscloud.com",
+        "v.cruz@coastalliving.com"
+      ],
+      "category": "External Customer",
+      "reasoning": "The meeting involves a discussion between Aegis Cloud and Coastal Living regarding the implementation of the Protect module, focusing on their backup and recovery setup. The dialogue indicates a high-level engagement about the customer's needs, including specific requirements for data protection and recovery time objectives (RTO and RPO). The presence of an external customer (Vanessa Cruz from Coastal Living) and the nature of the conversation, which revolves around understanding the customer's operational challenges and proposing solutions, aligns with the 'External Customer' category.",
+      "themes": [
+        "Backup and Recovery Solutions",
+        "Data Protection Requirements",
+        "Implementation Phases",
+        "Customer Onboarding Process"
+      ],
+      "sentiment": {
+        "score": 0.5,
+        "trajectory": "The meeting began with a positive tone as both Kevin and Vanessa exchanged pleasantries, indicating a good rapport. Vanessa expressed concerns about their current backup setup, which shifted the tone slightly towards a more serious discussion about challenges. However, as Kevin introduced solutions that addressed her pain points, particularly the unified view and streamlined implementation process, the sentiment improved significantly, leaving Vanessa feeling reassured and optimistic about the partnership moving forward."
+      },
+      "strategic_insights": [
+        "Implement a centralized dashboard feature in Aegis Protect that provides real-time visibility across all environments, including both CloudPrime and on-prem systems. This recommendation should be owned by the Product Management team as it directly addresses Vanessa's pain point of having to navigate multiple dashboards for backup visibility. By simplifying the user experience and providing a unified view, it will significantly reduce the time her team spends managing backups, especially during peak traffic periods.",
+        "Develop a tailored onboarding package that includes a phased implementation plan specifically designed for customers with legacy systems and bandwidth constraints, like Coastal Living. This should be owned by the Account Management team and include a business impact analysis template to demonstrate the cost of downtime during peak periods. By ensuring that the onboarding process is manageable and includes clear metrics for success, it will help Vanessa secure internal buy-in from her CFO and facilitate smoother adoption of Aegis Protect."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQ5EC1665DCFD7A6B62A59",
+      "title": "Support Case #8749 - Coastal Living Co SAML Certificate Rotation Bug",
+      "host": "marcus.williams@aegiscloud.com",
+      "duration": 10.1,
+      "allEmails": [
+        "marcus.williams@aegiscloud.com",
+        "elena.vasquez@aegiscloud.com",
+        "v.cruz@coastalliving.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is focused on resolving a specific technical issue related to a SAML certificate rotation bug that is causing authentication failures for a significant portion of the customer's workforce. The dialogue includes troubleshooting steps, acknowledgment of a known bug, and a manual workaround to restore functionality, which aligns with the Customer Support category. Additionally, one attendee is from the customer (coastalliving.com), indicating that this is a support case rather than an internal discussion.",
+      "themes": [
+        "SAML Certificate Rotation Bug",
+        "Authentication Failures",
+        "Manual Workaround for Service Provider Connections",
+        "Customer Advisory for Bug Prevention"
+      ],
+      "sentiment": {
+        "score": -0.4,
+        "trajectory": "The meeting began with Vanessa expressing significant frustration over a critical issue affecting a large portion of her workforce, leading to a tense atmosphere. As the conversation progressed, the team identified a bug in the certificate rotation wizard, which Vanessa found unacceptable given their reliance on the platform. However, the tone shifted slightly towards resolution when a manual workaround was proposed, and the support team committed to follow-up actions, though the underlying dissatisfaction remained evident, indicating a risk of churn if issues persist."
+      },
+      "strategic_insights": [
+        "Implement a dedicated SAML certificate management dashboard within the Aegis Identity module, allowing users to monitor and manage their certificate statuses in real-time. Product Management should own this initiative, as it directly addresses the root cause of authentication failures due to certificate rotation issues, providing customers with proactive alerts and insights to avoid similar disruptions in the future.",
+        "Develop an automated certificate propagation feature that ensures new SAML certificates are instantly and correctly updated across all service provider connections upon rotation. This recommendation should be led by the Engineering team, as it will eliminate manual intervention and reduce the risk of human error during critical updates, ultimately enhancing the reliability of SSO functionalities for customers like Vanessa Cruz's organization."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQBB7C4D4789DB2F3DA9C2",
+      "title": "Support Case #1750 - Vanta Health Systems SIEM Connector Issue",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 29.7,
+      "allEmails": [
+        "sarah.chen@aegiscloud.com",
+        "priya.patel@aegiscloud.com",
+        "l.cheng@vantahealth.com",
+        "r.burke@vantahealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is focused on resolving a specific technical issue related to the SIEM connector for Vanta Health Systems, which falls under customer support. The attendees include both Aegis Cloud support staff and representatives from Vanta Health, indicating a direct troubleshooting session. The dialogue revolves around identifying and addressing a technical problem, including error messages, configuration details, and potential fixes, which aligns with the Customer Support category.",
+      "themes": [
+        "SIEM Connector Issue",
+        "Connection Timeout Errors",
+        "Event Data Loss",
+        "Upgrade Process for Connector"
+      ],
+      "sentiment": {
+        "score": -0.4,
+        "trajectory": "The meeting began with a clear sense of urgency and concern from Vanta Health Systems regarding significant data gaps in their SIEM integration, which escalated to frustration over delayed support responses. As the conversation progressed, Sarah and Priya acknowledged the issues and proposed immediate solutions, which slightly alleviated the tension. However, the overall sentiment remained negative due to unresolved concerns about reliability and communication failures, leaving Vanta Health Systems with lingering doubts about their partnership."
+      },
+      "strategic_insights": [
+        "Implement a proactive notification system for known issues in Aegis Detect's SIEM connector, specifically for critical versions like 3.4.1. This should be owned by the Product Management team, and it will address the root cause of customer frustration regarding undisclosed bugs and enhance transparency with customers like Vanta Health Systems. By providing timely alerts for known issues, we can improve customer trust and satisfaction, especially in sensitive sectors like healthcare.",
+        "Create a dedicated support resource or self-service portal for configuration parameters, including undocumented ones like 'retry_on_timeout'. The Engineering team should own this initiative. This resource will empower customers to quickly troubleshoot and optimize their configurations without waiting for support, reducing downtime and enhancing the customer experience. This is especially critical for customers dealing with PHI, as in the case of Vanta Health Systems, to ensure compliance and continuous monitoring."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQ38FE02AEE5AA5157F042",
+      "title": "Support Case #3296 - Pinnacle Insurance Comply v2 Report Formatting Issue",
+      "host": "marcus.williams@aegiscloud.com",
+      "duration": 14.1,
+      "allEmails": [
+        "marcus.williams@aegiscloud.com",
+        "o.grant@pinnacleins.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is classified as Customer Support because it involves troubleshooting a specific technical issue related to a formatting problem in the Aegis Comply v2 reports. The dialogue focuses on resolving a support case (Case #3296) where the customer, Oliver Grant from Pinnacle Insurance, is experiencing issues with report generation, which is a direct operational concern. The interaction is centered around identifying the problem, confirming details, and discussing next steps for resolution, which aligns with the Customer Support category.",
+      "themes": [
+        "Report Formatting Issue",
+        "PDF Export Bug",
+        "SOC 2 Compliance Reporting",
+        "Urgent Fix Timeline"
+      ],
+      "sentiment": {
+        "score": -0.1,
+        "trajectory": "The meeting began with Oliver expressing frustration over formatting issues in the newly launched Aegis Comply v2 reports, indicating a negative emotional state. As Marcus acknowledged the problems and confirmed them on his end, the tone shifted towards a more collaborative atmosphere, with Oliver feeling reassured by Marcus's commitment to escalate the issue. However, the urgency of the timeline for an internal audit review kept a slight tension in the conversation, resulting in a slightly negative sentiment overall, but with a sense of hope for resolution."
+      },
+      "strategic_insights": [
+        "Implement a dedicated PDF rendering QA process within the Aegis Comply product module, specifically targeting the SOC 2 report format. This should involve the Product Management team working closely with Engineering to create test cases that include various control category names and pagination scenarios to ensure that all potential formatting issues are caught before future releases. This proactive measure will address the root cause of the current PDF export bug and prevent similar issues from affecting customers during critical audits.",
+        "Develop a temporary customer-facing feature that allows users to preview the PDF report formatting directly in the Comply dashboard before finalizing the export. This should be owned by the Engineering team, with input from Product Management on UI design. By giving users the ability to see how their reports will look prior to export, we can mitigate the impact of formatting issues and improve user confidence in the reporting process, especially in urgent scenarios like compliance audits."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQEDE682B4A8D67C657CF1",
+      "title": "Support Case #3103 - Silverline Brands Detect False Positives After Patch",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 13.8,
+      "allEmails": [
+        "sarah.chen@aegiscloud.com",
+        "d.flores@silverlinebrands.com",
+        "m.tan@silverlinebrands.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is focused on resolving a specific technical issue related to false positives in the Aegis Detect system after a patch was applied. The attendees include a support representative from Aegis Cloud and representatives from Silverline Brands, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the issue, discussing operational impacts, and providing solutions, which aligns with the Customer Support category.",
+      "themes": [
+        "False Positives in Aegis Detect",
+        "Patch Version 4.2.1 Issues",
+        "Alert Volume Management",
+        "Configuration Update and Baseline Restore"
+      ],
+      "sentiment": {
+        "score": -0.3,
+        "trajectory": "The meeting began with Dominic expressing frustration over repeated issues with the Aegis Detect platform, indicating a negative emotional state. As Sarah provided solutions, including a baseline restore and a supervised re-learning period, the tone shifted slightly towards reassurance, though concerns about ongoing stability and vendor evaluation remained. The conversation ended with a cautious optimism about immediate fixes, but underlying dissatisfaction with the overall service persisted, leaving a potential churn risk."
+      },
+      "strategic_insights": [
+        "Implement a proactive communication strategy by creating a dedicated notification system for patch releases that includes potential impacts on Aegis Detect. The Product Management team should take ownership of this initiative. This addresses the root cause of customer frustration regarding the lack of timely information on known issues, ensuring that clients are aware of any significant changes before applying patches, thereby reducing operational disruptions.",
+        "Enhance the Aegis Detect configuration management by developing a self-service portal feature that allows users to easily access and manage their baseline profiles and suppression rules. The Engineering team should lead this effort. This would empower customers to make necessary adjustments to their detection settings without needing to contact support, thereby reducing alert fatigue and improving overall user confidence in the platform."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQ03B0303900521BB089CA",
+      "title": "Detect Outage - Remediation Plan Review",
+      "host": "megan.lawson@aegiscloud.com",
+      "duration": 35.2,
+      "allEmails": [
+        "megan.lawson@aegiscloud.com",
+        "raj.kapoor@aegiscloud.com",
+        "brian.cho@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "",
+      "themes": [],
+      "sentiment": {
+        "score": 0.0,
+        "trajectory": ""
+      },
+      "strategic_insights": [],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQB632F1ADC378C42F2C03",
+      "title": "Support Case #7570 - Silverline Brands Comply v2 License Upgrade",
+      "host": "david.kim@aegiscloud.com",
+      "duration": 16.3,
+      "allEmails": [
+        "david.kim@aegiscloud.com",
+        "m.tan@silverlinebrands.com",
+        "d.flores@silverlinebrands.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is focused on resolving a specific billing discrepancy related to the Comply v2 license upgrade for Silverline Brands. The attendees from Silverline Brands are discussing a support case with David Kim from Aegis Cloud Security, indicating that they are seeking assistance with a technical issue regarding their billing. The dialogue includes troubleshooting the billing error and confirming the correct charges, which aligns with the Customer Support category.",
+      "themes": [
+        "Billing Discrepancy",
+        "Comply v2 License Upgrade",
+        "Proration Calculation",
+        "Credit Issuance"
+      ],
+      "sentiment": {
+        "score": 0.5,
+        "trajectory": "The meeting began with a billing discrepancy that caused initial concern for Michelle and Dominic, leading to a slightly negative tone. However, as David clarified the issue and confirmed the correct proration calculation, the mood shifted positively. By the end, the customers felt reassured with a resolution plan in place, expressing satisfaction with the support received and the functionality of the product."
+      },
+      "strategic_insights": [
+        "Implement a tiered proration calculation feature in the billing system to ensure that upgrades like Comply v2 automatically apply the correct proration based on the upgrade date rather than the start of the billing cycle. This should be owned by the Engineering team to address the root cause of the miscalculation issue observed in this call and prevent future billing discrepancies for all customers who upgrade mid-cycle.",
+        "Create a dedicated FAQ and notification system for customers upgrading to Comply v2 that clearly outlines potential billing changes and expected timelines for credit issuance. This can be owned by Product Management, ensuring that customers like Silverline Brands have clear expectations and can maintain compliance with their internal accounting practices, thus enhancing overall customer satisfaction."
+      ],
+      "date": "20260518"
+    },
+    {
+      "meetingId": "01KQ56AA6B60801ABC01AB1C",
+      "title": "Support Case #8179 - Clearwater Medical Overage Charges Dispute",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 21.5,
+      "allEmails": [
+        "sarah.chen@aegiscloud.com",
+        "marcus.williams@aegiscloud.com",
+        "a.mehta@clearwatermed.com",
+        "n.simmons@clearwatermed.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is focused on resolving a specific billing dispute related to overage charges for Clearwater Medical. The attendees include representatives from Clearwater Medical and Aegis Cloud support staff, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the billing discrepancies, understanding the reasons behind the charges, and discussing potential resolutions, which aligns with the Customer Support category.",
+      "themes": [
+        "Billing Dispute",
+        "Overage Charges",
+        "Comply Module Issues",
+        "Event Ingestion Charges"
+      ],
+      "sentiment": {
+        "score": -0.3,
+        "trajectory": "The meeting began with a sense of urgency and concern from Clearwater Medical regarding unexpected overage charges on their invoice, particularly tied to the Comply module. As the discussion progressed, the tone shifted to frustration when it was revealed that the lack of alert notifications contributed to the charges, and the potential for additional charges due to a system outage was raised. By the end of the meeting, while there was a commitment from Aegis to investigate and address the issues, the sentiment remained slightly negative due to the financial implications and the need for further clarification, leaving Clearwater Medical feeling uneasy about their billing situation."
+      },
+      "strategic_insights": [
+        "Implement an automated alert system for overage charges linked to the Comply module. This should include in-app notifications and email alerts that notify users as they approach their report generation limits, especially after significant upgrades like v2. Product Management should own this initiative, as it addresses the lack of communication that led to unexpected charges. By proactively informing users of their usage, we can enhance customer trust and reduce billing disputes.",
+        "Conduct a thorough audit of the billing system's handling of event ingestion during outage periods. This should involve Engineering analyzing the backend logs to ensure that queued replay events do not incur charges when they are a result of system failures. The findings should be reviewed by Account Management to communicate clearly with affected customers. This action not only resolves the immediate issue for Clearwater Medical but also helps refine our billing process to avoid future disputes related to system outages."
+      ],
+      "date": "20260518"
+    }
+  ],
   "20260517": [
     {
       "meetingId": "01KQ4D71CDFB1045A2458216",
@@ -464,4 +796,4 @@ const DASHBOARD_DATA = {
       "date": "20260517"
     }
   ]
-};// trigger
+};

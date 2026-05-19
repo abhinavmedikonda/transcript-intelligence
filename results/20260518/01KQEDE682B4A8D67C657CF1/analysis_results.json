@@ -1,0 +1,27 @@
+{
+  "meetingId": "01KQEDE682B4A8D67C657CF1",
+  "title": "Support Case #3103 - Silverline Brands Detect False Positives After Patch",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 13.8,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "d.flores@silverlinebrands.com",
+    "m.tan@silverlinebrands.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific technical issue related to false positives in the Aegis Detect system after a patch was applied. The attendees include a support representative from Aegis Cloud and representatives from Silverline Brands, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the issue, discussing operational impacts, and providing solutions, which aligns with the Customer Support category.",
+  "themes": [
+    "False Positives in Aegis Detect",
+    "Patch Version 4.2.1 Issues",
+    "Alert Volume Management",
+    "Configuration Update and Baseline Restore"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with Dominic expressing frustration over repeated issues with the Aegis Detect platform, indicating a negative emotional state. As Sarah provided solutions, including a baseline restore and a supervised re-learning period, the tone shifted slightly towards reassurance, though concerns about ongoing stability and vendor evaluation remained. The conversation ended with a cautious optimism about immediate fixes, but underlying dissatisfaction with the overall service persisted, leaving a potential churn risk."
+  },
+  "strategic_insights": [
+    "Implement a proactive communication strategy by creating a dedicated notification system for patch releases that includes potential impacts on Aegis Detect. The Product Management team should take ownership of this initiative. This addresses the root cause of customer frustration regarding the lack of timely information on known issues, ensuring that clients are aware of any significant changes before applying patches, thereby reducing operational disruptions.",
+    "Enhance the Aegis Detect configuration management by developing a self-service portal feature that allows users to easily access and manage their baseline profiles and suppression rules. The Engineering team should lead this effort. This would empower customers to make necessary adjustments to their detection settings without needing to contact support, thereby reducing alert fatigue and improving overall user confidence in the platform."
+  ]
+}
