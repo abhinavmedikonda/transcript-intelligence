@@ -121,7 +121,7 @@
         }
 
         .main-container {
-            max-width: 1600px;
+            max-width: 100%;
             margin: 2rem auto;
             padding: 0 2rem;
             display: grid;
@@ -133,7 +133,7 @@
         .kpi-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
         .kpi-card {
@@ -255,7 +255,7 @@
         }
 
         .call-list {
-            max-height: 500px;
+            flex-grow: 1;
             overflow-y: auto;
         }
 
@@ -523,6 +523,72 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.25);
         }
+
+        /* Metric Toggle & Premium Toggle Switch */
+        .metric-toggle {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .metric-btn {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--card-border);
+            color: var(--text-muted);
+            border-radius: 0.5rem;
+            padding: 0.35rem 0.9rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .metric-btn:hover {
+            border-color: var(--accent-blue);
+            color: var(--text-main);
+        }
+        .metric-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: #fff;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .toggle-switch-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .toggle-switch {
+            display: flex;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 0.5rem;
+            padding: 0.2rem;
+            position: relative;
+        }
+        .toggle-option {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.35rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .toggle-option:hover {
+            color: var(--text-main);
+        }
+        .toggle-option.active {
+            background: var(--accent-blue);
+            color: #fff;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+        @media (max-width: 992px) {
+            #panel-comparison {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 
@@ -533,11 +599,17 @@
             <div class="logo-icon"></div>
             <div class="logo-text">Transcript Intelligence</div>
         </div>
-        <div class="date-selector-wrapper">
-            <span class="selector-label">Analytics Segment:</span>
-            <select id="date-select" onchange="loadDateSegment(this.value)">
-                <!-- Dates loaded dynamically -->
-            </select>
+        <div class="toggle-switch-wrapper">
+            <div class="toggle-switch">
+                <button id="toggle-all" class="toggle-option" onclick="switchViewMode('all-time')">Entire Time Series</button>
+                <button id="toggle-daily" class="toggle-option active" onclick="switchViewMode('daily')">Specific Day</button>
+            </div>
+            <div id="date-select-container" style="display: flex; align-items: center; gap: 0.75rem;">
+                <span class="selector-label" id="date-select-label">Analytics Segment:</span>
+                <select id="date-select" onchange="loadDateSegment(this.value)">
+                    <!-- Dates loaded dynamically -->
+                </select>
+            </div>
         </div>
     </header>
 
@@ -567,11 +639,14 @@
             </div>
         </div>
 
-        <!-- Dashboard Content Panels -->
-        <div class="dashboard-content">
+        <!-- Daily View Container Wrapper -->
+        <div id="daily-view-container" style="display: flex; flex-direction: column; gap: 2rem;">
+
+            <!-- Dashboard Content Panels -->
+            <div class="dashboard-content" id="panel-dashboard-content">
 
             <!-- Left Side: Ingested Calls Browser -->
-            <div class="panel">
+            <div class="panel" style="height: 650px;">
                 <div class="panel-header">
                     <h2 class="panel-title">Ingested Call Logs</h2>
                     <div style="display:flex;align-items:center;gap:0.75rem;">
@@ -596,11 +671,11 @@
             </div>
 
             <!-- Right Side: Meeting Details Split -->
-            <div class="panel" style="min-height: 600px;">
+            <div class="panel" style="height: 650px;">
                 <div class="panel-header">
                     <h2 class="panel-title">Call Analytics & Insights</h2>
                 </div>
-                <div id="detail-container" style="flex-grow: 1;">
+                <div id="detail-container" style="flex-grow: 1; overflow-y: auto;">
                     <div class="empty-detail-state">
                         <div class="empty-icon">🔍</div>
                         <h3>Select a Call from the Log</h3>
@@ -613,12 +688,24 @@
         </div>
 
         <!-- Sentiment Timeline Panel -->
-        <div class="panel" style="margin-top: 1rem;">
+        <div class="panel" style="margin-top: 1rem;" id="panel-sentiment-score">
             <div class="panel-header">
                 <h2 class="panel-title">Sentiment Score Trajectory Timeline</h2>
             </div>
             <div class="chart-wrapper">
                 <canvas id="sentimentChart"></canvas>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Cross-Segment Comparison Panel (Unified) -->
+        <div id="panel-comparison" class="panel" style="margin-bottom: 2rem;">
+            <div class="panel-header" style="justify-content: flex-start; gap: 0.5rem;">
+                <h2 class="panel-title">📈 Cross-Segment Historical Trends</h2>
+            </div>
+            <div class="chart-wrapper" style="height: 480px; padding: 1.5rem;">
+                <canvas id="comparisonChartUnified"></canvas>
             </div>
         </div>
 
@@ -631,6 +718,8 @@
         let currentCalls = [];
         let filteredCallsList = [];
         let chartInstance = null;
+        let compChartInstance = null;
+        let viewMode = "daily";
 
         // Initialize dashboard
         window.addEventListener('DOMContentLoaded', () => {
@@ -654,7 +743,66 @@
 
             // Load latest segment
             loadDateSegment(dates[0]);
+            switchViewMode('daily');
         });
+
+        function switchViewMode(mode) {
+            viewMode = mode;
+            const dailyBtn = document.getElementById('toggle-daily');
+            const allBtn = document.getElementById('toggle-all');
+            const dateContainer = document.getElementById('date-select-container');
+            const dateSelect = document.getElementById('date-select');
+            
+            const dailyContainer = document.getElementById('daily-view-container');
+            const comparisonPanel = document.getElementById('panel-comparison');
+            
+            if (mode === 'daily') {
+                dailyBtn.classList.add('active');
+                allBtn.classList.remove('active');
+                dateSelect.disabled = false;
+                dateContainer.style.opacity = '1';
+                dateContainer.style.pointerEvents = 'auto';
+                
+                dailyContainer.style.display = 'flex';
+                comparisonPanel.style.display = 'none';
+                
+                loadDateSegment(dateSelect.value);
+            } else {
+                dailyBtn.classList.remove('active');
+                allBtn.classList.add('active');
+                dateSelect.disabled = true;
+                dateContainer.style.opacity = '0.4';
+                dateContainer.style.pointerEvents = 'none';
+                
+                dailyContainer.style.display = 'none';
+                comparisonPanel.style.display = 'block';
+                
+                loadAllTime();
+            }
+        }
+
+        function loadAllTime() {
+            currentSegment = "all-time";
+            let allCalls = [];
+            const sortedDates = Object.keys(DASHBOARD_DATA).sort();
+            sortedDates.forEach(date => {
+                allCalls = allCalls.concat(DASHBOARD_DATA[date]);
+            });
+            currentCalls = allCalls;
+            applyFilters();
+
+            resetDetailPanel();
+            refreshKPIs();
+            renderCallList();
+            renderSentimentChart();
+            renderComparisonChart();
+
+            if (filteredCallsList.length > 0) {
+                showCallDetail(filteredCallsList[0].meetingId);
+                const firstItem = document.querySelector('.call-item');
+                if (firstItem) firstItem.classList.add('active');
+            }
+        }
 
         function loadDateSegment(date) {
             currentSegment = date;
@@ -668,6 +816,7 @@
             refreshKPIs();
             renderCallList();
             renderSentimentChart();
+            renderComparisonChart();
 
             // Pre-select first call if available
             if (filteredCallsList.length > 0) {
@@ -857,6 +1006,217 @@
                     <p>Click on any meeting in the left browser panel to view its dynamic categorization reasoning, sentiment arcs, and C-Suite roadmap recommendations.</p>
                 </div>
             `;
+        }
+
+        function renderComparisonChart() {
+            const allDates = Object.keys(DASHBOARD_DATA).sort();
+            const labels = allDates.map(d => `${d.substring(0,4)}-${d.substring(4,6)}-${d.substring(6,8)}`);
+
+            const metricColors = {
+                sentiment: '#3B82F6',
+                volume:    '#10B981',
+                support:   '#EF4444',
+                duration:  '#F59E0B'
+            };
+            const metricLabels = {
+                sentiment: 'Average Sentiment',
+                volume: 'Ingested Transcripts',
+                support: 'Support Ratio',
+                duration: 'Average Call Duration'
+            };
+
+            const dataSentiment = allDates.map(date => {
+                const calls = DASHBOARD_DATA[date] || [];
+                if (calls.length === 0) return 0;
+                return parseFloat((calls.reduce((s, c) => s + c.sentiment.score, 0) / calls.length).toFixed(2));
+            });
+
+            const dataVolume = allDates.map(date => {
+                const calls = DASHBOARD_DATA[date] || [];
+                return calls.length;
+            });
+
+            const dataSupport = allDates.map(date => {
+                const calls = DASHBOARD_DATA[date] || [];
+                if (calls.length === 0) return 0;
+                return Math.round((calls.filter(c => c.category === 'Customer Support').length / calls.length) * 100);
+            });
+
+            const dataDuration = allDates.map(date => {
+                const calls = DASHBOARD_DATA[date] || [];
+                if (calls.length === 0) return 0;
+                return parseFloat((calls.reduce((s, c) => s + c.duration, 0) / calls.length).toFixed(1));
+            });
+
+            const canvasEl = document.getElementById('comparisonChartUnified');
+            if (!canvasEl) return;
+            const ctx = canvasEl.getContext('2d');
+
+            if (compChartInstance) compChartInstance.destroy();
+
+            compChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: [
+                        {
+                            label: metricLabels.volume,
+                            data: dataVolume,
+                            borderColor: metricColors.volume,
+                            backgroundColor: 'rgba(16, 185, 129, 0.04)',
+                            borderWidth: 3,
+                            tension: 0.4,
+                            fill: true,
+                            yAxisID: 'yVolume',
+                            pointBackgroundColor: metricColors.volume,
+                            pointBorderColor: '#020617',
+                            pointBorderWidth: 2,
+                            pointRadius: 4,
+                            pointHoverRadius: 6
+                        },
+                        {
+                            label: metricLabels.sentiment,
+                            data: dataSentiment,
+                            borderColor: metricColors.sentiment,
+                            backgroundColor: 'rgba(59, 130, 246, 0.04)',
+                            borderWidth: 3,
+                            tension: 0.4,
+                            fill: true,
+                            yAxisID: 'ySentiment',
+                            pointBackgroundColor: metricColors.sentiment,
+                            pointBorderColor: '#020617',
+                            pointBorderWidth: 2,
+                            pointRadius: 4,
+                            pointHoverRadius: 6
+                        },
+                        {
+                            label: metricLabels.support,
+                            data: dataSupport,
+                            borderColor: metricColors.support,
+                            backgroundColor: 'rgba(239, 68, 68, 0.04)',
+                            borderWidth: 3,
+                            tension: 0.4,
+                            fill: true,
+                            yAxisID: 'yPercentage',
+                            pointBackgroundColor: metricColors.support,
+                            pointBorderColor: '#020617',
+                            pointBorderWidth: 2,
+                            pointRadius: 4,
+                            pointHoverRadius: 6
+                        },
+                        {
+                            label: metricLabels.duration,
+                            data: dataDuration,
+                            borderColor: metricColors.duration,
+                            backgroundColor: 'rgba(245, 158, 11, 0.04)',
+                            borderWidth: 3,
+                            tension: 0.4,
+                            fill: true,
+                            yAxisID: 'yDuration',
+                            pointBackgroundColor: metricColors.duration,
+                            pointBorderColor: '#020617',
+                            pointBorderWidth: 2,
+                            pointRadius: 4,
+                            pointHoverRadius: 6
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                color: '#E5E7EB',
+                                font: {
+                                    family: 'Space Grotesk',
+                                    size: 11,
+                                    weight: '600'
+                                },
+                                padding: 20
+                            }
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            backgroundColor: '#0f172a',
+                            titleColor: '#fff',
+                            bodyColor: '#e2e8f0',
+                            borderColor: 'rgba(148, 163, 184, 0.22)',
+                            borderWidth: 1,
+                            titleFont: { family: 'Space Grotesk' },
+                            bodyFont: { family: 'Space Grotesk' }
+                        }
+                    },
+                    scales: {
+                        ySentiment: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            min: -1.0,
+                            max: 1.0,
+                            title: {
+                                display: true,
+                                text: 'Sentiment (-1.0 to 1.0)',
+                                color: metricColors.sentiment,
+                                font: { family: 'Space Grotesk', weight: '600' }
+                            },
+                            grid: { color: 'rgba(255,255,255,0.03)' },
+                            ticks: { color: metricColors.sentiment }
+                        },
+                        yPercentage: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            min: 0,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: 'Support Ratio (%)',
+                                color: metricColors.support,
+                                font: { family: 'Space Grotesk', weight: '600' }
+                            },
+                            grid: { drawOnChartArea: false },
+                            ticks: { color: metricColors.support }
+                        },
+                        yVolume: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            min: 0,
+                            title: {
+                                display: true,
+                                text: 'Ingested Transcripts (Count)',
+                                color: metricColors.volume,
+                                font: { family: 'Space Grotesk', weight: '600' }
+                            },
+                            grid: { drawOnChartArea: false },
+                            ticks: { color: metricColors.volume, stepSize: 1 }
+                        },
+                        yDuration: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            min: 0,
+                            title: {
+                                display: true,
+                                text: 'Duration (Minutes)',
+                                color: metricColors.duration,
+                                font: { family: 'Space Grotesk', weight: '600' }
+                            },
+                            grid: { drawOnChartArea: false },
+                            ticks: { color: metricColors.duration }
+                        },
+                        x: {
+                            offset: true,
+                            grid: { display: false },
+                            ticks: { color: '#9CA3AF', font: { family: 'Space Grotesk', size: 11 } }
+                        }
+                    }
+                }
+            });
         }
 
         function renderSentimentChart() {
