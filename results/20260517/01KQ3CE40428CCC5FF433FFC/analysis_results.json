@@ -1,0 +1,19 @@
+{
+  "meetingId": "01KQ3CE40428CCC5FF433FFC",
+  "title": "Detect Outage - Post-Incident Review",
+  "host": "tom.bradley@aegiscloud.com",
+  "duration": 21.4,
+  "allEmails": [
+    "tom.bradley@aegiscloud.com",
+    "diana.reeves@aegiscloud.com",
+    "megan.lawson@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "",
+  "themes": [],
+  "sentiment": {
+    "score": 0.0,
+    "trajectory": ""
+  },
+  "strategic_insights": []
+}

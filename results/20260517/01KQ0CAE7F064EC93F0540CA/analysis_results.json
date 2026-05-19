@@ -1,0 +1,20 @@
+{
+  "meetingId": "01KQ0CAE7F064EC93F0540CA",
+  "title": "Weekly Engineering Standup",
+  "host": "chris.lee@aegiscloud.com",
+  "duration": 29.0,
+  "allEmails": [
+    "chris.lee@aegiscloud.com",
+    "mike.romano@aegiscloud.com",
+    "tyler.washington@aegiscloud.com",
+    "tom.bradley@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "",
+  "themes": [],
+  "sentiment": {
+    "score": 0.0,
+    "trajectory": ""
+  },
+  "strategic_insights": []
+}
