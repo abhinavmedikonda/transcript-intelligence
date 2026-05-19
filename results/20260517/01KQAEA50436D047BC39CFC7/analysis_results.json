@@ -1,0 +1,26 @@
+{
+  "meetingId": "01KQAEA50436D047BC39CFC7",
+  "title": "Aegis / Crestline Wealth - Account Review",
+  "host": "maria.santos@aegiscloud.com",
+  "duration": 48.7,
+  "allEmails": [
+    "maria.santos@aegiscloud.com",
+    "d.owens@crestlinewealth.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting is classified as 'External Customer' because it involves a discussion between Aegis Cloud and a client, Crestline Wealth, focusing on account review, renewal terms, and addressing client concerns. The dialogue centers around the client's usage of Aegis Cloud's services, upcoming contract renewal, and specific product features, which are typical of high-level client interactions. The presence of an external attendee from Crestline Wealth further supports this classification.",
+  "themes": [
+    "Account Renewal Discussion",
+    "Product Usage Review",
+    "Compliance Updates",
+    "Contract Negotiation"
+  ],
+  "sentiment": {
+    "score": 0.4,
+    "trajectory": "The meeting began with a neutral tone as both parties acknowledged the busy month ahead. As they discussed the platform's usage and upcoming renewal, Derek expressed some concerns about justifying the renewal costs internally, which introduced a slight tension. However, the conversation shifted positively when Maria highlighted the upcoming Comply update, which Derek found relevant and beneficial, leading to a collaborative discussion on renewal options that ended on a constructive note."
+  },
+  "strategic_insights": [
+    "Develop a tier-based pricing model for the Protect module that accommodates varying data volumes. This should be owned by Product Management to ensure that pricing reflects actual usage and growth, preventing any customer dissatisfaction due to unexpected increases in costs. This will help Derek justify the renewal cost to his CFO by aligning it with their actual data growth, enhancing perceived value.",
+    "Create a comprehensive technical documentation package that includes a summary of the resilience improvements in the Detect module, as well as a preview of the upcoming Comply features. This should be owned by Engineering and Product Management, providing Derek with concrete materials to support his internal discussions. This will address his need for documentation to justify the value of Aegis Cloud's offerings and strengthen the case for renewal."
+  ]
+}

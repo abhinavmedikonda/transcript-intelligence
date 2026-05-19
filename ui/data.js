@@ -395,6 +395,35 @@ const DASHBOARD_DATA = {
       "date": "20260517"
     },
     {
+      "meetingId": "01KQ56786DD1E8A1BF174FDD",
+      "title": "Support Case #1993 - Forge Industries Comply v2 Early Access Question",
+      "host": "david.kim@aegiscloud.com",
+      "duration": 25.6,
+      "allEmails": [
+        "david.kim@aegiscloud.com",
+        "elena.vasquez@aegiscloud.com",
+        "g.hutchins@forgeindustries.com",
+        "d.moretti@forgeindustries.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is focused on resolving a specific support case (Case #1993) related to the Comply v2 module for Forge Industries. The attendees include Aegis Cloud support engineers and representatives from Forge Industries discussing technical details about early access to a new feature, troubleshooting compliance reporting issues, and preparing for an upcoming audit. The dialogue revolves around specific operational questions and support for the customer's needs, which aligns with the Customer Support category.",
+      "themes": [
+        "Comply v2 Early Access",
+        "On-Demand Reporting for Compliance",
+        "Multi-Framework Support",
+        "Feature Request for Custom Control Labeling"
+      ],
+      "sentiment": {
+        "score": 0.8,
+        "trajectory": "The meeting began with a positive tone as all participants were able to connect clearly, and Elena's introduction set a collaborative atmosphere. As Dana expressed concerns about manual reporting for compliance, the tone shifted to excitement when Elena confirmed that Comply v2 would be released in just four days, addressing their needs effectively. The conversation ended on a high note with clear next steps and a willingness to explore additional feature requests, indicating strong customer satisfaction and a productive partnership."
+      },
+      "strategic_insights": [
+        "Implement a dedicated 'On-Demand Reporting Configuration' feature within the Comply v2 module. This feature should include an intuitive setup wizard that assists users like Forge Industries in mapping existing controls to the new framework templates while providing context-sensitive help and real-time validation checks. This will significantly reduce manual setup time and errors, ensuring customers are fully prepared for compliance audits across multiple frameworks.",
+        "Establish a Customer Feature Request Portal within the Aegis Cloud ecosystem, specifically targeting the needs of enterprise clients like Forge Industries who require advanced customization options such as custom control labeling. This portal should allow clients to submit, track, and vote on feature requests, which can provide valuable insights to the Product Management team while fostering a community-driven approach to feature development."
+      ],
+      "date": "20260517"
+    },
+    {
       "meetingId": "01KQ3C837D7EF689408DCF95",
       "title": "Support Case #2638 - Pineridge Systems CloudPrime S3 Backup Connector",
       "host": "priya.patel@aegiscloud.com",
@@ -636,6 +665,33 @@ const DASHBOARD_DATA = {
       "date": "20260517"
     },
     {
+      "meetingId": "01KQAEA50436D047BC39CFC7",
+      "title": "Aegis / Crestline Wealth - Account Review",
+      "host": "maria.santos@aegiscloud.com",
+      "duration": 48.7,
+      "allEmails": [
+        "maria.santos@aegiscloud.com",
+        "d.owens@crestlinewealth.com"
+      ],
+      "category": "External Customer",
+      "reasoning": "The meeting is classified as 'External Customer' because it involves a discussion between Aegis Cloud and a client, Crestline Wealth, focusing on account review, renewal terms, and addressing client concerns. The dialogue centers around the client's usage of Aegis Cloud's services, upcoming contract renewal, and specific product features, which are typical of high-level client interactions. The presence of an external attendee from Crestline Wealth further supports this classification.",
+      "themes": [
+        "Account Renewal Discussion",
+        "Product Usage Review",
+        "Compliance Updates",
+        "Contract Negotiation"
+      ],
+      "sentiment": {
+        "score": 0.4,
+        "trajectory": "The meeting began with a neutral tone as both parties acknowledged the busy month ahead. As they discussed the platform's usage and upcoming renewal, Derek expressed some concerns about justifying the renewal costs internally, which introduced a slight tension. However, the conversation shifted positively when Maria highlighted the upcoming Comply update, which Derek found relevant and beneficial, leading to a collaborative discussion on renewal options that ended on a constructive note."
+      },
+      "strategic_insights": [
+        "Develop a tier-based pricing model for the Protect module that accommodates varying data volumes. This should be owned by Product Management to ensure that pricing reflects actual usage and growth, preventing any customer dissatisfaction due to unexpected increases in costs. This will help Derek justify the renewal cost to his CFO by aligning it with their actual data growth, enhancing perceived value.",
+        "Create a comprehensive technical documentation package that includes a summary of the resilience improvements in the Detect module, as well as a preview of the upcoming Comply features. This should be owned by Engineering and Product Management, providing Derek with concrete materials to support his internal discussions. This will address his need for documentation to justify the value of Aegis Cloud's offerings and strengthen the case for renewal."
+      ],
+      "date": "20260517"
+    },
+    {
       "meetingId": "01KQ3F90FF9EBC3DB3632514",
       "title": "Identity Team - Sprint Retro",
       "host": "nina.kowalski@aegiscloud.com",
@@ -794,6 +850,33 @@ const DASHBOARD_DATA = {
       },
       "strategic_insights": [],
       "date": "20260517"
+    },
+    {
+      "meetingId": "01KQDD5172176D02DB51360A",
+      "title": "Support Case #3286 - Vanta Health Systems API Integration Error",
+      "host": "priya.patel@aegiscloud.com",
+      "duration": 21.0,
+      "allEmails": [
+        "priya.patel@aegiscloud.com",
+        "l.cheng@vantahealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "The meeting is classified as Customer Support because it involves resolving a specific technical issue related to an API integration error for a customer, Vanta Health Systems. The dialogue focuses on troubleshooting the API errors, discussing the impact on their operations, and providing immediate solutions to mitigate the problem. The presence of a support case number and the nature of the conversation, which revolves around fixing a technical problem, further solidify this classification.",
+      "themes": [
+        "API Integration Error",
+        "Backup Workflow Disruption",
+        "Service Availability Issues",
+        "Compliance and Data Integrity"
+      ],
+      "sentiment": {
+        "score": -0.3,
+        "trajectory": "The meeting began with Dr. Cheng expressing significant frustration over a critical API issue affecting their backup workflows, indicating a serious concern for patient data integrity. As Priya Patel provided clarity on the situation and proposed immediate solutions, the tone shifted slightly towards a more constructive dialogue, though underlying tension remained due to the communication failures experienced. By the end, while some immediate actions were agreed upon, Dr. Cheng's frustration about the lack of proactive communication and the urgency of the situation highlighted ongoing concerns, leaving a slight negative sentiment overall."
+      },
+      "strategic_insights": [
+        "Implement a dedicated incident alerting system for high-impact customers like healthcare organizations. This system should proactively notify affected clients about service disruptions, including expected resolution timelines and mitigation steps. Ownership should be on the Product Management team to develop this feature, enhancing customer trust and satisfaction by preventing frustration due to lack of communication during critical outages.",
+        "Introduce a manual backup override feature within the Aegis Protect web console, allowing users to trigger backups even when the orchestration layer is down. This feature should be owned by the Engineering team, addressing immediate customer needs and ensuring compliance with regulatory standards, while also enhancing the overall reliability and user experience of the backup functionality."
+      ],
+      "date": "20260517"
     }
   ]
-};// redeploy
+};
