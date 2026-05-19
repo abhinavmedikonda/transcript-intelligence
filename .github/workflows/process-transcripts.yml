@@ -33,9 +33,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: .tmp/cache
-          key: ${{ runner.os }}-pipeline-cache-${{ hashFiles('datasets/**/transcript.json') }}
+          key: ${{ runner.os }}-pipeline-cache-v2-${{ hashFiles('datasets/**/transcript.json') }}
           restore-keys: |
-            ${{ runner.os }}-pipeline-cache-
+            ${{ runner.os }}-pipeline-cache-v2-
 
       - name: Run Processing Pipeline
         env:

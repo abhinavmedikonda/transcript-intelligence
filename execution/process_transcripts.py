@@ -423,9 +423,10 @@ def process_single_meeting(meeting_dir, cache_dir, m_results_dir, categorizer=No
         "strategic_insights": ins_data.get("insights", [])
     }
     
-    # Save to Cache
-    with open(cache_path, 'w') as f:
-        json.dump(analysis_result, f, indent=2)
+    # Save to Cache ONLY if LLM successfully populated the reasoning
+    if reasoning and len(reasoning) > 0 and reasoning != "Failed parsing output.":
+        with open(cache_path, 'w') as f:
+            json.dump(analysis_result, f, indent=2)
         
     # Ensure output mirrors input structure
     with open(results_json_path, 'w') as rf:
