@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQC1267BEB344076DD7656",
+  "title": "Aegis / Ironclad Financial - Account Recovery Check-in",
+  "host": "maria.santos@aegiscloud.com",
+  "duration": 35.3,
+  "allEmails": [
+    "maria.santos@aegiscloud.com",
+    "kevin.obrien@aegiscloud.com",
+    "r.langston@ironcladfinancial.com",
+    "t.desai@ironcladfinancial.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud representatives and Ironclad Financial regarding a significant outage that affected their platform, which is a critical concern for the client. The dialogue includes technical explanations and a focus on the client's confidence in the platform, renewal discussions, and specific requests for documentation and configuration reviews. The presence of an external client (Ironclad Financial) and the nature of the conversation, which revolves around platform concerns and contract renewal, clearly categorize this as an External Customer meeting.",
+  "themes": [
+    "Platform Outage Impact",
+    "Contract Renewal Discussion",
+    "Technical Documentation Requests",
+    "Configuration Review for Detect"
+  ],
+  "sentiment": {
+    "score": -0.2,
+    "trajectory": "The meeting began with a clear expression of frustration from Robert regarding a significant outage, setting a negative tone. However, as Maria and Kevin provided detailed explanations and solutions, the conversation shifted towards a more constructive dialogue, with Tanya engaging positively about upcoming features. By the end, while concerns about the renewal remained, there was a sense of collaborative problem-solving, indicating a slight improvement in sentiment but still leaving unresolved issues that could impact future decisions."
+  },
+  "strategic_insights": [
+    "Implement a dedicated, self-service configuration wizard for Detect that guides customers through recommended settings, including alert persistence and offline buffering. This tool should be owned by the Product Management team, as it directly addresses the onboarding gap that Tanya highlighted during the outage, ensuring that customers are adequately prepared to leverage the platform's capabilities and avoid similar issues in the future.",
+    "Create a formal incident post-mortem template that includes clear SLA terms and a robust documentation process for outages. This should be spearheaded by the Account Management team in collaboration with Engineering. By proactively providing this documentation to clients like Robert, it not only addresses their immediate concerns regarding the March outage but also reinforces Aegis Cloud's commitment to transparency and reliability in high-stakes environments such as financial services."
+  ]
+}

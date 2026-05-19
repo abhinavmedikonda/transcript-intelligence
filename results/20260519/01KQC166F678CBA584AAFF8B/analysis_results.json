@@ -1,0 +1,26 @@
+{
+  "meetingId": "01KQC166F678CBA584AAFF8B",
+  "title": "Support Case #7615 - Crestline Wealth Group Policy Sync Delay",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 20.7,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "d.owens@crestlinewealth.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it involves a specific operational issue being resolved for a customer, Crestline Wealth Group, regarding a policy sync delay in Aegis Identity. The dialogue focuses on troubleshooting the sync delays, discussing the impact on the customer's operations, and planning immediate actions to resolve the issue. The presence of an external attendee from Crestline Wealth Group further supports this classification.",
+  "themes": [
+    "Policy Sync Delay",
+    "Provisioning Issues",
+    "Customer Support Escalation",
+    "Configuration Changes"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with Derek expressing frustration over delays in policy syncs, indicating a negative emotional state due to operational impacts on his financial services firm. As Sarah acknowledged the issue and proposed immediate actions, including escalating the case and changing the configuration to alleviate the problem, Derek's tone shifted slightly towards a more constructive engagement. However, lingering concerns about the root cause and the previous lack of communication kept the overall sentiment slightly negative, reflecting a need for resolution and assurance."
+  },
+  "strategic_insights": [
+    "Implement a dedicated sync worker tier for customers with large Active Directory environments (like Derek's with 800 users) to alleviate provisioning delays. This should be owned by the Engineering team to make necessary backend adjustments, as it directly addresses the bottleneck caused by shared cluster resource limitations, ensuring faster policy and provisioning updates critical in compliance-heavy sectors like financial services.",
+    "Establish an automated notification system within the support ticketing framework to provide customers with real-time updates on the status of their high-priority cases. Account Management should lead this initiative, as it addresses customer frustration with perceived communication gaps and enhances customer trust by ensuring they are informed throughout the resolution process."
+  ]
+}

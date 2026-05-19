@@ -1,0 +1,27 @@
+{
+  "meetingId": "01KQ445B1B5B890316C9E300",
+  "title": "Weekly Engineering Standup",
+  "host": "ravi.gupta@aegiscloud.com",
+  "duration": 45.2,
+  "allEmails": [
+    "ravi.gupta@aegiscloud.com",
+    "sofia.petrov@aegiscloud.com",
+    "raj.kapoor@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees are from the Aegis Cloud domain, indicating that this meeting is an internal sync. The discussion revolves around engineering updates, post-mortem follow-ups, and project planning, which are typical topics for internal team meetings.",
+  "themes": [
+    "Post-Mortem Follow-Up on Detect Outage",
+    "Comply v2 Report Generation Issues",
+    "Circuit Breaker Logic Review",
+    "Load Testing Suite Planning"
+  ],
+  "sentiment": {
+    "score": -0.1,
+    "trajectory": "The meeting began with a neutral tone as team members provided status updates, but shifted to a slightly negative sentiment when discussing the Comply v2 issues affecting customers. The conversation highlighted concerns about the potential impact on mid-to-large enterprise clients, which raised alarms. However, the team collaboratively identified solutions and established a timeline for addressing the issues, leading to a more constructive ending, albeit with lingering concerns about workload and prioritization."
+  },
+  "strategic_insights": [
+    "Implement a paginated query mechanism for the SOC 2 report generation in Comply v2. This should be owned by Sofia Petrov, with support from Ravi Gupta for QA. This addresses the root cause of the timeout errors experienced by mid-to-large enterprise customers when generating reports for large datasets, ensuring scalability and reliability of report generation across all customer segments.",
+    "Develop a comprehensive load testing suite to simulate cascading failure scenarios in the Detect system, with a targeted start date of April 28th. This should be owned by Ravi Gupta and Sofia Petrov, allocating dedicated time to ensure it is completed in a two-week sprint. This recommendation directly tackles the risk of future outages by proactively identifying weaknesses in the system before they impact production."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ2217B066855A3B7814CB",
+  "title": "Aegis / Meridian Capital - Service Reliability Discussion",
+  "host": "rachel.torres@aegiscloud.com",
+  "duration": 43.4,
+  "allEmails": [
+    "rachel.torres@aegiscloud.com",
+    "lisa.park@aegiscloud.com",
+    "ravi.gupta@aegiscloud.com",
+    "s.nakamura@meridiancapital.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud team members and a representative from Meridian Capital regarding service reliability issues with the Aegis Detect platform. The dialogue focuses on a significant outage that affected Meridian Capital's operations, leading to concerns about the platform's reliability and potential vendor review. The presence of an external client (Suki Nakamura from Meridian Capital) and the nature of the conversation, which revolves around addressing client concerns and maintaining the business relationship, classify this call as External Customer.",
+  "themes": [
+    "Service Reliability",
+    "Threat Monitoring Outage",
+    "Vendor Review Process",
+    "Infrastructure Audit"
+  ],
+  "sentiment": {
+    "score": -0.4,
+    "trajectory": "The meeting began with Suki expressing significant frustration and concern over a recent outage that severely impacted her team's operations, indicating a lack of confidence in the platform. As Ravi provided a detailed explanation of the technical issues and the steps being taken to address them, Suki's tone shifted slightly towards cautious optimism, especially when he offered to share an audit summary. However, the underlying tension remained as Suki emphasized the urgency of restoring confidence in the platform, leaving the conversation with unresolved concerns about their ongoing partnership."
+  },
+  "strategic_insights": [
+    "Implement a dedicated incident response feature within Aegis Detect that allows users to receive real-time alerts and detailed status updates during outages. This feature should be owned by the Product Management team and should include automated communication with users when critical components fail. This will address Suki's concern about insufficient visibility and communication during the outage, and help rebuild trust in the platform by ensuring users are informed and can respond appropriately in real-time.",
+    "Create a comprehensive infrastructure audit report tool within Aegis Detect that allows customers to perform their own audits and assessments of the platform's reliability and security features. This should be managed by the Engineering team and should include user-friendly interfaces to visualize potential single points of failure and redundancy setups. This recommendation directly addresses Suki's request for a more thorough understanding of the system's architecture and will help her provide substantiated information to her CISO and other stakeholders."
+  ]
+}
