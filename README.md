@@ -29,7 +29,7 @@ Configured at [`.github/workflows/process-transcripts.yml`](file:///Users/abhi/D
 
 ### Layer 3: Execution (The Deterministic Pipeline)
 Driven by [`process_transcripts.py`](file:///Users/abhi/Documents/github/transcript-intelligence/execution/process_transcripts.py), this python engine manages:
-* **Recursive traversal:** Searches recursively to support flat or deeply nested dates (e.g. `datasets/YYYYMMDD/meeting_id`).
+* **Recursive traversal:** Searches recursively to support flat or deeply nested dataset IDs (e.g. `datasets/0001/meeting_id`).
 * **Dynamic Root resolution:** Script-relative workspace resolution that behaves identically locally or inside ephemeral Actions container runners.
 
 ---
