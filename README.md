@@ -65,10 +65,10 @@ python execution/process_transcripts.py
 ```
 
 ### 3. Pipeline Output Folders
-Your processed outputs are completely compartmentalized by date and directed to a permanent, tracked **[`results/`](file:///Users/abhi/Documents/github/transcript-intelligence/results/)** directory:
-* **Day-Specific Databases (e.g. `results/YYYYMMDD/analysis_results.csv` & `.json`)**: The compiled databases containing categories, themes, sentiment scores, trajectories, and recommendations specifically for that single day's processed calls.
-* **Daily Insights Summary (e.g. `results/YYYYMMDD/insights_summary.md`)**: A segment-aware C-Suite daily analysis report in slide deck layout synthesizing only that day's macro metrics.
-* **Mirrored Subdirectories (e.g. `results/YYYYMMDD/meeting_id/analysis_results.json`)**: Contains the individual structured stage-by-stage analysis results for every single processed call.
+Your processed outputs are compartmentalized by dataset ID and directed to a permanent, tracked **[`results/`](file:///Users/abhi/Documents/github/transcript-intelligence/results/)** directory:
+* **Dataset-Specific Databases (e.g. `results/0001/analysis_results.csv` & `.json`)**: The compiled databases containing categories, themes, sentiment scores, trajectories, and recommendations for that dataset's processed calls.
+* **Dataset Insights Summary (e.g. `results/0001/insights_summary.md`)**: A segment-aware C-Suite analysis report in slide deck layout synthesizing only that dataset's macro metrics.
+* **Mirrored Subdirectories (e.g. `results/0001/meeting_id/analysis_results.json`)**: Contains the individual structured stage-by-stage analysis results for every single processed call.
 
 ### 4. Interactive UI Dashboard (GitHub Pages Ready)
 We built a decoupled, premium JavaScript presentation layer in the **`ui/`** directory to beautifully visualize your insights.
