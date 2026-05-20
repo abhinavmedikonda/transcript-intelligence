@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <style>
         :root {
             --bg-dark: #020617;
@@ -1238,23 +1239,16 @@
             });
         }
 
-        function formatSentimentChartLabel(isoString) {
-            if (!isoString) return 'Unknown';
-            const d = new Date(isoString);
-            return d.toLocaleString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                hour: 'numeric',
-                minute: '2-digit'
-            });
-        }
-
         function renderSentimentChart() {
             const ctx = document.getElementById('sentimentChart').getContext('2d');
-            const sortedCalls = sortCallsByStartTime(currentCalls);
+            const sortedCalls = sortCallsByStartTime(
+                currentCalls.filter(c => c.startTime)
+            );
 
-            const labels = sortedCalls.map(c => formatSentimentChartLabel(c.startTime));
-            const sentimentScores = sortedCalls.map(c => c.sentiment.score);
+            const timeSeriesData = sortedCalls.map(c => ({
+                x: c.startTime,
+                y: c.sentiment.score
+            }));
 
             if (chartInstance) {
                 chartInstance.destroy();
@@ -1263,11 +1257,10 @@
             chartInstance = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: labels,
                     datasets: [
                         {
                             label: 'Sentiment Score',
-                            data: sentimentScores,
+                            data: timeSeriesData,
                             borderColor: '#3B82F6',
                             borderWidth: 2,
                             pointBackgroundColor: '#FFF',
@@ -1293,9 +1286,20 @@
                                     const call = sortedCalls[context[0].dataIndex];
                                     return call.title;
                                 },
+                                afterLabel: function (context) {
+                                    const call = sortedCalls[context.dataIndex];
+                                    if (!call.startTime) return '';
+                                    return new Date(call.startTime).toLocaleString('en-US', {
+                                        month: 'short',
+                                        day: 'numeric',
+                                        year: 'numeric',
+                                        hour: 'numeric',
+                                        minute: '2-digit'
+                                    });
+                                },
                                 label: function (context) {
                                     const call = sortedCalls[context.dataIndex];
-                                    const score = context.raw.toFixed(2);
+                                    const score = context.parsed.y.toFixed(2);
                                     return `Sentiment Score: ${score} (${call.category})`;
                                 }
                             }
@@ -1313,6 +1317,16 @@
                             }
                         },
                         x: {
+                            type: 'time',
+                            time: {
+                                tooltipFormat: 'PPp',
+                                displayFormats: {
+                                    hour: 'MMM d, h:mm a',
+                                    day: 'MMM d',
+                                    week: 'MMM d',
+                                    month: 'MMM yyyy'
+                                }
+                            },
                             title: {
                                 display: true,
                                 text: 'Call Start Time',
@@ -1320,7 +1334,7 @@
                                 font: { family: 'Space Grotesk', size: 11, weight: '600' }
                             },
                             grid: {
-                                display: false
+                                color: 'rgba(255, 255, 255, 0.03)'
                             },
                             ticks: {
                                 color: '#9CA3AF',
@@ -1330,7 +1344,7 @@
                                 maxRotation: 45,
                                 minRotation: 45,
                                 autoSkip: true,
-                                maxTicksLimit: 12
+                                maxTicksLimit: 10
                             }
                         }
                     }
