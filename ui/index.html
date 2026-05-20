@@ -696,10 +696,16 @@
 
             </div>
 
-            <!-- Sentiment Timeline Panel -->
+            <!-- Time Plot Panel -->
             <div class="panel" style="margin-top: 1rem;" id="panel-sentiment-score">
                 <div class="panel-header">
-                    <h2 class="panel-title">Sentiment by Call Over Time</h2>
+                    <div style="display:flex;align-items:center;justify-content:space-between;width:100%">
+                        <h2 class="panel-title">Time Plot</h2>
+                        <div class="metric-toggle" style="margin-left:1rem;">
+                            <button id="timeMetric-sentiment" class="metric-btn active" onclick="switchTimePlotMetric('sentiment')">Sentiment</button>
+                            <button id="timeMetric-duration" class="metric-btn" onclick="switchTimePlotMetric('duration')">Call Duration</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="chart-wrapper">
                     <canvas id="sentimentChart"></canvas>
@@ -729,6 +735,7 @@
         let chartInstance = null;
         let compChartInstance = null;
         let viewMode = "daily";
+        let timePlotMetric = 'sentiment'; // 'sentiment' or 'duration'
 
         // Initialize dashboard
         window.addEventListener('DOMContentLoaded', () => {
@@ -802,7 +809,7 @@
             resetDetailPanel();
             refreshKPIs();
             renderCallList();
-            renderSentimentChart();
+            renderTimePlot();
             renderComparisonChart();
 
             if (filteredCallsList.length > 0) {
@@ -823,7 +830,7 @@
             // Refresh UI components
             refreshKPIs();
             renderCallList();
-            renderSentimentChart();
+            renderTimePlot();
             renderComparisonChart();
 
             // Pre-select first call if available
@@ -930,7 +937,7 @@
                 return matchesSearch && matchesCategory;
             });
             renderCallList();
-            renderSentimentChart();
+            renderTimePlot();
         }
 
         function showCallDetail(meetingId) {
@@ -1028,10 +1035,10 @@
                 duration: '#F59E0B'
             };
             const metricLabels = {
-                sentiment: 'Average Sentiment',
+                sentiment: 'Sentiment',
                 volume: 'Ingested Transcripts',
                 support: 'Support Ratio',
-                duration: 'Average Call Duration'
+                duration: 'Call Duration'
             };
 
             const dataSentiment = allDatasets.map(datasetId => {
@@ -1240,12 +1247,12 @@
             });
         }
 
-        function buildSentimentScatterDataset(label, calls, color) {
+        function buildScatterDataset(label, calls, color, getY) {
             return {
                 label,
                 data: calls.map(c => ({
                     x: c.startTime,
-                    y: c.sentiment.score,
+                    y: getY(c),
                     call: c
                 })),
                 backgroundColor: color,
@@ -1258,11 +1265,116 @@
             };
         }
 
-        function renderSentimentChart() {
+        function buildSentimentScatterDataset(label, calls, color) {
+            return buildScatterDataset(label, calls, color, c => c.sentiment.score);
+        }
+
+        function buildDurationScatterDataset(label, calls, color) {
+            return buildScatterDataset(label, calls, color, c => c.duration || 0);
+        }
+
+        function switchTimePlotMetric(metric) {
+            timePlotMetric = metric;
+            document.getElementById('timeMetric-sentiment').classList.toggle('active', metric === 'sentiment');
+            document.getElementById('timeMetric-duration').classList.toggle('active', metric === 'duration');
+            renderTimePlot();
+        }
+
+        function renderTimePlot() {
             const ctx = document.getElementById('sentimentChart').getContext('2d');
+
+            if (chartInstance) {
+                chartInstance.destroy();
+                chartInstance = null;
+            }
+
             const callsWithTime = sortCallsByStartTime(
                 filteredCallsList.filter(c => c.startTime)
             );
+
+            if (timePlotMetric === 'sentiment') {
+                const categoryStyles = [
+                    { category: 'Customer Support', label: 'Customer Support', color: '#EF4444' },
+                    { category: 'External Customer', label: 'External Customer', color: '#10B981' },
+                    { category: 'Internal', label: 'Internal', color: '#8B5CF6' }
+                ];
+
+                const datasets = categoryStyles
+                    .map(({ category, label, color }) => {
+                        const calls = callsWithTime.filter(c => c.category === category);
+                        if (calls.length === 0) return null;
+                        return buildSentimentScatterDataset(label, calls, color);
+                    })
+                    .filter(Boolean);
+
+                if (datasets.length === 0) return;
+
+                chartInstance = new Chart(ctx, {
+                    type: 'scatter',
+                    data: { datasets },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    color: '#E5E7EB',
+                                    font: { family: 'Space Grotesk', size: 11, weight: '600' },
+                                    padding: 16,
+                                    usePointStyle: true,
+                                    pointStyle: 'circle'
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: function (context) {
+                                        const call = context[0].raw.call;
+                                        return call ? call.title : '';
+                                    },
+                                    afterLabel: function (context) {
+                                        const call = context.raw.call;
+                                        if (!call || !call.startTime) return '';
+                                        return new Date(call.startTime).toLocaleString('en-US', {
+                                            month: 'short',
+                                            day: 'numeric',
+                                            year: 'numeric',
+                                            hour: 'numeric',
+                                            minute: '2-digit'
+                                        });
+                                    },
+                                    label: function (context) {
+                                        const score = context.parsed.y.toFixed(2);
+                                        return `Sentiment Score: ${score}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                min: -1.0,
+                                max: 1.0,
+                                title: { display: true, text: 'Sentiment (-1.0 to +1.0)', color: '#9CA3AF', font: { family: 'Space Grotesk', size: 11, weight: '600' } },
+                                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                                ticks: { color: '#9CA3AF' }
+                            },
+                            x: {
+                                type: 'time',
+                                time: {
+                                    tooltipFormat: 'PPp',
+                                    displayFormats: { hour: 'MMM d, h:mm a', day: 'MMM d', week: 'MMM d', month: 'MMM yyyy' }
+                                },
+                                title: { display: true, text: 'Call Start Time', color: '#9CA3AF', font: { family: 'Space Grotesk', size: 11, weight: '600' } },
+                                grid: { color: 'rgba(255, 255, 255, 0.03)' },
+                                ticks: { color: '#9CA3AF', font: { size: 10 }, maxRotation: 45, minRotation: 45, autoSkip: true, maxTicksLimit: 10 }
+                            }
+                        }
+                    }
+                });
+
+                return;
+            }
 
             const categoryStyles = [
                 { category: 'Customer Support', label: 'Customer Support', color: '#EF4444' },
@@ -1274,18 +1386,11 @@
                 .map(({ category, label, color }) => {
                     const calls = callsWithTime.filter(c => c.category === category);
                     if (calls.length === 0) return null;
-                    return buildSentimentScatterDataset(label, calls, color);
+                    return buildDurationScatterDataset(label, calls, color);
                 })
                 .filter(Boolean);
 
-            if (chartInstance) {
-                chartInstance.destroy();
-                chartInstance = null;
-            }
-
-            if (datasets.length === 0) {
-                return;
-            }
+            if (datasets.length === 0) return;
 
             chartInstance = new Chart(ctx, {
                 type: 'scatter',
@@ -1299,11 +1404,7 @@
                             position: 'top',
                             labels: {
                                 color: '#E5E7EB',
-                                font: {
-                                    family: 'Space Grotesk',
-                                    size: 11,
-                                    weight: '600'
-                                },
+                                font: { family: 'Space Grotesk', size: 11, weight: '600' },
                                 padding: 16,
                                 usePointStyle: true,
                                 pointStyle: 'circle'
@@ -1327,39 +1428,17 @@
                                     });
                                 },
                                 label: function (context) {
-                                    const score = context.parsed.y.toFixed(2);
-                                    return `Sentiment Score: ${score}`;
+                                    return `Duration: ${parseFloat(context.parsed.y).toFixed(1)}m`;
                                 }
                             }
                         }
                     },
                     scales: {
-                        y: {
-                            min: -1.0,
-                            max: 1.0,
-                            title: {
-                                display: true,
-                                text: 'Sentiment (-1.0 to +1.0)',
-                                color: '#9CA3AF',
-                                font: { family: 'Space Grotesk', size: 11, weight: '600' }
-                            },
-                            grid: {
-                                color: 'rgba(255, 255, 255, 0.05)'
-                            },
-                            ticks: {
-                                color: '#9CA3AF'
-                            }
-                        },
                         x: {
                             type: 'time',
                             time: {
                                 tooltipFormat: 'PPp',
-                                displayFormats: {
-                                    hour: 'MMM d, h:mm a',
-                                    day: 'MMM d',
-                                    week: 'MMM d',
-                                    month: 'MMM yyyy'
-                                }
+                                displayFormats: { hour: 'MMM d, h:mm a', day: 'MMM d', week: 'MMM d', month: 'MMM yyyy' }
                             },
                             title: {
                                 display: true,
@@ -1367,19 +1446,19 @@
                                 color: '#9CA3AF',
                                 font: { family: 'Space Grotesk', size: 11, weight: '600' }
                             },
-                            grid: {
-                                color: 'rgba(255, 255, 255, 0.03)'
+                            grid: { color: 'rgba(255, 255, 255, 0.03)' },
+                            ticks: { color: '#9CA3AF', font: { size: 10 }, maxRotation: 45, minRotation: 45, autoSkip: true, maxTicksLimit: 10 }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Duration (minutes)',
+                                color: '#F59E0B',
+                                font: { family: 'Space Grotesk', size: 11, weight: '600' }
                             },
-                            ticks: {
-                                color: '#9CA3AF',
-                                font: {
-                                    size: 10
-                                },
-                                maxRotation: 45,
-                                minRotation: 45,
-                                autoSkip: true,
-                                maxTicksLimit: 10
-                            }
+                            grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                            ticks: { color: '#F59E0B' }
                         }
                     }
                 }
