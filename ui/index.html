@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aegis Cloud — Transcript Intelligence Dashboard</title>
+    <title>Transcript Intelligence</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
@@ -83,7 +83,7 @@
             color: transparent;
         }
 
-        .date-selector-wrapper {
+        .dataset-selector-wrapper {
             display: flex;
             align-items: center;
             gap: 0.75rem;
@@ -530,8 +530,9 @@
             gap: 0.5rem;
             flex-wrap: wrap;
         }
+
         .metric-btn {
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--card-border);
             color: var(--text-muted);
             border-radius: 0.5rem;
@@ -541,10 +542,12 @@
             cursor: pointer;
             transition: all 0.2s ease;
         }
+
         .metric-btn:hover {
             border-color: var(--accent-blue);
             color: var(--text-main);
         }
+
         .metric-btn.active {
             background: var(--accent-blue);
             border-color: var(--accent-blue);
@@ -557,6 +560,7 @@
             align-items: center;
             gap: 1.5rem;
         }
+
         .toggle-switch {
             display: flex;
             background: rgba(255, 255, 255, 0.03);
@@ -565,6 +569,7 @@
             padding: 0.2rem;
             position: relative;
         }
+
         .toggle-option {
             background: transparent;
             border: none;
@@ -576,14 +581,17 @@
             cursor: pointer;
             transition: all 0.2s ease;
         }
+
         .toggle-option:hover {
             color: var(--text-main);
         }
+
         .toggle-option.active {
             background: var(--accent-blue);
             color: #fff;
             box-shadow: 0 0 10px var(--accent-glow);
         }
+
         @media (max-width: 992px) {
             #panel-comparison {
                 grid-template-columns: 1fr !important;
@@ -601,13 +609,12 @@
         </div>
         <div class="toggle-switch-wrapper">
             <div class="toggle-switch">
-                <button id="toggle-all" class="toggle-option" onclick="switchViewMode('all-time')">Entire Time Series</button>
-                <button id="toggle-daily" class="toggle-option active" onclick="switchViewMode('daily')">Specific Day</button>
+                <button id="toggle-all" class="toggle-option" onclick="switchViewMode('all-time')">All Datasets</button>
+                <button id="toggle-daily" class="toggle-option active" onclick="switchViewMode('daily')">Specific Dataset</button>
             </div>
-            <div id="date-select-container" style="display: flex; align-items: center; gap: 0.75rem;">
-                <span class="selector-label" id="date-select-label">Analytics Segment:</span>
-                <select id="date-select" onchange="loadDateSegment(this.value)">
-                    <!-- Dates loaded dynamically -->
+            <div id="dataset-select-container" style="display: flex; align-items: center; gap: 0.75rem;">
+                <select id="dataset-select" onchange="loadDataset(this.value)">
+                    <!-- Datasets loaded dynamically -->
                 </select>
             </div>
         </div>
@@ -645,64 +652,65 @@
             <!-- Dashboard Content Panels -->
             <div class="dashboard-content" id="panel-dashboard-content">
 
-            <!-- Left Side: Ingested Calls Browser -->
-            <div class="panel" style="height: 650px;">
-                <div class="panel-header">
-                    <h2 class="panel-title">Ingested Call Logs</h2>
-                    <div style="display:flex;align-items:center;gap:0.75rem;">
-                        <select id="category-select" onchange="applyFilters()"
-                            style="font-size:0.8rem;padding:0.35rem 1.75rem 0.35rem 0.75rem;">
-                            <option value="All">All Categories</option>
-                            <option value="Customer Support">Customer Support</option>
-                            <option value="External Customer">External Customer</option>
-                            <option value="Internal">Internal</option>
-                        </select>
-                        <span id="call-count-label"
-                            style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;"></span>
+                <!-- Left Side: Ingested Calls Browser -->
+                <div class="panel" style="height: 650px;">
+                    <div class="panel-header">
+                        <h2 class="panel-title">Ingested Call Logs</h2>
+                        <div style="display:flex;align-items:center;gap:0.75rem;">
+                            <select id="category-select" onchange="applyFilters()"
+                                style="font-size:0.8rem;padding:0.35rem 1.75rem 0.35rem 0.75rem;">
+                                <option value="All">All Categories</option>
+                                <option value="Customer Support">Customer Support</option>
+                                <option value="External Customer">External Customer</option>
+                                <option value="Internal">Internal</option>
+                            </select>
+                            <span id="call-count-label"
+                                style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;"></span>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search by call title, host, or themes..."
+                            oninput="applyFilters()">
+                    </div>
+                    <div class="call-list" id="call-list-container">
+                        <!-- Loaded dynamically -->
                     </div>
                 </div>
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Search by call title, host, or themes..."
-                        oninput="applyFilters()">
-                </div>
-                <div class="call-list" id="call-list-container">
-                    <!-- Loaded dynamically -->
-                </div>
-            </div>
 
-            <!-- Right Side: Meeting Details Split -->
-            <div class="panel" style="height: 650px;">
-                <div class="panel-header">
-                    <h2 class="panel-title">Call Analytics & Insights</h2>
-                </div>
-                <div id="detail-container" style="flex-grow: 1; overflow-y: auto;">
-                    <div class="empty-detail-state">
-                        <div class="empty-icon">🔍</div>
-                        <h3>Select a Call from the Log</h3>
-                        <p>Click on any meeting in the left browser panel to view its dynamic categorization reasoning,
-                            sentiment arcs, and C-Suite roadmap recommendations.</p>
+                <!-- Right Side: Meeting Details Split -->
+                <div class="panel" style="height: 650px;">
+                    <div class="panel-header">
+                        <h2 class="panel-title">Call Analytics & Insights</h2>
+                    </div>
+                    <div id="detail-container" style="flex-grow: 1; overflow-y: auto;">
+                        <div class="empty-detail-state">
+                            <div class="empty-icon">🔍</div>
+                            <h3>Select a Call from the Log</h3>
+                            <p>Click on any meeting in the left browser panel to view its dynamic categorization
+                                reasoning,
+                                sentiment arcs, and C-Suite roadmap recommendations.</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
-
-        <!-- Sentiment Timeline Panel -->
-        <div class="panel" style="margin-top: 1rem;" id="panel-sentiment-score">
-            <div class="panel-header">
-                <h2 class="panel-title">Sentiment Score Trajectory Timeline</h2>
+            <!-- Sentiment Timeline Panel -->
+            <div class="panel" style="margin-top: 1rem;" id="panel-sentiment-score">
+                <div class="panel-header">
+                    <h2 class="panel-title">Sentiment Score Trajectory Timeline</h2>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="sentimentChart"></canvas>
+                </div>
             </div>
-            <div class="chart-wrapper">
-                <canvas id="sentimentChart"></canvas>
-            </div>
-        </div>
 
         </div>
 
         <!-- Cross-Segment Comparison Panel (Unified) -->
         <div id="panel-comparison" class="panel" style="margin-bottom: 2rem;">
             <div class="panel-header" style="justify-content: flex-start; gap: 0.5rem;">
-                <h2 class="panel-title">📈 Cross-Segment Historical Trends</h2>
+                <h2 class="panel-title">📈 Cross-Dataset Historical Trends</h2>
             </div>
             <div class="chart-wrapper" style="height: 480px; padding: 1.5rem;">
                 <canvas id="comparisonChartUnified"></canvas>
@@ -729,20 +737,19 @@
                 return;
             }
 
-            const dates = Object.keys(DASHBOARD_DATA).sort().reverse();
-            if (dates.length === 0) return;
+            const datasets = Object.keys(DASHBOARD_DATA).sort().reverse();
+            if (datasets.length === 0) return;
 
-            const select = document.getElementById('date-select');
-            dates.forEach(d => {
+            const select = document.getElementById('dataset-select');
+            datasets.forEach(id => {
                 const opt = document.createElement('option');
-                opt.value = d;
-                // Format YYYYMMDD to YYYY-MM-DD
-                opt.textContent = `${d.substring(0, 4)}-${d.substring(4, 6)}-${d.substring(6, 8)}`;
+                opt.value = id;
+                opt.textContent = id;
                 select.appendChild(opt);
             });
 
-            // Load latest segment
-            loadDateSegment(dates[0]);
+            // Load latest dataset
+            loadDataset(datasets[0]);
             switchViewMode('daily');
         });
 
@@ -750,33 +757,33 @@
             viewMode = mode;
             const dailyBtn = document.getElementById('toggle-daily');
             const allBtn = document.getElementById('toggle-all');
-            const dateContainer = document.getElementById('date-select-container');
-            const dateSelect = document.getElementById('date-select');
-            
+            const datasetContainer = document.getElementById('dataset-select-container');
+            const datasetSelect = document.getElementById('dataset-select');
+
             const dailyContainer = document.getElementById('daily-view-container');
             const comparisonPanel = document.getElementById('panel-comparison');
-            
+
             if (mode === 'daily') {
                 dailyBtn.classList.add('active');
                 allBtn.classList.remove('active');
-                dateSelect.disabled = false;
-                dateContainer.style.opacity = '1';
-                dateContainer.style.pointerEvents = 'auto';
-                
+                datasetSelect.disabled = false;
+                datasetContainer.style.opacity = '1';
+                datasetContainer.style.pointerEvents = 'auto';
+
                 dailyContainer.style.display = 'flex';
                 comparisonPanel.style.display = 'none';
-                
-                loadDateSegment(dateSelect.value);
+
+                loadDataset(datasetSelect.value);
             } else {
                 dailyBtn.classList.remove('active');
                 allBtn.classList.add('active');
-                dateSelect.disabled = true;
-                dateContainer.style.opacity = '0.4';
-                dateContainer.style.pointerEvents = 'none';
-                
+                datasetSelect.disabled = true;
+                datasetContainer.style.opacity = '0.4';
+                datasetContainer.style.pointerEvents = 'none';
+
                 dailyContainer.style.display = 'none';
                 comparisonPanel.style.display = 'block';
-                
+
                 loadAllTime();
             }
         }
@@ -784,9 +791,9 @@
         function loadAllTime() {
             currentSegment = "all-time";
             let allCalls = [];
-            const sortedDates = Object.keys(DASHBOARD_DATA).sort();
-            sortedDates.forEach(date => {
-                allCalls = allCalls.concat(DASHBOARD_DATA[date]);
+            const sortedDatasets = Object.keys(DASHBOARD_DATA).sort();
+            sortedDatasets.forEach(datasetId => {
+                allCalls = allCalls.concat(DASHBOARD_DATA[datasetId]);
             });
             currentCalls = allCalls;
             applyFilters();
@@ -804,9 +811,9 @@
             }
         }
 
-        function loadDateSegment(date) {
-            currentSegment = date;
-            currentCalls = DASHBOARD_DATA[date] || [];
+        function loadDataset(datasetId) {
+            currentSegment = datasetId;
+            currentCalls = DASHBOARD_DATA[datasetId] || [];
             applyFilters();
 
             // Clear details panel
@@ -1009,14 +1016,14 @@
         }
 
         function renderComparisonChart() {
-            const allDates = Object.keys(DASHBOARD_DATA).sort();
-            const labels = allDates.map(d => `${d.substring(0,4)}-${d.substring(4,6)}-${d.substring(6,8)}`);
+            const allDatasets = Object.keys(DASHBOARD_DATA).sort();
+            const labels = allDatasets;
 
             const metricColors = {
                 sentiment: '#3B82F6',
-                volume:    '#10B981',
-                support:   '#EF4444',
-                duration:  '#F59E0B'
+                volume: '#10B981',
+                support: '#EF4444',
+                duration: '#F59E0B'
             };
             const metricLabels = {
                 sentiment: 'Average Sentiment',
@@ -1025,25 +1032,25 @@
                 duration: 'Average Call Duration'
             };
 
-            const dataSentiment = allDates.map(date => {
-                const calls = DASHBOARD_DATA[date] || [];
+            const dataSentiment = allDatasets.map(datasetId => {
+                const calls = DASHBOARD_DATA[datasetId] || [];
                 if (calls.length === 0) return 0;
                 return parseFloat((calls.reduce((s, c) => s + c.sentiment.score, 0) / calls.length).toFixed(2));
             });
 
-            const dataVolume = allDates.map(date => {
-                const calls = DASHBOARD_DATA[date] || [];
+            const dataVolume = allDatasets.map(datasetId => {
+                const calls = DASHBOARD_DATA[datasetId] || [];
                 return calls.length;
             });
 
-            const dataSupport = allDates.map(date => {
-                const calls = DASHBOARD_DATA[date] || [];
+            const dataSupport = allDatasets.map(datasetId => {
+                const calls = DASHBOARD_DATA[datasetId] || [];
                 if (calls.length === 0) return 0;
                 return Math.round((calls.filter(c => c.category === 'Customer Support').length / calls.length) * 100);
             });
 
-            const dataDuration = allDates.map(date => {
-                const calls = DASHBOARD_DATA[date] || [];
+            const dataDuration = allDatasets.map(datasetId => {
+                const calls = DASHBOARD_DATA[datasetId] || [];
                 if (calls.length === 0) return 0;
                 return parseFloat((calls.reduce((s, c) => s + c.duration, 0) / calls.length).toFixed(1));
             });
@@ -1053,6 +1060,8 @@
             const ctx = canvasEl.getContext('2d');
 
             if (compChartInstance) compChartInstance.destroy();
+
+            const topAxisPadding = (min, max) => max + (max - min) * 0.2;
 
             compChartInstance = new Chart(ctx, {
                 type: 'line',
@@ -1156,7 +1165,7 @@
                             display: true,
                             position: 'left',
                             min: -1.0,
-                            max: 1.0,
+                            max: topAxisPadding(-1.0, 1.0),
                             title: {
                                 display: true,
                                 text: 'Sentiment (-1.0 to 1.0)',
@@ -1171,7 +1180,7 @@
                             display: true,
                             position: 'left',
                             min: 0,
-                            max: 100,
+                            max: topAxisPadding(0, 100),
                             title: {
                                 display: true,
                                 text: 'Support Ratio (%)',
@@ -1186,6 +1195,7 @@
                             display: true,
                             position: 'right',
                             min: 0,
+                            grace: '20%',
                             title: {
                                 display: true,
                                 text: 'Ingested Transcripts (Count)',
@@ -1200,6 +1210,7 @@
                             display: true,
                             position: 'right',
                             min: 0,
+                            grace: '20%',
                             title: {
                                 display: true,
                                 text: 'Duration (Minutes)',
@@ -1219,13 +1230,31 @@
             });
         }
 
+        function sortCallsByStartTime(calls) {
+            return [...calls].sort((a, b) => {
+                const ta = a.startTime ? new Date(a.startTime).getTime() : 0;
+                const tb = b.startTime ? new Date(b.startTime).getTime() : 0;
+                return ta - tb;
+            });
+        }
+
+        function formatSentimentChartLabel(isoString) {
+            if (!isoString) return 'Unknown';
+            const d = new Date(isoString);
+            return d.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit'
+            });
+        }
+
         function renderSentimentChart() {
             const ctx = document.getElementById('sentimentChart').getContext('2d');
+            const sortedCalls = sortCallsByStartTime(currentCalls);
 
-            // Prepare scores and labels
-            const labels = currentCalls.map((c, i) => c.title.length > 25 ? c.title.substring(0, 25) + "..." : c.title);
-            const sentimentScores = currentCalls.map(c => c.sentiment.score);
-            const durations = currentCalls.map(c => c.duration);
+            const labels = sortedCalls.map(c => formatSentimentChartLabel(c.startTime));
+            const sentimentScores = sortedCalls.map(c => c.sentiment.score);
 
             if (chartInstance) {
                 chartInstance.destroy();
@@ -1260,10 +1289,14 @@
                         },
                         tooltip: {
                             callbacks: {
+                                title: function (context) {
+                                    const call = sortedCalls[context[0].dataIndex];
+                                    return call.title;
+                                },
                                 label: function (context) {
-                                    const index = context.dataIndex;
+                                    const call = sortedCalls[context.dataIndex];
                                     const score = context.raw.toFixed(2);
-                                    return `Sentiment Score: ${score} (${currentCalls[index].category})`;
+                                    return `Sentiment Score: ${score} (${call.category})`;
                                 }
                             }
                         }
@@ -1280,6 +1313,12 @@
                             }
                         },
                         x: {
+                            title: {
+                                display: true,
+                                text: 'Call Start Time',
+                                color: '#9CA3AF',
+                                font: { family: 'Space Grotesk', size: 11, weight: '600' }
+                            },
                             grid: {
                                 display: false
                             },
@@ -1289,7 +1328,9 @@
                                     size: 10
                                 },
                                 maxRotation: 45,
-                                minRotation: 45
+                                minRotation: 45,
+                                autoSkip: true,
+                                maxTicksLimit: 12
                             }
                         }
                     }

@@ -374,7 +374,14 @@ def process_single_meeting(meeting_dir, cache_dir, m_results_dir, categorizer=No
     meeting_id = metadata["meetingId"]
     cache_path = os.path.join(cache_dir, f"{meeting_id}.json")
     
-    # Mirror the input datasets subfolder layout inside results/
+    # Extract the true date from startTime in meeting-info.json
+    start_time = metadata.get("startTime", "")
+    if start_time and len(start_time) >= 10:
+        meeting_date = start_time[:10].replace("-", "")
+    else:
+        meeting_date = "unknown_date"
+        
+    # Mirror the input subfolder layout inside results/ based on the actual meeting_date
     os.makedirs(m_results_dir, exist_ok=True)
     results_json_path = os.path.join(m_results_dir, "analysis_results.json")
     
@@ -382,6 +389,9 @@ def process_single_meeting(meeting_dir, cache_dir, m_results_dir, categorizer=No
     if os.path.exists(cache_path):
         with open(cache_path, 'r') as f:
             analysis_result = json.load(f)
+            # Ensure the actual meeting_date is present
+            analysis_result["date"] = meeting_date
+            analysis_result["startTime"] = start_time
             # Ensure output mirrors input structure
             with open(results_json_path, 'w') as rf:
                 json.dump(analysis_result, rf, indent=2)
@@ -420,7 +430,9 @@ def process_single_meeting(meeting_dir, cache_dir, m_results_dir, categorizer=No
             "score": sent_data.get("score", 0.0),
             "trajectory": sent_data.get("trajectory", "")
         },
-        "strategic_insights": ins_data.get("insights", [])
+        "strategic_insights": ins_data.get("insights", []),
+        "date": meeting_date,
+        "startTime": metadata.get("startTime", "")
     }
     
     # Save to Cache ONLY if LLM successfully populated the reasoning
@@ -489,7 +501,7 @@ def run_pipeline():
         rel_path = os.path.relpath(m_dir, root_dataset_dir)
         m_results_dir = os.path.join(results_dir, rel_path)
         
-        # Extract the date folder (first part of rel_path)
+        # Extract the raw date folder (first part of rel_path) for filesystem consistency
         parts = rel_path.split(os.sep)
         date_folder = parts[0] if len(parts) > 1 else "unknown_date"
         
@@ -502,7 +514,7 @@ def run_pipeline():
             insight
         )
         if res:
-            res["date"] = date_folder
+            res["date_folder"] = date_folder
             results.append(res)
             
     print(f"\n[Pipeline] Completed processing. Successfully analyzed {len(results)} transcripts.")
@@ -517,6 +529,7 @@ def run_pipeline():
             "duration": r["duration"],
             "category": r["category"],
             "date": r.get("date", "unknown_date"),
+            "startTime": r.get("startTime", ""),
             "sentiment_score": r["sentiment"]["score"],
             "sentiment_trajectory": r["sentiment"]["trajectory"],
             "themes": ", ".join(r["themes"]),
@@ -525,18 +538,19 @@ def run_pipeline():
         })
         
     df = pd.DataFrame(df_rows)
+    df["date_folder"] = [r.get("date_folder", "unknown_date") for r in results]
     
     # Generate day-specific exports and summaries inside each date subfolder
-    if "date" in df.columns:
-        unique_dates = df["date"].unique()
-        for date_folder in unique_dates:
+    if "date_folder" in df.columns:
+        unique_date_folders = df["date_folder"].unique()
+        for date_folder in unique_date_folders:
             if date_folder != "unknown_date":
-                df_date = df[df["date"] == date_folder]
+                df_date = df[df["date_folder"] == date_folder].drop(columns=["date_folder"])
                 date_output_dir = os.path.join(results_dir, date_folder)
                 os.makedirs(date_output_dir, exist_ok=True)
                 
                 # Filter results list for just this date folder to write JSON database
-                date_results = [r for r in results if r.get("date") == date_folder]
+                date_results = [r for r in results if r.get("date_folder") == date_folder]
                 
                 # Day-specific paths
                 csv_path = os.path.join(date_output_dir, "analysis_results.csv")
@@ -544,8 +558,16 @@ def run_pipeline():
                 
                 # Export day-specific databases
                 df_date.to_csv(csv_path, index=False)
+                
+                # Clean up date_folder in-memory key before dumping JSON to file
+                clean_date_results = []
+                for dr in date_results:
+                    dr_clean = dr.copy()
+                    dr_clean.pop("date_folder", None)
+                    clean_date_results.append(dr_clean)
+                    
                 with open(json_path, 'w') as f:
-                    json.dump(date_results, f, indent=2)
+                    json.dump(clean_date_results, f, indent=2)
                     
                 print(f"[Pipeline] Day-Specific Database exported ({date_folder}): CSV -> {csv_path}")
                 print(f"[Pipeline] Day-Specific Database exported ({date_folder}): JSON -> {json_path}")
@@ -557,9 +579,15 @@ def run_pipeline():
         ui_dir = os.path.join(workspace_dir, "ui")
         os.makedirs(ui_dir, exist_ok=True)
         js_data = {}
-        for date_folder in unique_dates:
+        for date_folder in unique_date_folders:
             if date_folder != "unknown_date":
-                js_data[date_folder] = [r for r in results if r.get("date") == date_folder]
+                date_results = [r for r in results if r.get("date_folder") == date_folder]
+                clean_date_results = []
+                for dr in date_results:
+                    dr_clean = dr.copy()
+                    dr_clean.pop("date_folder", None)
+                    clean_date_results.append(dr_clean)
+                js_data[date_folder] = clean_date_results
                 
         js_asset_path = os.path.join(ui_dir, "data.js")
         with open(js_asset_path, 'w') as f:

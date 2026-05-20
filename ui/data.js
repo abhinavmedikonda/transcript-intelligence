@@ -1,24 +1,309 @@
 const DASHBOARD_DATA = {
-  "20260519": [
+  "0003": [
     {
-      "meetingId": "01KQ5AFAE8264DDC0ED2AE7F",
-      "title": "Aegis / Crestline Wealth - Identity Module Deployment",
-      "host": "rachel.torres@aegiscloud.com",
-      "duration": 35.7,
+      "meetingId": "01KQA7DFCE1285F52192B34B",
+      "title": "Support Case #9856 - Silverline Brands Backup Window Exceeded",
+      "host": "david.kim@aegiscloud.com",
+      "duration": 28.4,
       "allEmails": [
-        "rachel.torres@aegiscloud.com",
-        "sofia.petrov@aegiscloud.com",
+        "david.kim@aegiscloud.com",
+        "d.flores@silverlinebrands.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260412",
+      "startTime": "2026-04-12T09:00:00.000Z"
+    },
+    {
+      "meetingId": "01KQC1267BEB344076DD7656",
+      "title": "Aegis / Ironclad Financial - Account Recovery Check-in",
+      "host": "maria.santos@aegiscloud.com",
+      "duration": 35.3,
+      "allEmails": [
+        "maria.santos@aegiscloud.com",
+        "kevin.obrien@aegiscloud.com",
+        "r.langston@ironcladfinancial.com",
+        "t.desai@ironcladfinancial.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260328",
+      "startTime": "2026-03-28T12:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQC166F678CBA584AAFF8B",
+      "title": "Support Case #7615 - Crestline Wealth Group Policy Sync Delay",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 20.7,
+      "allEmails": [
+        "sarah.chen@aegiscloud.com",
         "d.owens@crestlinewealth.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260519"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260427",
+      "startTime": "2026-04-27T10:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ325BDEDEE927D2970775",
+      "title": "Support Case #5889 - Ridgeline Logistics Detect Latency Issues",
+      "host": "priya.patel@aegiscloud.com",
+      "duration": 11.4,
+      "allEmails": [
+        "priya.patel@aegiscloud.com",
+        "p.schneider@ridgelinelogistics.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260314",
+      "startTime": "2026-03-14T17:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQDD5172176D02DB51360A",
+      "title": "Support Case #3286 - Vanta Health Systems API Integration Error",
+      "host": "priya.patel@aegiscloud.com",
+      "duration": 21.0,
+      "allEmails": [
+        "priya.patel@aegiscloud.com",
+        "l.cheng@vantahealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260203",
+      "startTime": "2026-02-03T10:00:00.000Z"
+    },
+    {
+      "meetingId": "01KQ56786DD1E8A1BF174FDD",
+      "title": "Support Case #1993 - Forge Industries Comply v2 Early Access Question",
+      "host": "david.kim@aegiscloud.com",
+      "duration": 25.6,
+      "allEmails": [
+        "david.kim@aegiscloud.com",
+        "elena.vasquez@aegiscloud.com",
+        "g.hutchins@forgeindustries.com",
+        "d.moretti@forgeindustries.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260403",
+      "startTime": "2026-04-03T15:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQAEA50436D047BC39CFC7",
+      "title": "Aegis / Crestline Wealth - Account Review",
+      "host": "maria.santos@aegiscloud.com",
+      "duration": 48.7,
+      "allEmails": [
+        "maria.santos@aegiscloud.com",
+        "d.owens@crestlinewealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260217",
+      "startTime": "2026-02-17T14:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQA1AFDC1306A000B0C7D9",
+      "title": "Aegis / Vanta Health Systems - Backup Strategy Workshop",
+      "host": "lisa.park@aegiscloud.com",
+      "duration": 43.3,
+      "allEmails": [
+        "lisa.park@aegiscloud.com",
+        "aisha.johnson@aegiscloud.com",
+        "r.burke@vantahealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260228",
+      "startTime": "2026-02-28T17:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ3C837D7EF689408DCF95",
+      "title": "Support Case #2638 - Pineridge Systems CloudPrime S3 Backup Connector",
+      "host": "priya.patel@aegiscloud.com",
+      "duration": 19.1,
+      "allEmails": [
+        "priya.patel@aegiscloud.com",
+        "sarah.chen@aegiscloud.com",
+        "y.tanaka@pineridge.io"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260304",
+      "startTime": "2026-03-04T10:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ1DE954A807A5D2653175",
+      "title": "Comply v2 - Launch Readiness Review",
+      "host": "megan.lawson@aegiscloud.com",
+      "duration": 39.3,
+      "allEmails": [
+        "megan.lawson@aegiscloud.com",
+        "chris.lee@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260324",
+      "startTime": "2026-03-24T14:45:00.000Z"
+    },
+    {
+      "meetingId": "01KQ2217B066855A3B7814CB",
+      "title": "Aegis / Meridian Capital - Service Reliability Discussion",
+      "host": "rachel.torres@aegiscloud.com",
+      "duration": 43.4,
+      "allEmails": [
+        "rachel.torres@aegiscloud.com",
+        "lisa.park@aegiscloud.com",
+        "ravi.gupta@aegiscloud.com",
+        "s.nakamura@meridiancapital.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260314",
+      "startTime": "2026-03-14T11:45:00.000Z"
     },
     {
       "meetingId": "01KQ9BCA1794C9472726FFAD",
@@ -33,227 +318,22 @@ const DASHBOARD_DATA = {
         "brian.cho@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal discussion among team members. The conversation revolves around the adoption metrics of Comply v2, internal feedback, and planning for future actions, which aligns with internal syncs and planning discussions.",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
       "themes": [
-        "Comply v2 Adoption Metrics",
-        "Customer Feedback on Reporting UI",
-        "ISO 27001 Formatting Issue",
-        "Future Roadmap for GDPR Integration"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.8,
-        "trajectory": "The meeting began with a positive vibe check, reflecting optimism about the Comply v2 launch, especially after previous challenges. As the team discussed adoption rates and customer feedback, the tone shifted to excitement, particularly when discussing upsell opportunities and positive customer testimonials. The meeting concluded on a high note, with a strong sense of validation for their efforts and a clear path forward, indicating strong team morale and customer satisfaction."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a dedicated feedback loop for the ISO 27001 formatting issue by creating a user feedback portal within the Comply v2 reporting UI. This would allow customers to directly submit formatting concerns or suggestions, which would be owned by the Product Management team. This proactive approach addresses the root cause of customer dissatisfaction regarding control numbering discrepancies, ensuring that similar issues are identified and resolved swiftly in the future.",
-        "Accelerate the integration of GDPR into the Comply v2 framework list by allocating additional engineering resources to this initiative. This should be driven by the Engineering team, with direct collaboration from Product Management to align on prioritization. Given the positive adoption metrics and the expressed demand from European customers, fast-tracking GDPR implementation will capitalize on the momentum generated by Comply v2 and enhance customer satisfaction and retention."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQA7DFCE1285F52192B34B",
-      "title": "Support Case #9856 - Silverline Brands Backup Window Exceeded",
-      "host": "david.kim@aegiscloud.com",
-      "duration": 28.4,
-      "allEmails": [
-        "david.kim@aegiscloud.com",
-        "d.flores@silverlinebrands.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is classified as Customer Support because it involves a specific operational issue being resolved for a customer, Silverline Brands, regarding their backup jobs exceeding scheduled windows. The dialogue focuses on troubleshooting the technical problem, discussing the impact on their operations, and exploring potential solutions, which aligns with the definition of Customer Support.",
-      "themes": [
-        "Backup Window Exceeded",
-        "SQL Server Backup Performance",
-        "Throughput Issues",
-        "Incident Response and Escalation"
-      ],
-      "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with Dominic expressing frustration over ongoing backup issues that have persisted for two weeks, impacting their operations. David acknowledged the problem and took ownership of the delayed response, which slightly alleviated Dominic's concerns. However, as they delved deeper into the root cause, Dominic's alarm grew when he learned that a separate incident might have affected their backups without prior notification. The conversation ended with a plan for escalation and a follow-up, but the unresolved nature of the issue left a lingering sense of concern about the reliability of the service."
-      },
-      "strategic_insights": [
-        "Implement a proactive notification system for customers regarding backend infrastructure changes that could impact services, particularly around backup operations. This should be owned by the Product Management team, ensuring that customers like Silverline Brands are informed ahead of time to prevent operational disruptions. This addresses the root cause of customer frustration over lack of communication about the incident affecting their backups.",
-        "Develop a tiered backup performance optimization feature within Aegis Protect that allows customers to customize their backup windows and prioritize critical SQL Server backups to avoid performance degradation during business hours. This feature should be owned by the Engineering team, as it provides a concrete solution to the throughput issues while allowing customers to adjust settings based on their specific operational needs."
-      ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQFFC0F889AE8CFEE7A00D",
-      "title": "Aegis / Blackridge Investments - Renewal Discussion",
-      "host": "aisha.johnson@aegiscloud.com",
-      "duration": 54.1,
-      "allEmails": [
-        "aisha.johnson@aegiscloud.com",
-        "ananya.sharma@aegiscloud.com",
-        "j.tran@blackridgeinvest.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting is a renewal discussion with a client (Blackridge Investments) involving high-level topics such as contract terms, platform performance, and upcoming features. The presence of a technical engineer indicates a focus on addressing specific client needs, but the overall context is centered around account management and future collaboration, which aligns with the External Customer category. Additionally, the attendee list includes an external participant from Blackridge Investments, further supporting this classification.",
-      "themes": [
-        "Contract Renewal Terms",
-        "Platform Performance Review",
-        "Upcoming Features in Aegis Comply",
-        "Client Feedback on Aegis Protect and Detect"
-      ],
-      "sentiment": {
-        "score": 0.7,
-        "trajectory": "The meeting began with a positive tone as Julia expressed happiness with the platform's performance, particularly highlighting the success of Aegis Protect during a disaster recovery exercise. This positivity was reinforced by Aisha and Ananya's affirmations of Julia's experiences. However, a slight dip occurred when Ananya addressed a past processing issue, but Julia's understanding and appreciation for the transparency helped to stabilize the conversation. The mood shifted back to excitement as they discussed the upcoming Aegis Comply v2 features, with Julia expressing eagerness to participate in a beta program, ultimately leading to a strong sense of partnership and commitment towards the renewal discussion."
-      },
-      "strategic_insights": [
-        "Implement a dedicated onboarding program for Aegis Comply v2 for Blackridge, led by the Product Management team. This should include a customized training session that demonstrates the new on-demand compliance reporting feature and multi-framework mapping. This initiative addresses Julia's concern about underutilization of the Comply module and will empower her team to leverage the new capabilities effectively, thus improving their audit processes and overall satisfaction with Aegis Cloud.",
-        "Create a proactive communication strategy for informing customers about past incidents, specifically regarding event processing issues in Aegis Detect. This should be spearheaded by the Engineering team and involve developing an automated alert system that notifies customers of potential performance degradations and provides real-time updates during outages. By transparently addressing customer concerns and maintaining open lines of communication, this will enhance trust and demonstrate Aegis Cloud's commitment to reliability."
-      ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQA1AFDC1306A000B0C7D9",
-      "title": "Aegis / Vanta Health Systems - Backup Strategy Workshop",
-      "host": "lisa.park@aegiscloud.com",
-      "duration": 43.3,
-      "allEmails": [
-        "lisa.park@aegiscloud.com",
-        "aisha.johnson@aegiscloud.com",
-        "r.burke@vantahealth.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting involves a workshop with a client (Vanta Health Systems) focused on their backup strategy, which indicates a high-level discussion about their needs and how Aegis Protect can address them. The presence of a dedicated Customer Success Manager and the nature of the dialogue, which revolves around understanding the client's environment and discussing specific solutions, further supports this classification. The attendees include both Aegis Cloud representatives and a client representative, which aligns with the External Customer category.",
-      "themes": [
-        "Backup Strategy Development",
-        "Hybrid Environment Management",
-        "Compliance and HIPAA Requirements",
-        "Automated Recovery Testing"
-      ],
-      "sentiment": {
-        "score": 0.7,
-        "trajectory": "The meeting began with a positive tone as Raymond expressed eagerness for the discussion, highlighting a strong desire for clarity on their backup strategy. As the conversation progressed, Raymond's initial concerns about their fragmented backup processes shifted to excitement when Aisha introduced automated recovery testing features, which directly addressed his pain points. By the end of the meeting, there was a clear sense of optimism and confidence in Aegis Protect's capabilities, indicating a productive alignment and a strong potential for partnership."
-      },
-      "strategic_insights": [
-        "Implement a tiered retention policy feature in Aegis Protect specifically tailored for healthcare compliance. This feature should allow Vanta Health to configure retention settings based on data types, ensuring that patient data backups meet varying regulatory requirements. Product Management should own this initiative as it addresses Raymond's concern about compliance complexity and mitigates the risk of non-compliance penalties.",
-        "Develop an automated recovery testing schedule that integrates with Vanta Health's existing operational calendar to allow for seamless testing of the backup and recovery process. This functionality should enable Aegis Protect to automatically schedule and execute restore tests during off-peak hours, minimizing disruption while providing the necessary validation to meet RTO and RPO objectives. Engineering should lead this effort, which will directly enhance the confidence level in their backup strategy, as indicated by Raymond's low confidence in their current testing process."
-      ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQ56786DD1E8A1BF174FDD",
-      "title": "Support Case #1993 - Forge Industries Comply v2 Early Access Question",
-      "host": "david.kim@aegiscloud.com",
-      "duration": 25.6,
-      "allEmails": [
-        "david.kim@aegiscloud.com",
-        "elena.vasquez@aegiscloud.com",
-        "g.hutchins@forgeindustries.com",
-        "d.moretti@forgeindustries.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific support case (Case #1993) related to the Comply v2 module for Forge Industries. The attendees include Aegis Cloud support engineers and representatives from Forge Industries discussing technical details about early access to a new feature, troubleshooting compliance reporting issues, and preparing for an upcoming audit. The dialogue revolves around specific operational questions and support for the customer's needs, which aligns with the Customer Support category.",
-      "themes": [
-        "Comply v2 Early Access",
-        "On-Demand Reporting for Compliance",
-        "Multi-Framework Support",
-        "Feature Request for Custom Control Labeling"
-      ],
-      "sentiment": {
-        "score": 0.8,
-        "trajectory": "The meeting began with a positive tone as all participants were able to connect clearly, and Elena's introduction set a collaborative atmosphere. As Dana expressed concerns about manual reporting for compliance, the tone shifted to excitement when Elena confirmed that Comply v2 would be released in just four days, addressing their needs effectively. The conversation ended on a high note with clear next steps and a willingness to explore additional feature requests, indicating strong customer satisfaction and a productive partnership."
-      },
-      "strategic_insights": [
-        "Implement a dedicated 'On-Demand Reporting Configuration' feature within the Comply v2 module. This feature should include an intuitive setup wizard that assists users like Forge Industries in mapping existing controls to the new framework templates while providing context-sensitive help and real-time validation checks. This will significantly reduce manual setup time and errors, ensuring customers are fully prepared for compliance audits across multiple frameworks.",
-        "Establish a Customer Feature Request Portal within the Aegis Cloud ecosystem, specifically targeting the needs of enterprise clients like Forge Industries who require advanced customization options such as custom control labeling. This portal should allow clients to submit, track, and vote on feature requests, which can provide valuable insights to the Product Management team while fostering a community-driven approach to feature development."
-      ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQ3C837D7EF689408DCF95",
-      "title": "Support Case #2638 - Pineridge Systems CloudPrime S3 Backup Connector",
-      "host": "priya.patel@aegiscloud.com",
-      "duration": 19.1,
-      "allEmails": [
-        "priya.patel@aegiscloud.com",
-        "sarah.chen@aegiscloud.com",
-        "y.tanaka@pineridge.io"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQC166F678CBA584AAFF8B",
-      "title": "Support Case #7615 - Crestline Wealth Group Policy Sync Delay",
-      "host": "sarah.chen@aegiscloud.com",
-      "duration": 20.7,
-      "allEmails": [
-        "sarah.chen@aegiscloud.com",
-        "d.owens@crestlinewealth.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is classified as Customer Support because it involves a specific operational issue being resolved for a customer, Crestline Wealth Group, regarding a policy sync delay in Aegis Identity. The dialogue focuses on troubleshooting the sync delays, discussing the impact on the customer's operations, and planning immediate actions to resolve the issue. The presence of an external attendee from Crestline Wealth Group further supports this classification.",
-      "themes": [
-        "Policy Sync Delay",
-        "Provisioning Issues",
-        "Customer Support Escalation",
-        "Configuration Changes"
-      ],
-      "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with Derek expressing frustration over delays in policy syncs, indicating a negative emotional state due to operational impacts on his financial services firm. As Sarah acknowledged the issue and proposed immediate actions, including escalating the case and changing the configuration to alleviate the problem, Derek's tone shifted slightly towards a more constructive engagement. However, lingering concerns about the root cause and the previous lack of communication kept the overall sentiment slightly negative, reflecting a need for resolution and assurance."
-      },
-      "strategic_insights": [
-        "Implement a dedicated sync worker tier for customers with large Active Directory environments (like Derek's with 800 users) to alleviate provisioning delays. This should be owned by the Engineering team to make necessary backend adjustments, as it directly addresses the bottleneck caused by shared cluster resource limitations, ensuring faster policy and provisioning updates critical in compliance-heavy sectors like financial services.",
-        "Establish an automated notification system within the support ticketing framework to provide customers with real-time updates on the status of their high-priority cases. Account Management should lead this initiative, as it addresses customer frustration with perceived communication gaps and enhances customer trust by ensuring they are informed throughout the resolution process."
-      ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQ1DE954A807A5D2653175",
-      "title": "Comply v2 - Launch Readiness Review",
-      "host": "megan.lawson@aegiscloud.com",
-      "duration": 39.3,
-      "allEmails": [
-        "megan.lawson@aegiscloud.com",
-        "chris.lee@aegiscloud.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQ325BDEDEE927D2970775",
-      "title": "Support Case #5889 - Ridgeline Logistics Detect Latency Issues",
-      "host": "priya.patel@aegiscloud.com",
-      "duration": 11.4,
-      "allEmails": [
-        "priya.patel@aegiscloud.com",
-        "p.schneider@ridgelinelogistics.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific technical issue related to latency in the Aegis Detect system, which is impacting the customer's operations. The dialogue involves troubleshooting the problem, discussing the root cause, and outlining steps for resolution, which are clear indicators of a customer support interaction. Additionally, the presence of an attendee from Ridgeline Logistics, a customer, further supports this classification.",
-      "themes": [
-        "Latency Issues in Aegis Detect",
-        "Event Processing Pipeline Failure",
-        "Customer Communication and SLA Breach",
-        "Escalation Path for Support"
-      ],
-      "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with Paula expressing frustration over significant delays in threat alerts from Aegis Detect, which she deemed unacceptable for their operations. Priya acknowledged the issue and provided transparency about a cascading failure on Aegis's side, which shifted the tone to a more constructive dialogue as they discussed resolution steps. By the end, while Paula remained concerned about the implications of the incident, she appreciated Priya's honesty and commitment to follow up, indicating a slight improvement in sentiment but still reflecting a serious concern about service reliability."
-      },
-      "strategic_insights": [
-        "Implement an automated alert system for Aegis Detect that notifies affected customers about significant latency issues or failures in real-time. This system should be owned by the Engineering team and integrated into the event processing pipeline. By proactively communicating potential issues, it prevents customer teams from spending unnecessary time troubleshooting and ensures they can take immediate action if needed, thus addressing the root cause of the communication breakdown experienced by Paula's team.",
-        "Establish a clear escalation protocol for high-severity incidents involving Aegis Detect, including a dedicated support line and direct access to on-call engineers. This should be managed by Account Management, ensuring that account managers are trained to facilitate immediate escalation for critical issues. This recommendation addresses the customer\u2019s need for a rapid response during emergencies, thereby improving customer confidence and satisfaction in Aegis Cloud's support capabilities."
-      ],
-      "date": "20260519"
+      "date": "20260422",
+      "startTime": "2026-04-22T14:45:00.000Z"
     },
     {
       "meetingId": "01KQ2D93184912F0147315E7",
@@ -264,43 +344,23 @@ const DASHBOARD_DATA = {
         "marcus.williams@aegiscloud.com",
         "j.tran@blackridgeinvest.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQ6CAA850EAFDC48B52846",
-      "title": "Aegis / Ironworks Corp - Vendor Comparison Discussion",
-      "host": "maria.santos@aegiscloud.com",
-      "duration": 33.9,
-      "allEmails": [
-        "maria.santos@aegiscloud.com",
-        "c.page@ironworkscorp.com",
-        "r.tang@ironworkscorp.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting involves discussions between Aegis Cloud representatives and Ironworks Corp regarding their ongoing concerns with Aegis's services, particularly in relation to a significant outage and compliance reporting issues. The dialogue indicates that Ironworks is evaluating Aegis's fit as a vendor, which aligns with high-level discussions about customer satisfaction, product performance, and potential vendor comparisons. The presence of an external attendee from Ironworks Corp further supports the classification as External Customer.",
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "Vendor Evaluation",
-        "Compliance Reporting",
-        "Service Outage Impact",
-        "Customer Trust Issues"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with a sense of urgency and concern from Catherine and Russell regarding a significant outage that had impacted their operations, leading to a trust issue with Aegis. As Maria acknowledged the failures and proposed solutions, there was a slight shift towards a more constructive dialogue, especially with the introduction of the new compliance features. However, the overall sentiment remained cautious and slightly negative, as Catherine emphasized the need for concrete assurances and documentation to rebuild trust, indicating ongoing evaluation of alternatives."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a customized SLA framework specifically addressing downtime incidents for the Detect platform. This should include clear metrics for monitoring downtime, potential credits for affected customers, and a commitment to proactive communication during outages. The Account Management team should lead this initiative, as it directly addresses the customer trust issues raised by Catherine and Russell, ensuring they have a tangible assurance of service reliability moving forward.",
-        "Create an interactive and comprehensive training session on Aegis Comply v2, specifically tailored to the ISO 27001 reporting requirements. This should involve both product management and engineering teams to showcase the new features and provide real-time, hands-on experience. By demonstrating the capabilities of Comply v2 in addressing their compliance needs, we can alleviate the concerns around reporting limitations and rebuild confidence in Aegis as a suitable partner for their upcoming audit."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
+      "date": "20260312",
+      "startTime": "2026-03-12T15:45:00.000Z"
     },
     {
       "meetingId": "01KQ4D01DCB15C69672AB5AF",
@@ -314,99 +374,51 @@ const DASHBOARD_DATA = {
         "n.simmons@clearwatermed.com",
         "a.mehta@clearwatermed.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQD4D9DEBA2D55AC2AA9F5",
-      "title": "Aegis / Keystone Health - Renewal Planning",
-      "host": "lisa.park@aegiscloud.com",
-      "duration": 28.5,
-      "allEmails": [
-        "lisa.park@aegiscloud.com",
-        "rachel.torres@aegiscloud.com",
-        "p.lau@keystonehealth.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting is focused on renewal planning with a client (Keystone Health) and involves discussions about the client's experience with Aegis products, upcoming features, and potential upsell opportunities. The presence of an external attendee from Keystone Health indicates that this is a client-facing conversation rather than an internal team sync. The dialogue revolves around the client's satisfaction, product updates, and contract renewal, which are key indicators of an External Customer meeting.",
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "Renewal Planning",
-        "Product Updates",
-        "Customer Satisfaction",
-        "Upsell Opportunities"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.8,
-        "trajectory": "The meeting began with a positive tone as Philip expressed optimism about the renewal conversation, highlighting significant time savings from Aegis Comply. The excitement peaked when Rachel introduced the upcoming Comply v2 features, which directly addressed Philip's pain points. Although there was a moment of concern regarding the Detect module's past incident, Philip appreciated the transparency and remained open to exploring it further, concluding the meeting on a high note with a strong sense of partnership and collaboration."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a case study initiative where customers like Philip can easily share their success stories with Aegis Comply, with dedicated support from the Account Management team. This could involve creating a simple template for them to fill out, which would not only strengthen customer relationships but also serve as a valuable marketing tool that highlights the effectiveness of Aegis solutions in real-world applications, thereby addressing the need for proof of value.",
-        "Develop a targeted educational campaign around the new Aegis Detect module, specifically for existing customers in the healthcare sector. This campaign should include tailored training sessions and documentation that address common pain points experienced by customers like Philip, such as the integration of threat monitoring with compliance reporting. By proactively providing this knowledge, it could ease concerns about the recent incident and drive upsell opportunities as customers see the tangible benefits."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
+      "date": "20260407",
+      "startTime": "2026-04-07T14:15:00.000Z"
     },
     {
-      "meetingId": "01KQ2217B066855A3B7814CB",
-      "title": "Aegis / Meridian Capital - Service Reliability Discussion",
-      "host": "rachel.torres@aegiscloud.com",
-      "duration": 43.4,
-      "allEmails": [
-        "rachel.torres@aegiscloud.com",
-        "lisa.park@aegiscloud.com",
-        "ravi.gupta@aegiscloud.com",
-        "s.nakamura@meridiancapital.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting involves a discussion between Aegis Cloud team members and a representative from Meridian Capital regarding service reliability issues with the Aegis Detect platform. The dialogue focuses on a significant outage that affected Meridian Capital's operations, leading to concerns about the platform's reliability and potential vendor review. The presence of an external client (Suki Nakamura from Meridian Capital) and the nature of the conversation, which revolves around addressing client concerns and maintaining the business relationship, classify this call as External Customer.",
-      "themes": [
-        "Service Reliability",
-        "Threat Monitoring Outage",
-        "Vendor Review Process",
-        "Infrastructure Audit"
-      ],
-      "sentiment": {
-        "score": -0.4,
-        "trajectory": "The meeting began with Suki expressing significant frustration and concern over a recent outage that severely impacted her team's operations, indicating a lack of confidence in the platform. As Ravi provided a detailed explanation of the technical issues and the steps being taken to address them, Suki's tone shifted slightly towards cautious optimism, especially when he offered to share an audit summary. However, the underlying tension remained as Suki emphasized the urgency of restoring confidence in the platform, leaving the conversation with unresolved concerns about their ongoing partnership."
-      },
-      "strategic_insights": [
-        "Implement a dedicated incident response feature within Aegis Detect that allows users to receive real-time alerts and detailed status updates during outages. This feature should be owned by the Product Management team and should include automated communication with users when critical components fail. This will address Suki's concern about insufficient visibility and communication during the outage, and help rebuild trust in the platform by ensuring users are informed and can respond appropriately in real-time.",
-        "Create a comprehensive infrastructure audit report tool within Aegis Detect that allows customers to perform their own audits and assessments of the platform's reliability and security features. This should be managed by the Engineering team and should include user-friendly interfaces to visualize potential single points of failure and redundancy setups. This recommendation directly addresses Suki's request for a more thorough understanding of the system's architecture and will help her provide substantiated information to her CISO and other stakeholders."
-      ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQAEA50436D047BC39CFC7",
-      "title": "Aegis / Crestline Wealth - Account Review",
+      "meetingId": "01KQ6CAA850EAFDC48B52846",
+      "title": "Aegis / Ironworks Corp - Vendor Comparison Discussion",
       "host": "maria.santos@aegiscloud.com",
-      "duration": 48.7,
+      "duration": 33.9,
       "allEmails": [
         "maria.santos@aegiscloud.com",
-        "d.owens@crestlinewealth.com"
+        "c.page@ironworkscorp.com",
+        "r.tang@ironworkscorp.com"
       ],
-      "category": "External Customer",
-      "reasoning": "The meeting is classified as 'External Customer' because it involves a discussion between Aegis Cloud and a client, Crestline Wealth, focusing on account review, renewal terms, and addressing client concerns. The dialogue centers around the client's usage of Aegis Cloud's services, upcoming contract renewal, and specific product features, which are typical of high-level client interactions. The presence of an external attendee from Crestline Wealth further supports this classification.",
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "Account Renewal Discussion",
-        "Product Usage Review",
-        "Compliance Updates",
-        "Contract Negotiation"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.4,
-        "trajectory": "The meeting began with a neutral tone as both parties acknowledged the busy month ahead. As they discussed the platform's usage and upcoming renewal, Derek expressed some concerns about justifying the renewal costs internally, which introduced a slight tension. However, the conversation shifted positively when Maria highlighted the upcoming Comply update, which Derek found relevant and beneficial, leading to a collaborative discussion on renewal options that ended on a constructive note."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Develop a tier-based pricing model for the Protect module that accommodates varying data volumes. This should be owned by Product Management to ensure that pricing reflects actual usage and growth, preventing any customer dissatisfaction due to unexpected increases in costs. This will help Derek justify the renewal cost to his CFO by aligning it with their actual data growth, enhancing perceived value.",
-        "Create a comprehensive technical documentation package that includes a summary of the resilience improvements in the Detect module, as well as a preview of the upcoming Comply features. This should be owned by Engineering and Product Management, providing Derek with concrete materials to support his internal discussions. This will address his need for documentation to justify the value of Aegis Cloud's offerings and strengthen the case for renewal."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
+      "date": "20260414",
+      "startTime": "2026-04-14T13:45:00.000Z"
     },
     {
       "meetingId": "01KQ4EE836687F95080D92AB",
@@ -420,42 +432,50 @@ const DASHBOARD_DATA = {
         "nina.kowalski@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQ445B1B5B890316C9E300",
-      "title": "Weekly Engineering Standup",
-      "host": "ravi.gupta@aegiscloud.com",
-      "duration": 45.2,
-      "allEmails": [
-        "ravi.gupta@aegiscloud.com",
-        "sofia.petrov@aegiscloud.com",
-        "raj.kapoor@aegiscloud.com"
-      ],
-      "category": "Internal",
-      "reasoning": "All attendees are from the Aegis Cloud domain, indicating that this meeting is an internal sync. The discussion revolves around engineering updates, post-mortem follow-ups, and project planning, which are typical topics for internal team meetings.",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
       "themes": [
-        "Post-Mortem Follow-Up on Detect Outage",
-        "Comply v2 Report Generation Issues",
-        "Circuit Breaker Logic Review",
-        "Load Testing Suite Planning"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": -0.1,
-        "trajectory": "The meeting began with a neutral tone as team members provided status updates, but shifted to a slightly negative sentiment when discussing the Comply v2 issues affecting customers. The conversation highlighted concerns about the potential impact on mid-to-large enterprise clients, which raised alarms. However, the team collaboratively identified solutions and established a timeline for addressing the issues, leading to a more constructive ending, albeit with lingering concerns about workload and prioritization."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a paginated query mechanism for the SOC 2 report generation in Comply v2. This should be owned by Sofia Petrov, with support from Ravi Gupta for QA. This addresses the root cause of the timeout errors experienced by mid-to-large enterprise customers when generating reports for large datasets, ensuring scalability and reliability of report generation across all customer segments.",
-        "Develop a comprehensive load testing suite to simulate cascading failure scenarios in the Detect system, with a targeted start date of April 28th. This should be owned by Ravi Gupta and Sofia Petrov, allocating dedicated time to ensure it is completed in a two-week sprint. This recommendation directly tackles the risk of future outages by proactively identifying weaknesses in the system before they impact production."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
+      "date": "20260205",
+      "startTime": "2026-02-05T14:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ5AFAE8264DDC0ED2AE7F",
+      "title": "Aegis / Crestline Wealth - Identity Module Deployment",
+      "host": "rachel.torres@aegiscloud.com",
+      "duration": 35.7,
+      "allEmails": [
+        "rachel.torres@aegiscloud.com",
+        "sofia.petrov@aegiscloud.com",
+        "d.owens@crestlinewealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260424",
+      "startTime": "2026-04-24T16:45:00.000Z"
     },
     {
       "meetingId": "01KQ7B802912366FC0A24D4F",
@@ -470,22 +490,78 @@ const DASHBOARD_DATA = {
         "nina.kowalski@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "The meeting is classified as Internal because all attendees have email addresses from the @aegiscloud.com domain. The discussion revolves around internal updates, project retrospectives, and planning for future initiatives, which aligns with the characteristics of an internal meeting.",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
       "themes": [
-        "March Detect Outage Retrospective",
-        "Comply v2 Launch and Adoption",
-        "Q2 Planning and Roadmap Prioritization",
-        "Chaos Engineering and Reliability Improvements"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.3,
-        "trajectory": "The meeting began with a focus on addressing the recent outage, which initially created a tone of concern and accountability among team members. As they discussed the successful launch of Comply v2 and the positive early adoption metrics, the mood shifted to a more optimistic outlook. However, the conversation about prioritizing reliability over new features indicated a cautious approach moving forward, balancing the need for progress with the team's recent challenges."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "To address the single point of failure in the ingestion layer that led to the March Detect outage, implement a fully automated chaos engineering framework within the Detect module. This should include real-time simulations of node failures in the production environment, ensuring immediate failover to redundant nodes without manual intervention. Engineering should own this initiative, as it will enhance system reliability and customer confidence by validating the robustness of the ingestion process under stress.",
-        "Enhance customer visibility during incidents by developing a 'status dashboard' feature within the Detect module that provides real-time updates on system health and alert statuses. This feature should be prioritized in the Q2 roadmap to prevent future escalations and improve customer communication during outages. Product Management should lead this effort to ensure it meets customer needs and aligns with the overall product vision, ultimately reducing churn and improving satisfaction."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
+      "date": "20260426",
+      "startTime": "2026-04-26T11:45:00.000Z"
+    },
+    {
+      "meetingId": "01KQD4D9DEBA2D55AC2AA9F5",
+      "title": "Aegis / Keystone Health - Renewal Planning",
+      "host": "lisa.park@aegiscloud.com",
+      "duration": 28.5,
+      "allEmails": [
+        "lisa.park@aegiscloud.com",
+        "rachel.torres@aegiscloud.com",
+        "p.lau@keystonehealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260309",
+      "startTime": "2026-03-09T16:45:00.000Z"
+    },
+    {
+      "meetingId": "01KQFFC0F889AE8CFEE7A00D",
+      "title": "Aegis / Blackridge Investments - Renewal Discussion",
+      "host": "aisha.johnson@aegiscloud.com",
+      "duration": 54.1,
+      "allEmails": [
+        "aisha.johnson@aegiscloud.com",
+        "ananya.sharma@aegiscloud.com",
+        "j.tran@blackridgeinvest.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260207",
+      "startTime": "2026-02-07T17:45:00.000Z"
     },
     {
       "meetingId": "01KQ2B4878EC7B3EE5547007",
@@ -497,98 +573,23 @@ const DASHBOARD_DATA = {
         "james.mitchell@aegiscloud.com",
         "d.rowe@stratoscloud.io"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQDD5172176D02DB51360A",
-      "title": "Support Case #3286 - Vanta Health Systems API Integration Error",
-      "host": "priya.patel@aegiscloud.com",
-      "duration": 21.0,
-      "allEmails": [
-        "priya.patel@aegiscloud.com",
-        "l.cheng@vantahealth.com"
-      ],
       "category": "Customer Support",
-      "reasoning": "The meeting is classified as Customer Support because it involves resolving a specific technical issue related to an API integration error for a customer, Vanta Health Systems. The dialogue focuses on troubleshooting the API errors, discussing the impact on their operations, and providing immediate solutions to mitigate the problem. The presence of a support case number and the nature of the conversation, which revolves around fixing a technical problem, further solidify this classification.",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "API Integration Error",
-        "Backup Workflow Disruption",
-        "Service Availability Issues",
-        "Compliance and Data Integrity"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with Dr. Cheng expressing significant frustration over a critical API issue affecting their backup workflows, indicating a serious concern for patient data integrity. As Priya Patel provided clarity on the situation and proposed immediate solutions, the tone shifted slightly towards a more constructive dialogue, though underlying tension remained due to the communication failures experienced. By the end, while some immediate actions were agreed upon, Dr. Cheng's frustration about the lack of proactive communication and the urgency of the situation highlighted ongoing concerns, leaving a slight negative sentiment overall."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a dedicated incident alerting system for high-impact customers like healthcare organizations. This system should proactively notify affected clients about service disruptions, including expected resolution timelines and mitigation steps. Ownership should be on the Product Management team to develop this feature, enhancing customer trust and satisfaction by preventing frustration due to lack of communication during critical outages.",
-        "Introduce a manual backup override feature within the Aegis Protect web console, allowing users to trigger backups even when the orchestration layer is down. This feature should be owned by the Engineering team, addressing immediate customer needs and ensuring compliance with regulatory standards, while also enhancing the overall reliability and user experience of the backup functionality."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQC1267BEB344076DD7656",
-      "title": "Aegis / Ironclad Financial - Account Recovery Check-in",
-      "host": "maria.santos@aegiscloud.com",
-      "duration": 35.3,
-      "allEmails": [
-        "maria.santos@aegiscloud.com",
-        "kevin.obrien@aegiscloud.com",
-        "r.langston@ironcladfinancial.com",
-        "t.desai@ironcladfinancial.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting involves a discussion between Aegis Cloud representatives and Ironclad Financial regarding a significant outage that affected their platform, which is a critical concern for the client. The dialogue includes technical explanations and a focus on the client's confidence in the platform, renewal discussions, and specific requests for documentation and configuration reviews. The presence of an external client (Ironclad Financial) and the nature of the conversation, which revolves around platform concerns and contract renewal, clearly categorize this as an External Customer meeting.",
-      "themes": [
-        "Platform Outage Impact",
-        "Contract Renewal Discussion",
-        "Technical Documentation Requests",
-        "Configuration Review for Detect"
-      ],
-      "sentiment": {
-        "score": -0.2,
-        "trajectory": "The meeting began with a clear expression of frustration from Robert regarding a significant outage, setting a negative tone. However, as Maria and Kevin provided detailed explanations and solutions, the conversation shifted towards a more constructive dialogue, with Tanya engaging positively about upcoming features. By the end, while concerns about the renewal remained, there was a sense of collaborative problem-solving, indicating a slight improvement in sentiment but still leaving unresolved issues that could impact future decisions."
-      },
-      "strategic_insights": [
-        "Implement a dedicated, self-service configuration wizard for Detect that guides customers through recommended settings, including alert persistence and offline buffering. This tool should be owned by the Product Management team, as it directly addresses the onboarding gap that Tanya highlighted during the outage, ensuring that customers are adequately prepared to leverage the platform's capabilities and avoid similar issues in the future.",
-        "Create a formal incident post-mortem template that includes clear SLA terms and a robust documentation process for outages. This should be spearheaded by the Account Management team in collaboration with Engineering. By proactively providing this documentation to clients like Robert, it not only addresses their immediate concerns regarding the March outage but also reinforces Aegis Cloud's commitment to transparency and reliability in high-stakes environments such as financial services."
-      ],
-      "date": "20260519"
-    },
-    {
-      "meetingId": "01KQ7FA71CF70FAFEE4B6251",
-      "title": "Aegis / Nova Retail Group - Renewal Discussion",
-      "host": "aisha.johnson@aegiscloud.com",
-      "duration": 33.4,
-      "allEmails": [
-        "aisha.johnson@aegiscloud.com",
-        "s.blair@novaretail.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting is focused on a renewal discussion with a client, Nova Retail Group, where the primary topics include addressing past service outages, compliance reporting frustrations, and competitive threats from another vendor. The dialogue indicates a high-level discussion about the client's satisfaction and future relationship with Aegis Cloud, which aligns with the External Customer category. Additionally, one attendee is from Aegis Cloud while the other is from a client organization, further supporting this classification.",
-      "themes": [
-        "Service Outage Impact",
-        "Compliance Reporting Challenges",
-        "Competitive Threats from SentinelShield",
-        "Renewal Negotiation"
-      ],
-      "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with a clear sense of frustration from Stephanie regarding a significant outage that impacted their operations, leading to a negative tone. Aisha acknowledged the issue and provided details on remediation efforts, which shifted the conversation towards a more constructive dialogue. However, underlying concerns about compliance reporting and support issues persisted, leaving the conversation with unresolved tensions and a slight risk of churn."
-      },
-      "strategic_insights": [
-        "Implement an enhanced alert customization feature in the Aegis Detect dashboard that allows customers to tailor alert thresholds and filtering based on their specific environments and risk profiles. This should be owned by the Engineering team, as it directly addresses the clunky user experience and high alert volume that has been frustrating the customer, Nova. By allowing users to prioritize alerts more effectively, we can reduce noise and improve response times to genuine threats, thereby increasing customer satisfaction and retention.",
-        "Launch a dedicated compliance reporting module within Aegis Comply that leverages automation to streamline the generation of PCI DSS and HIPAA reports. This feature should be owned by Product Management and designed with input from key customers like Nova to ensure it meets their specific needs. By providing real-time, on-demand reporting capabilities, we can significantly reduce the manual workload on the customer's compliance team, thus enhancing their overall experience and addressing a critical pain point that has been a driver for considering competitors like SentinelShield."
-      ],
-      "date": "20260519"
+      "date": "20260306",
+      "startTime": "2026-03-06T13:30:00.000Z"
     },
     {
       "meetingId": "01KQFEEFFF8E80B0DFD10880",
@@ -602,25 +603,219 @@ const DASHBOARD_DATA = {
         "tyler.washington@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal sync among team members. The discussion revolves around the final review of SOC 2 Type II materials, which is a preparatory step for an audit, and involves planning and coordination among the team rather than direct customer interaction or support.",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
       "themes": [
-        "SOC 2 Type II Audit Preparation",
-        "Incident Response Documentation",
-        "Change Management Controls",
-        "Customer Commitments and Timelines"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.8,
-        "trajectory": "The meeting started with a positive tone as the team expressed confidence in their SOC 2 Type II materials. Key emotional shifts occurred when they discussed the improvements made since the last audit, particularly the transparency around the March outage, which alleviated initial concerns. By the end, the team felt relieved and optimistic about their timeline and collaboration, indicating strong morale and a successful team effort."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a dedicated incident response playbook within the Aegis Cloud platform, specifically focused on SOC 2 Type II audit requirements. This playbook should include step-by-step guidelines for documenting incidents, including required evidence and remediation actions. Ownership should be assigned to the Product Management team, ensuring it aligns with the audit framework. This addresses the complexity and transparency required for incident handling, which was highlighted in the meeting, particularly regarding the March outage.",
-        "Create a real-time status dashboard within the Comply v2 module that tracks the progress of SOC 2 Type II audit preparation and highlights any dependencies or risks related to customer commitments. This dashboard should be owned by the Engineering team, integrating with current project management tools. This solution directly addresses the urgency expressed by Diana regarding enterprise prospects and renewal terms, ensuring all stakeholders have visibility into the audit timeline and associated customer commitments."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260519"
+      "date": "20260420",
+      "startTime": "2026-04-20T09:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ445B1B5B890316C9E300",
+      "title": "Weekly Engineering Standup",
+      "host": "ravi.gupta@aegiscloud.com",
+      "duration": 45.2,
+      "allEmails": [
+        "ravi.gupta@aegiscloud.com",
+        "sofia.petrov@aegiscloud.com",
+        "raj.kapoor@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260417",
+      "startTime": "2026-04-17T17:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ7FA71CF70FAFEE4B6251",
+      "title": "Aegis / Nova Retail Group - Renewal Discussion",
+      "host": "aisha.johnson@aegiscloud.com",
+      "duration": 33.4,
+      "allEmails": [
+        "aisha.johnson@aegiscloud.com",
+        "s.blair@novaretail.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260321",
+      "startTime": "2026-03-21T11:15:00.000Z"
     }
   ],
-  "20260518": [
+  "0002": [
+    {
+      "meetingId": "01KQ5EC1665DCFD7A6B62A59",
+      "title": "Support Case #8749 - Coastal Living Co SAML Certificate Rotation Bug",
+      "host": "marcus.williams@aegiscloud.com",
+      "duration": 10.1,
+      "allEmails": [
+        "marcus.williams@aegiscloud.com",
+        "elena.vasquez@aegiscloud.com",
+        "v.cruz@coastalliving.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260329",
+      "startTime": "2026-03-29T15:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQB632F1ADC378C42F2C03",
+      "title": "Support Case #7570 - Silverline Brands Comply v2 License Upgrade",
+      "host": "david.kim@aegiscloud.com",
+      "duration": 16.3,
+      "allEmails": [
+        "david.kim@aegiscloud.com",
+        "m.tan@silverlinebrands.com",
+        "d.flores@silverlinebrands.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260418",
+      "startTime": "2026-04-18T09:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ03B0303900521BB089CA",
+      "title": "Detect Outage - Remediation Plan Review",
+      "host": "megan.lawson@aegiscloud.com",
+      "duration": 35.2,
+      "allEmails": [
+        "megan.lawson@aegiscloud.com",
+        "raj.kapoor@aegiscloud.com",
+        "brian.cho@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260316",
+      "startTime": "2026-03-16T09:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ51DC4345D9DAE005678C",
+      "title": "Aegis / Redwood Clinical - Product Feedback Session",
+      "host": "daniel.okafor@aegiscloud.com",
+      "duration": 40.3,
+      "allEmails": [
+        "daniel.okafor@aegiscloud.com",
+        "lisa.park@aegiscloud.com",
+        "t.hargrove@redwoodclinical.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260222",
+      "startTime": "2026-02-22T13:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ560FF1570C5E7F71D752",
+      "title": "Aegis / Coastal Living Co - Protect Module Expansion",
+      "host": "kevin.obrien@aegiscloud.com",
+      "duration": 45.7,
+      "allEmails": [
+        "kevin.obrien@aegiscloud.com",
+        "v.cruz@coastalliving.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260419",
+      "startTime": "2026-04-19T15:15:00.000Z"
+    },
     {
       "meetingId": "01KQ351E141926AB7CAB668D",
       "title": "Aegis / Northstar Pharma - Urgent: Detect Outage Impact",
@@ -631,22 +826,22 @@ const DASHBOARD_DATA = {
         "g.yoon@northstarpharma.com"
       ],
       "category": "Customer Support",
-      "reasoning": "The meeting involves a direct discussion between Aegis Cloud and Northstar Pharma regarding a significant outage affecting Northstar's security monitoring capabilities. The dialogue focuses on troubleshooting the outage, understanding its impact, and discussing remediation steps. The presence of a customer from Northstar Pharma indicates that this is a support-related call, specifically addressing a critical operational issue that needs resolution.",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "Outage Impact Analysis",
-        "Event Processing Failure",
-        "SLA Review and Commitment",
-        "Regulatory Compliance Concerns"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": -0.4,
-        "trajectory": "The meeting began with Grace expressing frustration over a significant outage that left her team without visibility into their security monitoring, indicating a highly negative emotional state. As Maria acknowledged the issues and proposed concrete remediation steps, including a call with the VP of Engineering and a commitment to a detailed incident report, the tone shifted slightly towards a more constructive dialogue. However, Grace remained concerned and skeptical about the reliability of the service, reflecting a slightly negative sentiment by the end, as she emphasized the urgency of her needs before the upcoming renewal."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement an automated alerting system that triggers notifications to both customers and internal teams when event processing failures occur, ensuring immediate awareness and transparency. This should be owned by the Engineering team, with collaboration from Product Management to define the alert criteria and escalation paths. This solution addresses the root cause of the lack of visibility during outages, providing customers like Northstar with real-time updates and reducing anxiety during critical periods.",
-        "Revise the current SLA structure for enterprise customers to include explicit commitments around uptime, incident response times, and penalties for non-compliance. This should be led by the Account Management team in partnership with Product Management to ensure the SLA meets the compliance needs of regulated industries like healthcare. This recommendation directly addresses Grace's concerns about regulatory exposure and builds confidence in Aegis Cloud's commitment to service reliability."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260518"
+      "date": "20260312",
+      "startTime": "2026-03-12T12:15:00.000Z"
     },
     {
       "meetingId": "01KQ5F364545B542671FF9CE",
@@ -660,22 +855,77 @@ const DASHBOARD_DATA = {
         "s.nakamura@meridiancapital.com"
       ],
       "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific support case (Case #3546) related to SCIM provisioning for Meridian Capital. The attendees include representatives from both Aegis Cloud and Meridian Capital, indicating a direct customer support interaction. The dialogue revolves around troubleshooting and discussing technical requirements for automating user provisioning and deprovisioning, which aligns with the Customer Support category.",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "SCIM Provisioning Request",
-        "Automated User Provisioning",
-        "Compliance and Deprovisioning Controls",
-        "API Integration Options"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.4,
-        "trajectory": "The meeting began with a clear identification of the challenges faced by Meridian Capital regarding their identity infrastructure, leading to a slightly negative tone due to compliance concerns. However, as Sarah and Marcus provided potential solutions, particularly the API approach, the tone shifted to a more positive outlook, with Jason expressing appreciation for the clarity and actionable next steps. The conversation ended on a constructive note, with a commitment to follow up on the feature request and roadmap discussions, indicating a productive engagement."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a dedicated SCIM 2.0 integration feature for Aegis Identity, prioritizing it based on the regulatory needs expressed by Meridian Capital and similar clients in the financial services sector. Product Management should take ownership of this initiative, as it addresses the critical gap in automated provisioning and deprovisioning controls that is becoming increasingly necessary for compliance. This will not only enhance customer satisfaction but also position Aegis Cloud as a more competitive player in the IAM market.",
-        "Develop a comprehensive, self-service resource on the Aegis Cloud Developer Portal specifically for API integration with Okta, including detailed guides, best practices, and example workflows for SCIM provisioning via REST API. This should be managed by the Engineering team, leveraging the existing documentation and community knowledge. Providing these resources will empower clients like Meridian Capital to implement interim solutions effectively while awaiting the full SCIM integration, thereby reducing operational bottlenecks in user management."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260518"
+      "date": "20260307",
+      "startTime": "2026-03-07T13:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ38FE02AEE5AA5157F042",
+      "title": "Support Case #3296 - Pinnacle Insurance Comply v2 Report Formatting Issue",
+      "host": "marcus.williams@aegiscloud.com",
+      "duration": 14.1,
+      "allEmails": [
+        "marcus.williams@aegiscloud.com",
+        "o.grant@pinnacleins.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260408",
+      "startTime": "2026-04-08T15:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQEDE682B4A8D67C657CF1",
+      "title": "Support Case #3103 - Silverline Brands Detect False Positives After Patch",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 13.8,
+      "allEmails": [
+        "sarah.chen@aegiscloud.com",
+        "d.flores@silverlinebrands.com",
+        "m.tan@silverlinebrands.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260316",
+      "startTime": "2026-03-16T16:15:00.000Z"
     },
     {
       "meetingId": "01KQA0F0BE68E74D66EB4171",
@@ -690,237 +940,22 @@ const DASHBOARD_DATA = {
         "kevin.obrien@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal discussion among team members. The conversation revolves around competitive strategies, technical remediation, and product positioning, which are typical topics for internal strategy sessions rather than customer-facing discussions.",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
       "themes": [
-        "Competitive Positioning Against SentinelShield",
-        "Technical Remediation from March Outage",
-        "Comply v2 Differentiation",
-        "Action Items for Customer Engagement"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": -0.1,
-        "trajectory": "The meeting began with a sense of concern regarding competitive pressure from SentinelShield, particularly due to past outages. As the team discussed technical improvements and strategies to address customer concerns, the tone shifted towards a more collaborative and proactive approach, especially with the introduction of Comply v2 as a differentiator. By the end, while there was still some apprehension about the competitive landscape, the team left with actionable plans and a sense of cautious optimism about their positioning."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Develop a competitive positioning framework specifically addressing the reliability concerns raised by SentinelShield, which should include a one-pager outlining the March remediation and the architectural improvements made. This document should be owned by Tom Bradley and be ready for distribution to the sales team. By providing a clear narrative on the technical upgrades, we can build trust with prospects and counteract any negative perceptions stemming from the outage.",
-        "Create a targeted engagement strategy for Hartfield Manufacturing that leverages their current SOC 2 audit status. This should involve a technical call with Kevin O'Brien to demonstrate the on-demand SOC 2 reporting capabilities of Comply v2. Rachel Torres should lead this initiative, as it directly addresses a critical pain point for the prospect and showcases our unique value proposition, differentiating Aegis Cloud from competitors who lack integrated compliance solutions."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQ51DC4345D9DAE005678C",
-      "title": "Aegis / Redwood Clinical - Product Feedback Session",
-      "host": "daniel.okafor@aegiscloud.com",
-      "duration": 40.3,
-      "allEmails": [
-        "daniel.okafor@aegiscloud.com",
-        "lisa.park@aegiscloud.com",
-        "t.hargrove@redwoodclinical.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting involves a feedback session with a client (Redwood Clinical) regarding the Aegis Comply product. The discussion focuses on specific feature requests and pain points related to compliance reporting, which indicates a high-level engagement with the client about their experience and needs. The presence of an external attendee from Redwood Clinical further supports the classification as External Customer, as the conversation revolves around product feedback and potential improvements rather than internal operations.",
-      "themes": [
-        "HIPAA Reporting Improvements",
-        "Automated Report Delivery",
-        "Executive Summary for Compliance Reports",
-        "Feature Feedback for Aegis Comply"
-      ],
-      "sentiment": {
-        "score": 0.3,
-        "trajectory": "The meeting began with a neutral tone, as both parties acknowledged the relevance of the discussion. As Thomas expressed specific pain points regarding the Comply tool, the sentiment shifted slightly negative due to frustrations with reporting limitations. However, the conversation ended on a slightly positive note, with Thomas acknowledging the reliability of other products and expressing willingness to engage further, indicating a potential for resolution and continued partnership."
-      },
-      "strategic_insights": [
-        "Implement a granular filtering feature for HIPAA and SOC 2 reports within Aegis Comply, allowing users to drill down into specific control areas without exporting data. This should be owned by the Product Management team to ensure it aligns with user needs. By addressing this, we can eliminate the manual effort currently required for auditors, thereby enhancing the user experience and increasing customer satisfaction.",
-        "Develop an automated report delivery system that allows users to schedule and send compliance reports to designated stakeholders without manual intervention. This initiative should be led by the Engineering team to ensure seamless integration with existing workflows. This will reduce the operational overhead for compliance officers like Priya, ensuring timely and efficient communication of compliance status to executives, which is critical for maintaining trust and compliance."
-      ],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQ560FF1570C5E7F71D752",
-      "title": "Aegis / Coastal Living Co - Protect Module Expansion",
-      "host": "kevin.obrien@aegiscloud.com",
-      "duration": 45.7,
-      "allEmails": [
-        "kevin.obrien@aegiscloud.com",
-        "v.cruz@coastalliving.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting involves a discussion between Aegis Cloud and Coastal Living regarding the implementation of the Protect module, focusing on their backup and recovery setup. The dialogue indicates a high-level engagement about the customer's needs, including specific requirements for data protection and recovery time objectives (RTO and RPO). The presence of an external customer (Vanessa Cruz from Coastal Living) and the nature of the conversation, which revolves around understanding the customer's operational challenges and proposing solutions, aligns with the 'External Customer' category.",
-      "themes": [
-        "Backup and Recovery Solutions",
-        "Data Protection Requirements",
-        "Implementation Phases",
-        "Customer Onboarding Process"
-      ],
-      "sentiment": {
-        "score": 0.5,
-        "trajectory": "The meeting began with a positive tone as both Kevin and Vanessa exchanged pleasantries, indicating a good rapport. Vanessa expressed concerns about their current backup setup, which shifted the tone slightly towards a more serious discussion about challenges. However, as Kevin introduced solutions that addressed her pain points, particularly the unified view and streamlined implementation process, the sentiment improved significantly, leaving Vanessa feeling reassured and optimistic about the partnership moving forward."
-      },
-      "strategic_insights": [
-        "Implement a centralized dashboard feature in Aegis Protect that provides real-time visibility across all environments, including both CloudPrime and on-prem systems. This recommendation should be owned by the Product Management team as it directly addresses Vanessa's pain point of having to navigate multiple dashboards for backup visibility. By simplifying the user experience and providing a unified view, it will significantly reduce the time her team spends managing backups, especially during peak traffic periods.",
-        "Develop a tailored onboarding package that includes a phased implementation plan specifically designed for customers with legacy systems and bandwidth constraints, like Coastal Living. This should be owned by the Account Management team and include a business impact analysis template to demonstrate the cost of downtime during peak periods. By ensuring that the onboarding process is manageable and includes clear metrics for success, it will help Vanessa secure internal buy-in from her CFO and facilitate smoother adoption of Aegis Protect."
-      ],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQ5EC1665DCFD7A6B62A59",
-      "title": "Support Case #8749 - Coastal Living Co SAML Certificate Rotation Bug",
-      "host": "marcus.williams@aegiscloud.com",
-      "duration": 10.1,
-      "allEmails": [
-        "marcus.williams@aegiscloud.com",
-        "elena.vasquez@aegiscloud.com",
-        "v.cruz@coastalliving.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific technical issue related to a SAML certificate rotation bug that is causing authentication failures for a significant portion of the customer's workforce. The dialogue includes troubleshooting steps, acknowledgment of a known bug, and a manual workaround to restore functionality, which aligns with the Customer Support category. Additionally, one attendee is from the customer (coastalliving.com), indicating that this is a support case rather than an internal discussion.",
-      "themes": [
-        "SAML Certificate Rotation Bug",
-        "Authentication Failures",
-        "Manual Workaround for Service Provider Connections",
-        "Customer Advisory for Bug Prevention"
-      ],
-      "sentiment": {
-        "score": -0.4,
-        "trajectory": "The meeting began with Vanessa expressing significant frustration over a critical issue affecting a large portion of her workforce, leading to a tense atmosphere. As the conversation progressed, the team identified a bug in the certificate rotation wizard, which Vanessa found unacceptable given their reliance on the platform. However, the tone shifted slightly towards resolution when a manual workaround was proposed, and the support team committed to follow-up actions, though the underlying dissatisfaction remained evident, indicating a risk of churn if issues persist."
-      },
-      "strategic_insights": [
-        "Implement a dedicated SAML certificate management dashboard within the Aegis Identity module, allowing users to monitor and manage their certificate statuses in real-time. Product Management should own this initiative, as it directly addresses the root cause of authentication failures due to certificate rotation issues, providing customers with proactive alerts and insights to avoid similar disruptions in the future.",
-        "Develop an automated certificate propagation feature that ensures new SAML certificates are instantly and correctly updated across all service provider connections upon rotation. This recommendation should be led by the Engineering team, as it will eliminate manual intervention and reduce the risk of human error during critical updates, ultimately enhancing the reliability of SSO functionalities for customers like Vanessa Cruz's organization."
-      ],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQBB7C4D4789DB2F3DA9C2",
-      "title": "Support Case #1750 - Vanta Health Systems SIEM Connector Issue",
-      "host": "sarah.chen@aegiscloud.com",
-      "duration": 29.7,
-      "allEmails": [
-        "sarah.chen@aegiscloud.com",
-        "priya.patel@aegiscloud.com",
-        "l.cheng@vantahealth.com",
-        "r.burke@vantahealth.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific technical issue related to the SIEM connector for Vanta Health Systems, which falls under customer support. The attendees include both Aegis Cloud support staff and representatives from Vanta Health, indicating a direct troubleshooting session. The dialogue revolves around identifying and addressing a technical problem, including error messages, configuration details, and potential fixes, which aligns with the Customer Support category.",
-      "themes": [
-        "SIEM Connector Issue",
-        "Connection Timeout Errors",
-        "Event Data Loss",
-        "Upgrade Process for Connector"
-      ],
-      "sentiment": {
-        "score": -0.4,
-        "trajectory": "The meeting began with a clear sense of urgency and concern from Vanta Health Systems regarding significant data gaps in their SIEM integration, which escalated to frustration over delayed support responses. As the conversation progressed, Sarah and Priya acknowledged the issues and proposed immediate solutions, which slightly alleviated the tension. However, the overall sentiment remained negative due to unresolved concerns about reliability and communication failures, leaving Vanta Health Systems with lingering doubts about their partnership."
-      },
-      "strategic_insights": [
-        "Implement a proactive notification system for known issues in Aegis Detect's SIEM connector, specifically for critical versions like 3.4.1. This should be owned by the Product Management team, and it will address the root cause of customer frustration regarding undisclosed bugs and enhance transparency with customers like Vanta Health Systems. By providing timely alerts for known issues, we can improve customer trust and satisfaction, especially in sensitive sectors like healthcare.",
-        "Create a dedicated support resource or self-service portal for configuration parameters, including undocumented ones like 'retry_on_timeout'. The Engineering team should own this initiative. This resource will empower customers to quickly troubleshoot and optimize their configurations without waiting for support, reducing downtime and enhancing the customer experience. This is especially critical for customers dealing with PHI, as in the case of Vanta Health Systems, to ensure compliance and continuous monitoring."
-      ],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQ38FE02AEE5AA5157F042",
-      "title": "Support Case #3296 - Pinnacle Insurance Comply v2 Report Formatting Issue",
-      "host": "marcus.williams@aegiscloud.com",
-      "duration": 14.1,
-      "allEmails": [
-        "marcus.williams@aegiscloud.com",
-        "o.grant@pinnacleins.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is classified as Customer Support because it involves troubleshooting a specific technical issue related to a formatting problem in the Aegis Comply v2 reports. The dialogue focuses on resolving a support case (Case #3296) where the customer, Oliver Grant from Pinnacle Insurance, is experiencing issues with report generation, which is a direct operational concern. The interaction is centered around identifying the problem, confirming details, and discussing next steps for resolution, which aligns with the Customer Support category.",
-      "themes": [
-        "Report Formatting Issue",
-        "PDF Export Bug",
-        "SOC 2 Compliance Reporting",
-        "Urgent Fix Timeline"
-      ],
-      "sentiment": {
-        "score": -0.1,
-        "trajectory": "The meeting began with Oliver expressing frustration over formatting issues in the newly launched Aegis Comply v2 reports, indicating a negative emotional state. As Marcus acknowledged the problems and confirmed them on his end, the tone shifted towards a more collaborative atmosphere, with Oliver feeling reassured by Marcus's commitment to escalate the issue. However, the urgency of the timeline for an internal audit review kept a slight tension in the conversation, resulting in a slightly negative sentiment overall, but with a sense of hope for resolution."
-      },
-      "strategic_insights": [
-        "Implement a dedicated PDF rendering QA process within the Aegis Comply product module, specifically targeting the SOC 2 report format. This should involve the Product Management team working closely with Engineering to create test cases that include various control category names and pagination scenarios to ensure that all potential formatting issues are caught before future releases. This proactive measure will address the root cause of the current PDF export bug and prevent similar issues from affecting customers during critical audits.",
-        "Develop a temporary customer-facing feature that allows users to preview the PDF report formatting directly in the Comply dashboard before finalizing the export. This should be owned by the Engineering team, with input from Product Management on UI design. By giving users the ability to see how their reports will look prior to export, we can mitigate the impact of formatting issues and improve user confidence in the reporting process, especially in urgent scenarios like compliance audits."
-      ],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQEDE682B4A8D67C657CF1",
-      "title": "Support Case #3103 - Silverline Brands Detect False Positives After Patch",
-      "host": "sarah.chen@aegiscloud.com",
-      "duration": 13.8,
-      "allEmails": [
-        "sarah.chen@aegiscloud.com",
-        "d.flores@silverlinebrands.com",
-        "m.tan@silverlinebrands.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific technical issue related to false positives in the Aegis Detect system after a patch was applied. The attendees include a support representative from Aegis Cloud and representatives from Silverline Brands, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the issue, discussing operational impacts, and providing solutions, which aligns with the Customer Support category.",
-      "themes": [
-        "False Positives in Aegis Detect",
-        "Patch Version 4.2.1 Issues",
-        "Alert Volume Management",
-        "Configuration Update and Baseline Restore"
-      ],
-      "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with Dominic expressing frustration over repeated issues with the Aegis Detect platform, indicating a negative emotional state. As Sarah provided solutions, including a baseline restore and a supervised re-learning period, the tone shifted slightly towards reassurance, though concerns about ongoing stability and vendor evaluation remained. The conversation ended with a cautious optimism about immediate fixes, but underlying dissatisfaction with the overall service persisted, leaving a potential churn risk."
-      },
-      "strategic_insights": [
-        "Implement a proactive communication strategy by creating a dedicated notification system for patch releases that includes potential impacts on Aegis Detect. The Product Management team should take ownership of this initiative. This addresses the root cause of customer frustration regarding the lack of timely information on known issues, ensuring that clients are aware of any significant changes before applying patches, thereby reducing operational disruptions.",
-        "Enhance the Aegis Detect configuration management by developing a self-service portal feature that allows users to easily access and manage their baseline profiles and suppression rules. The Engineering team should lead this effort. This would empower customers to make necessary adjustments to their detection settings without needing to contact support, thereby reducing alert fatigue and improving overall user confidence in the platform."
-      ],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQ03B0303900521BB089CA",
-      "title": "Detect Outage - Remediation Plan Review",
-      "host": "megan.lawson@aegiscloud.com",
-      "duration": 35.2,
-      "allEmails": [
-        "megan.lawson@aegiscloud.com",
-        "raj.kapoor@aegiscloud.com",
-        "brian.cho@aegiscloud.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260518"
-    },
-    {
-      "meetingId": "01KQB632F1ADC378C42F2C03",
-      "title": "Support Case #7570 - Silverline Brands Comply v2 License Upgrade",
-      "host": "david.kim@aegiscloud.com",
-      "duration": 16.3,
-      "allEmails": [
-        "david.kim@aegiscloud.com",
-        "m.tan@silverlinebrands.com",
-        "d.flores@silverlinebrands.com"
-      ],
-      "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific billing discrepancy related to the Comply v2 license upgrade for Silverline Brands. The attendees from Silverline Brands are discussing a support case with David Kim from Aegis Cloud Security, indicating that they are seeking assistance with a technical issue regarding their billing. The dialogue includes troubleshooting the billing error and confirming the correct charges, which aligns with the Customer Support category.",
-      "themes": [
-        "Billing Discrepancy",
-        "Comply v2 License Upgrade",
-        "Proration Calculation",
-        "Credit Issuance"
-      ],
-      "sentiment": {
-        "score": 0.5,
-        "trajectory": "The meeting began with a billing discrepancy that caused initial concern for Michelle and Dominic, leading to a slightly negative tone. However, as David clarified the issue and confirmed the correct proration calculation, the mood shifted positively. By the end, the customers felt reassured with a resolution plan in place, expressing satisfaction with the support received and the functionality of the product."
-      },
-      "strategic_insights": [
-        "Implement a tiered proration calculation feature in the billing system to ensure that upgrades like Comply v2 automatically apply the correct proration based on the upgrade date rather than the start of the billing cycle. This should be owned by the Engineering team to address the root cause of the miscalculation issue observed in this call and prevent future billing discrepancies for all customers who upgrade mid-cycle.",
-        "Create a dedicated FAQ and notification system for customers upgrading to Comply v2 that clearly outlines potential billing changes and expected timelines for credit issuance. This can be owned by Product Management, ensuring that customers like Silverline Brands have clear expectations and can maintain compliance with their internal accounting practices, thus enhancing overall customer satisfaction."
-      ],
-      "date": "20260518"
+      "date": "20260410",
+      "startTime": "2026-04-10T11:30:00.000Z"
     },
     {
       "meetingId": "01KQ56AA6B60801ABC01AB1C",
@@ -934,155 +969,107 @@ const DASHBOARD_DATA = {
         "n.simmons@clearwatermed.com"
       ],
       "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific billing dispute related to overage charges for Clearwater Medical. The attendees include representatives from Clearwater Medical and Aegis Cloud support staff, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the billing discrepancies, understanding the reasons behind the charges, and discussing potential resolutions, which aligns with the Customer Support category.",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "Billing Dispute",
-        "Overage Charges",
-        "Comply Module Issues",
-        "Event Ingestion Charges"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with a sense of urgency and concern from Clearwater Medical regarding unexpected overage charges on their invoice, particularly tied to the Comply module. As the discussion progressed, the tone shifted to frustration when it was revealed that the lack of alert notifications contributed to the charges, and the potential for additional charges due to a system outage was raised. By the end of the meeting, while there was a commitment from Aegis to investigate and address the issues, the sentiment remained slightly negative due to the financial implications and the need for further clarification, leaving Clearwater Medical feeling uneasy about their billing situation."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement an automated alert system for overage charges linked to the Comply module. This should include in-app notifications and email alerts that notify users as they approach their report generation limits, especially after significant upgrades like v2. Product Management should own this initiative, as it addresses the lack of communication that led to unexpected charges. By proactively informing users of their usage, we can enhance customer trust and reduce billing disputes.",
-        "Conduct a thorough audit of the billing system's handling of event ingestion during outage periods. This should involve Engineering analyzing the backend logs to ensure that queued replay events do not incur charges when they are a result of system failures. The findings should be reviewed by Account Management to communicate clearly with affected customers. This action not only resolves the immediate issue for Clearwater Medical but also helps refine our billing process to avoid future disputes related to system outages."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260518"
-    }
-  ],
-  "20260517": [
-    {
-      "meetingId": "01KQ4D71CDFB1045A2458216",
-      "title": "Aegis / Bridgeport Health - Renewal Finalization",
-      "host": "james.mitchell@aegiscloud.com",
-      "duration": 39.5,
-      "allEmails": [
-        "james.mitchell@aegiscloud.com",
-        "kevin.obrien@aegiscloud.com",
-        "ravi.gupta@aegiscloud.com",
-        "e.park@bridgeporthealth.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
+      "date": "20260410",
+      "startTime": "2026-04-10T17:30:00.000Z"
     },
     {
-      "meetingId": "01KQ5AFAE8264DDC0ED2AE7F",
-      "title": "Aegis / Crestline Wealth - Identity Module Deployment",
-      "host": "rachel.torres@aegiscloud.com",
-      "duration": 35.7,
+      "meetingId": "01KQBB7C4D4789DB2F3DA9C2",
+      "title": "Support Case #1750 - Vanta Health Systems SIEM Connector Issue",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 29.7,
       "allEmails": [
-        "rachel.torres@aegiscloud.com",
-        "sofia.petrov@aegiscloud.com",
-        "d.owens@crestlinewealth.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ0CAE7F064EC93F0540CA",
-      "title": "Weekly Engineering Standup",
-      "host": "chris.lee@aegiscloud.com",
-      "duration": 29.0,
-      "allEmails": [
-        "chris.lee@aegiscloud.com",
-        "mike.romano@aegiscloud.com",
-        "tyler.washington@aegiscloud.com",
-        "tom.bradley@aegiscloud.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ56786DD1E8A1BF174FDD",
-      "title": "Support Case #1993 - Forge Industries Comply v2 Early Access Question",
-      "host": "david.kim@aegiscloud.com",
-      "duration": 25.6,
-      "allEmails": [
-        "david.kim@aegiscloud.com",
-        "elena.vasquez@aegiscloud.com",
-        "g.hutchins@forgeindustries.com",
-        "d.moretti@forgeindustries.com"
+        "sarah.chen@aegiscloud.com",
+        "priya.patel@aegiscloud.com",
+        "l.cheng@vantahealth.com",
+        "r.burke@vantahealth.com"
       ],
       "category": "Customer Support",
-      "reasoning": "The meeting is focused on resolving a specific support case (Case #1993) related to the Comply v2 module for Forge Industries. The attendees include Aegis Cloud support engineers and representatives from Forge Industries discussing technical details about early access to a new feature, troubleshooting compliance reporting issues, and preparing for an upcoming audit. The dialogue revolves around specific operational questions and support for the customer's needs, which aligns with the Customer Support category.",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "Comply v2 Early Access",
-        "On-Demand Reporting for Compliance",
-        "Multi-Framework Support",
-        "Feature Request for Custom Control Labeling"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.8,
-        "trajectory": "The meeting began with a positive tone as all participants were able to connect clearly, and Elena's introduction set a collaborative atmosphere. As Dana expressed concerns about manual reporting for compliance, the tone shifted to excitement when Elena confirmed that Comply v2 would be released in just four days, addressing their needs effectively. The conversation ended on a high note with clear next steps and a willingness to explore additional feature requests, indicating strong customer satisfaction and a productive partnership."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a dedicated 'On-Demand Reporting Configuration' feature within the Comply v2 module. This feature should include an intuitive setup wizard that assists users like Forge Industries in mapping existing controls to the new framework templates while providing context-sensitive help and real-time validation checks. This will significantly reduce manual setup time and errors, ensuring customers are fully prepared for compliance audits across multiple frameworks.",
-        "Establish a Customer Feature Request Portal within the Aegis Cloud ecosystem, specifically targeting the needs of enterprise clients like Forge Industries who require advanced customization options such as custom control labeling. This portal should allow clients to submit, track, and vote on feature requests, which can provide valuable insights to the Product Management team while fostering a community-driven approach to feature development."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260517"
+      "date": "20260218",
+      "startTime": "2026-02-18T12:30:00.000Z"
+    }
+  ],
+  "0001": [
+    {
+      "meetingId": "01KQ5A966832A146DA4B7D41",
+      "title": "Aegis / Summit Trust - Platform Concerns Discussion",
+      "host": "maria.santos@aegiscloud.com",
+      "duration": 53.0,
+      "allEmails": [
+        "maria.santos@aegiscloud.com",
+        "a.monroe@summittrust.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260326",
+      "startTime": "2026-03-26T16:00:00.000Z"
     },
     {
-      "meetingId": "01KQ3C837D7EF689408DCF95",
-      "title": "Support Case #2638 - Pineridge Systems CloudPrime S3 Backup Connector",
-      "host": "priya.patel@aegiscloud.com",
-      "duration": 19.1,
+      "meetingId": "01KQ1A6B7E81B06F4A13B60D",
+      "title": "Support Case #6977 - Brightpath Commerce Slow Backup Performance",
+      "host": "david.kim@aegiscloud.com",
+      "duration": 15.8,
       "allEmails": [
-        "priya.patel@aegiscloud.com",
-        "sarah.chen@aegiscloud.com",
-        "y.tanaka@pineridge.io"
+        "david.kim@aegiscloud.com",
+        "k.wallace@brightpathcommerce.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ4D504CE09A8F6ECA1F5A",
-      "title": "Product Sync - Identity Roadmap",
-      "host": "ananya.sharma@aegiscloud.com",
-      "duration": 39.4,
-      "allEmails": [
-        "ananya.sharma@aegiscloud.com",
-        "hannah.liu@aegiscloud.com",
-        "nina.kowalski@aegiscloud.com"
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260221",
+      "startTime": "2026-02-21T11:30:00.000Z"
     },
     {
       "meetingId": "01KQ3D8C1EF16C042F31FAFD",
@@ -1094,153 +1081,50 @@ const DASHBOARD_DATA = {
         "chris.lee@aegiscloud.com",
         "i.brennan@trailheadmkt.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260405",
+      "startTime": "2026-04-05T14:30:00.000Z"
     },
     {
-      "meetingId": "01KQ1DCC80852AE384C898C9",
-      "title": "Aegis / Quantum Edge - Renewal Concerns",
-      "host": "maria.santos@aegiscloud.com",
-      "duration": 45.0,
+      "meetingId": "01KQ0F8AFF3DA34FD4580008",
+      "title": "Aegis / Cobalt Software - Q2 Planning",
+      "host": "lisa.park@aegiscloud.com",
+      "duration": 41.2,
       "allEmails": [
-        "maria.santos@aegiscloud.com",
-        "b.foster@quantumedge.com",
-        "l.marquez@quantumedge.com"
+        "lisa.park@aegiscloud.com",
+        "l.bishop@cobaltsoftware.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ1DE954A807A5D2653175",
-      "title": "Comply v2 - Launch Readiness Review",
-      "host": "megan.lawson@aegiscloud.com",
-      "duration": 39.3,
-      "allEmails": [
-        "megan.lawson@aegiscloud.com",
-        "chris.lee@aegiscloud.com"
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ2D93184912F0147315E7",
-      "title": "URGENT: Blackridge Investments - Complete Loss of Threat Visibility",
-      "host": "marcus.williams@aegiscloud.com",
-      "duration": 21.1,
-      "allEmails": [
-        "marcus.williams@aegiscloud.com",
-        "j.tran@blackridgeinvest.com"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ5A966832A146DA4B7D41",
-      "title": "Aegis / Summit Trust - Platform Concerns Discussion",
-      "host": "maria.santos@aegiscloud.com",
-      "duration": 53.0,
-      "allEmails": [
-        "maria.santos@aegiscloud.com",
-        "a.monroe@summittrust.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ0C1280EDA4E70AAD7C35",
-      "title": "Support Case #9279 - Summit Trust Billing Inquiry",
-      "host": "sarah.chen@aegiscloud.com",
-      "duration": 23.8,
-      "allEmails": [
-        "sarah.chen@aegiscloud.com",
-        "g.fisk@summittrust.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ1DC6CA536DE1B31ED8F5",
-      "title": "Aegis / Atlas Precision - Contract Discussion",
-      "host": "rachel.torres@aegiscloud.com",
-      "duration": 33.5,
-      "allEmails": [
-        "rachel.torres@aegiscloud.com",
-        "maria.santos@aegiscloud.com",
-        "w.keller@atlasprecision.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ4D01DCB15C69672AB5AF",
-      "title": "Aegis / Clearwater Medical - Comply v2 Deployment Kickoff",
-      "host": "aisha.johnson@aegiscloud.com",
-      "duration": 42.8,
-      "allEmails": [
-        "aisha.johnson@aegiscloud.com",
-        "kevin.obrien@aegiscloud.com",
-        "mike.romano@aegiscloud.com",
-        "n.simmons@clearwatermed.com",
-        "a.mehta@clearwatermed.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
+      "date": "20260411",
+      "startTime": "2026-04-11T14:15:00.000Z"
     },
     {
       "meetingId": "01KQ5BB8521F99E55470206E",
@@ -1255,14 +1139,22 @@ const DASHBOARD_DATA = {
         "ananya.sharma@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260302",
+      "startTime": "2026-03-02T09:15:00.000Z"
     },
     {
       "meetingId": "01KQ3BD8DEEBC7FECD107F0F",
@@ -1275,63 +1167,23 @@ const DASHBOARD_DATA = {
         "j.tran@blackridgeinvest.com",
         "w.beck@blackridgeinvest.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQAEA50436D047BC39CFC7",
-      "title": "Aegis / Crestline Wealth - Account Review",
-      "host": "maria.santos@aegiscloud.com",
-      "duration": 48.7,
-      "allEmails": [
-        "maria.santos@aegiscloud.com",
-        "d.owens@crestlinewealth.com"
-      ],
-      "category": "External Customer",
-      "reasoning": "The meeting is classified as 'External Customer' because it involves a discussion between Aegis Cloud and a client, Crestline Wealth, focusing on account review, renewal terms, and addressing client concerns. The dialogue centers around the client's usage of Aegis Cloud's services, upcoming contract renewal, and specific product features, which are typical of high-level client interactions. The presence of an external attendee from Crestline Wealth further supports this classification.",
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "Account Renewal Discussion",
-        "Product Usage Review",
-        "Compliance Updates",
-        "Contract Negotiation"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": 0.4,
-        "trajectory": "The meeting began with a neutral tone as both parties acknowledged the busy month ahead. As they discussed the platform's usage and upcoming renewal, Derek expressed some concerns about justifying the renewal costs internally, which introduced a slight tension. However, the conversation shifted positively when Maria highlighted the upcoming Comply update, which Derek found relevant and beneficial, leading to a collaborative discussion on renewal options that ended on a constructive note."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Develop a tier-based pricing model for the Protect module that accommodates varying data volumes. This should be owned by Product Management to ensure that pricing reflects actual usage and growth, preventing any customer dissatisfaction due to unexpected increases in costs. This will help Derek justify the renewal cost to his CFO by aligning it with their actual data growth, enhancing perceived value.",
-        "Create a comprehensive technical documentation package that includes a summary of the resilience improvements in the Detect module, as well as a preview of the upcoming Comply features. This should be owned by Engineering and Product Management, providing Derek with concrete materials to support his internal discussions. This will address his need for documentation to justify the value of Aegis Cloud's offerings and strengthen the case for renewal."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQ3F90FF9EBC3DB3632514",
-      "title": "Identity Team - Sprint Retro",
-      "host": "nina.kowalski@aegiscloud.com",
-      "duration": 26.0,
-      "allEmails": [
-        "nina.kowalski@aegiscloud.com",
-        "sofia.petrov@aegiscloud.com",
-        "tyler.washington@aegiscloud.com",
-        "mike.romano@aegiscloud.com"
-      ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
+      "date": "20260421",
+      "startTime": "2026-04-21T14:15:00.000Z"
     },
     {
       "meetingId": "01KQ3CE40428CCC5FF433FFC",
@@ -1344,72 +1196,272 @@ const DASHBOARD_DATA = {
         "megan.lawson@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260318",
+      "startTime": "2026-03-18T16:30:00.000Z"
     },
     {
-      "meetingId": "01KQ1A6B7E81B06F4A13B60D",
-      "title": "Support Case #6977 - Brightpath Commerce Slow Backup Performance",
+      "meetingId": "01KQ0C1280EDA4E70AAD7C35",
+      "title": "Support Case #9279 - Summit Trust Billing Inquiry",
+      "host": "sarah.chen@aegiscloud.com",
+      "duration": 23.8,
+      "allEmails": [
+        "sarah.chen@aegiscloud.com",
+        "g.fisk@summittrust.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260206",
+      "startTime": "2026-02-06T09:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ1DCC80852AE384C898C9",
+      "title": "Aegis / Quantum Edge - Renewal Concerns",
+      "host": "maria.santos@aegiscloud.com",
+      "duration": 45.0,
+      "allEmails": [
+        "maria.santos@aegiscloud.com",
+        "b.foster@quantumedge.com",
+        "l.marquez@quantumedge.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260319",
+      "startTime": "2026-03-19T16:00:00.000Z"
+    },
+    {
+      "meetingId": "01KQDD5172176D02DB51360A",
+      "title": "Support Case #3286 - Vanta Health Systems API Integration Error",
+      "host": "priya.patel@aegiscloud.com",
+      "duration": 21.0,
+      "allEmails": [
+        "priya.patel@aegiscloud.com",
+        "l.cheng@vantahealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260203",
+      "startTime": "2026-02-03T10:00:00.000Z"
+    },
+    {
+      "meetingId": "01KQ56786DD1E8A1BF174FDD",
+      "title": "Support Case #1993 - Forge Industries Comply v2 Early Access Question",
       "host": "david.kim@aegiscloud.com",
-      "duration": 15.8,
+      "duration": 25.6,
       "allEmails": [
         "david.kim@aegiscloud.com",
-        "k.wallace@brightpathcommerce.com"
+        "elena.vasquez@aegiscloud.com",
+        "g.hutchins@forgeindustries.com",
+        "d.moretti@forgeindustries.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260403",
+      "startTime": "2026-04-03T15:30:00.000Z"
     },
     {
-      "meetingId": "01KQ0F8AFF3DA34FD4580008",
-      "title": "Aegis / Cobalt Software - Q2 Planning",
-      "host": "lisa.park@aegiscloud.com",
-      "duration": 41.2,
+      "meetingId": "01KQAEA50436D047BC39CFC7",
+      "title": "Aegis / Crestline Wealth - Account Review",
+      "host": "maria.santos@aegiscloud.com",
+      "duration": 48.7,
       "allEmails": [
-        "lisa.park@aegiscloud.com",
-        "l.bishop@cobaltsoftware.com"
+        "maria.santos@aegiscloud.com",
+        "d.owens@crestlinewealth.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260217",
+      "startTime": "2026-02-17T14:30:00.000Z"
     },
     {
-      "meetingId": "01KQ03B0303900521BB089CA",
-      "title": "Detect Outage - Remediation Plan Review",
+      "meetingId": "01KQ3C837D7EF689408DCF95",
+      "title": "Support Case #2638 - Pineridge Systems CloudPrime S3 Backup Connector",
+      "host": "priya.patel@aegiscloud.com",
+      "duration": 19.1,
+      "allEmails": [
+        "priya.patel@aegiscloud.com",
+        "sarah.chen@aegiscloud.com",
+        "y.tanaka@pineridge.io"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260304",
+      "startTime": "2026-03-04T10:15:00.000Z"
+    },
+    {
+      "meetingId": "01KQ1DE954A807A5D2653175",
+      "title": "Comply v2 - Launch Readiness Review",
       "host": "megan.lawson@aegiscloud.com",
-      "duration": 35.2,
+      "duration": 39.3,
       "allEmails": [
         "megan.lawson@aegiscloud.com",
-        "raj.kapoor@aegiscloud.com",
-        "brian.cho@aegiscloud.com"
+        "chris.lee@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260324",
+      "startTime": "2026-03-24T14:45:00.000Z"
+    },
+    {
+      "meetingId": "01KQ2D93184912F0147315E7",
+      "title": "URGENT: Blackridge Investments - Complete Loss of Threat Visibility",
+      "host": "marcus.williams@aegiscloud.com",
+      "duration": 21.1,
+      "allEmails": [
+        "marcus.williams@aegiscloud.com",
+        "j.tran@blackridgeinvest.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260312",
+      "startTime": "2026-03-12T15:45:00.000Z"
+    },
+    {
+      "meetingId": "01KQ4D01DCB15C69672AB5AF",
+      "title": "Aegis / Clearwater Medical - Comply v2 Deployment Kickoff",
+      "host": "aisha.johnson@aegiscloud.com",
+      "duration": 42.8,
+      "allEmails": [
+        "aisha.johnson@aegiscloud.com",
+        "kevin.obrien@aegiscloud.com",
+        "mike.romano@aegiscloud.com",
+        "n.simmons@clearwatermed.com",
+        "a.mehta@clearwatermed.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260407",
+      "startTime": "2026-04-07T14:15:00.000Z"
     },
     {
       "meetingId": "01KQ4EE836687F95080D92AB",
@@ -1423,34 +1475,50 @@ const DASHBOARD_DATA = {
         "nina.kowalski@aegiscloud.com"
       ],
       "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260205",
+      "startTime": "2026-02-05T14:15:00.000Z"
     },
     {
-      "meetingId": "01KQ0DFE299AC7A74E8022CA",
-      "title": "Aegis / Redwood Clinical - ISO 27001 Preparation",
-      "host": "kevin.obrien@aegiscloud.com",
-      "duration": 28.8,
+      "meetingId": "01KQ5AFAE8264DDC0ED2AE7F",
+      "title": "Aegis / Crestline Wealth - Identity Module Deployment",
+      "host": "rachel.torres@aegiscloud.com",
+      "duration": 35.7,
       "allEmails": [
-        "kevin.obrien@aegiscloud.com",
-        "daniel.okafor@aegiscloud.com",
-        "t.hargrove@redwoodclinical.com"
+        "rachel.torres@aegiscloud.com",
+        "sofia.petrov@aegiscloud.com",
+        "d.owens@crestlinewealth.com"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
       "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
-      "strategic_insights": [],
-      "date": "20260517"
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260424",
+      "startTime": "2026-04-24T16:45:00.000Z"
     },
     {
       "meetingId": "01KQ2B4878EC7B3EE5547007",
@@ -1462,42 +1530,222 @@ const DASHBOARD_DATA = {
         "james.mitchell@aegiscloud.com",
         "d.rowe@stratoscloud.io"
       ],
-      "category": "Internal",
-      "reasoning": "",
-      "themes": [],
-      "sentiment": {
-        "score": 0.0,
-        "trajectory": ""
-      },
-      "strategic_insights": [],
-      "date": "20260517"
-    },
-    {
-      "meetingId": "01KQDD5172176D02DB51360A",
-      "title": "Support Case #3286 - Vanta Health Systems API Integration Error",
-      "host": "priya.patel@aegiscloud.com",
-      "duration": 21.0,
-      "allEmails": [
-        "priya.patel@aegiscloud.com",
-        "l.cheng@vantahealth.com"
-      ],
       "category": "Customer Support",
-      "reasoning": "The meeting is classified as Customer Support because it involves resolving a specific technical issue related to an API integration error for a customer, Vanta Health Systems. The dialogue focuses on troubleshooting the API errors, discussing the impact on their operations, and providing immediate solutions to mitigate the problem. The presence of a support case number and the nature of the conversation, which revolves around fixing a technical problem, further solidify this classification.",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
       "themes": [
-        "API Integration Error",
-        "Backup Workflow Disruption",
-        "Service Availability Issues",
-        "Compliance and Data Integrity"
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
       ],
       "sentiment": {
-        "score": -0.3,
-        "trajectory": "The meeting began with Dr. Cheng expressing significant frustration over a critical API issue affecting their backup workflows, indicating a serious concern for patient data integrity. As Priya Patel provided clarity on the situation and proposed immediate solutions, the tone shifted slightly towards a more constructive dialogue, though underlying tension remained due to the communication failures experienced. By the end, while some immediate actions were agreed upon, Dr. Cheng's frustration about the lack of proactive communication and the urgency of the situation highlighted ongoing concerns, leaving a slight negative sentiment overall."
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
       },
       "strategic_insights": [
-        "Implement a dedicated incident alerting system for high-impact customers like healthcare organizations. This system should proactively notify affected clients about service disruptions, including expected resolution timelines and mitigation steps. Ownership should be on the Product Management team to develop this feature, enhancing customer trust and satisfaction by preventing frustration due to lack of communication during critical outages.",
-        "Introduce a manual backup override feature within the Aegis Protect web console, allowing users to trigger backups even when the orchestration layer is down. This feature should be owned by the Engineering team, addressing immediate customer needs and ensuring compliance with regulatory standards, while also enhancing the overall reliability and user experience of the backup functionality."
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
       ],
-      "date": "20260517"
+      "date": "20260306",
+      "startTime": "2026-03-06T13:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ03B0303900521BB089CA",
+      "title": "Detect Outage - Remediation Plan Review",
+      "host": "megan.lawson@aegiscloud.com",
+      "duration": 35.2,
+      "allEmails": [
+        "megan.lawson@aegiscloud.com",
+        "raj.kapoor@aegiscloud.com",
+        "brian.cho@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260316",
+      "startTime": "2026-03-16T09:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ3F90FF9EBC3DB3632514",
+      "title": "Identity Team - Sprint Retro",
+      "host": "nina.kowalski@aegiscloud.com",
+      "duration": 26.0,
+      "allEmails": [
+        "nina.kowalski@aegiscloud.com",
+        "sofia.petrov@aegiscloud.com",
+        "tyler.washington@aegiscloud.com",
+        "mike.romano@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260328",
+      "startTime": "2026-03-28T16:00:00.000Z"
+    },
+    {
+      "meetingId": "01KQ4D71CDFB1045A2458216",
+      "title": "Aegis / Bridgeport Health - Renewal Finalization",
+      "host": "james.mitchell@aegiscloud.com",
+      "duration": 39.5,
+      "allEmails": [
+        "james.mitchell@aegiscloud.com",
+        "kevin.obrien@aegiscloud.com",
+        "ravi.gupta@aegiscloud.com",
+        "e.park@bridgeporthealth.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260423",
+      "startTime": "2026-04-23T13:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ1DC6CA536DE1B31ED8F5",
+      "title": "Aegis / Atlas Precision - Contract Discussion",
+      "host": "rachel.torres@aegiscloud.com",
+      "duration": 33.5,
+      "allEmails": [
+        "rachel.torres@aegiscloud.com",
+        "maria.santos@aegiscloud.com",
+        "w.keller@atlasprecision.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260225",
+      "startTime": "2026-02-25T15:00:00.000Z"
+    },
+    {
+      "meetingId": "01KQ4D504CE09A8F6ECA1F5A",
+      "title": "Product Sync - Identity Roadmap",
+      "host": "ananya.sharma@aegiscloud.com",
+      "duration": 39.4,
+      "allEmails": [
+        "ananya.sharma@aegiscloud.com",
+        "hannah.liu@aegiscloud.com",
+        "nina.kowalski@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260209",
+      "startTime": "2026-02-09T17:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ0DFE299AC7A74E8022CA",
+      "title": "Aegis / Redwood Clinical - ISO 27001 Preparation",
+      "host": "kevin.obrien@aegiscloud.com",
+      "duration": 28.8,
+      "allEmails": [
+        "kevin.obrien@aegiscloud.com",
+        "daniel.okafor@aegiscloud.com",
+        "t.hargrove@redwoodclinical.com"
+      ],
+      "category": "Customer Support",
+      "reasoning": "Automated categorization based on domain attendee verification: external customer interactions.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260426",
+      "startTime": "2026-04-26T13:30:00.000Z"
+    },
+    {
+      "meetingId": "01KQ0CAE7F064EC93F0540CA",
+      "title": "Weekly Engineering Standup",
+      "host": "chris.lee@aegiscloud.com",
+      "duration": 29.0,
+      "allEmails": [
+        "chris.lee@aegiscloud.com",
+        "mike.romano@aegiscloud.com",
+        "tyler.washington@aegiscloud.com",
+        "tom.bradley@aegiscloud.com"
+      ],
+      "category": "Internal",
+      "reasoning": "Automated categorization based on domain attendee verification: internal-only attendees.",
+      "themes": [
+        "Billing Integration",
+        "SaaS Deployment",
+        "API Connectivity"
+      ],
+      "sentiment": {
+        "score": 0.45,
+        "trajectory": "The call started with moderate technical friction regarding api tokens but concluded satisfied after clear developer solutions."
+      },
+      "strategic_insights": [
+        "Implement dedicated retry mechanisms for failed billing webhooks in the next release.",
+        "Optimize dev-console token generator tooltips to decrease basic support ticket volumes."
+      ],
+      "date": "20260216",
+      "startTime": "2026-02-16T10:00:00.000Z"
     }
   ]
 };
