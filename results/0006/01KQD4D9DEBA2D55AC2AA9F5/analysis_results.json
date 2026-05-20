@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQD4D9DEBA2D55AC2AA9F5",
+  "title": "Aegis / Keystone Health - Renewal Planning",
+  "host": "lisa.park@aegiscloud.com",
+  "duration": 28.5,
+  "allEmails": [
+    "lisa.park@aegiscloud.com",
+    "rachel.torres@aegiscloud.com",
+    "p.lau@keystonehealth.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting is focused on renewal planning with a client (Keystone Health) and involves discussions about the client's experience with Aegis products, upcoming features, and potential upsell opportunities. The presence of an external attendee from Keystone Health indicates that this is a client-facing conversation rather than an internal team sync. The dialogue revolves around the client's satisfaction, product updates, and contract renewal, which are key indicators of an External Customer meeting.",
+  "themes": [
+    "Renewal Planning",
+    "Product Updates",
+    "Customer Satisfaction",
+    "Upsell Opportunities"
+  ],
+  "sentiment": {
+    "score": 0.8,
+    "trajectory": "The meeting began with a positive tone as Philip expressed optimism about the renewal conversation, highlighting significant time savings from Aegis Comply. The excitement peaked when Rachel introduced the upcoming Comply v2 features, which directly addressed Philip's pain points. Although there was a moment of concern regarding the Detect module's past incident, Philip appreciated the transparency and remained open to exploring it further, concluding the meeting on a high note with a strong sense of partnership and collaboration."
+  },
+  "strategic_insights": [
+    "Implement a case study initiative where customers like Philip can easily share their success stories with Aegis Comply, with dedicated support from the Account Management team. This could involve creating a simple template for them to fill out, which would not only strengthen customer relationships but also serve as a valuable marketing tool that highlights the effectiveness of Aegis solutions in real-world applications, thereby addressing the need for proof of value.",
+    "Develop a targeted educational campaign around the new Aegis Detect module, specifically for existing customers in the healthcare sector. This campaign should include tailored training sessions and documentation that address common pain points experienced by customers like Philip, such as the integration of threat monitoring with compliance reporting. By proactively providing this knowledge, it could ease concerns about the recent incident and drive upsell opportunities as customers see the tangible benefits."
+  ],
+  "date": "20260309",
+  "startTime": "2026-03-09T16:45:00.000Z"
+}

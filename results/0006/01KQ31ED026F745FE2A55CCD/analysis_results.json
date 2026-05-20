@@ -1,0 +1,31 @@
+{
+  "meetingId": "01KQ31ED026F745FE2A55CCD",
+  "title": "Identity Team - Q2 Roadmap",
+  "host": "ananya.sharma@aegiscloud.com",
+  "duration": 47.6,
+  "allEmails": [
+    "ananya.sharma@aegiscloud.com",
+    "sofia.petrov@aegiscloud.com",
+    "jordan.whitfield@aegiscloud.com",
+    "alex.reyes@aegiscloud.com",
+    "mike.romano@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have email addresses from the aegiscloud.com domain, indicating that this meeting is an internal sync among team members. The discussion revolves around planning and strategizing for the Q2 roadmap of the Identity team, which is a typical internal activity focused on product development and team alignment.",
+  "themes": [
+    "Q2 Roadmap Planning",
+    "Just-in-Time Provisioning Improvements",
+    "Adaptive MFA Policies",
+    "Identity Audit Trail Integration"
+  ],
+  "sentiment": {
+    "score": 0.5,
+    "trajectory": "The meeting started with a positive tone as team members expressed excitement about the Q2 roadmap, particularly following the successful Comply v2 launch. However, concerns about existing issues with JIT provisioning and SCIM were raised, reflecting a slight dip in morale due to past outages. The conversation shifted back to a positive trajectory as the team collaboratively discussed solutions and innovative features, ultimately ending on a hopeful note with a clear plan for moving forward."
+  },
+  "strategic_insights": [
+    "Develop a comprehensive attribute mapping UI for Just-in-Time (JIT) provisioning, led by Jordan Whitfield and Mike Romano. This should include a drag-and-drop interface with inline validation to prevent configuration errors before saving. This addresses the root cause of high support ticket volumes related to SSO configuration and JIT provisioning, improving user experience and reducing operational bottlenecks.",
+    "Implement a phased rollout of adaptive MFA policies, starting with context-aware signals like login location and device posture, led by Sofia Petrov. This should include an initial beta version for customer feedback before full deployment. By enhancing security measures and differentiating Aegis Cloud from competitors like SentinelShield, this initiative can directly respond to customer demands and improve competitive positioning in enterprise deals."
+  ],
+  "date": "20260413",
+  "startTime": "2026-04-13T11:45:00.000Z"
+}

@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQA1AFDC1306A000B0C7D9",
+  "title": "Aegis / Vanta Health Systems - Backup Strategy Workshop",
+  "host": "lisa.park@aegiscloud.com",
+  "duration": 43.3,
+  "allEmails": [
+    "lisa.park@aegiscloud.com",
+    "aisha.johnson@aegiscloud.com",
+    "r.burke@vantahealth.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a workshop with a client (Vanta Health Systems) focused on their backup strategy, which indicates a high-level discussion about their needs and how Aegis Protect can address them. The presence of a dedicated Customer Success Manager and the nature of the dialogue, which revolves around understanding the client's environment and discussing specific solutions, further supports this classification. The attendees include both Aegis Cloud representatives and a client representative, which aligns with the External Customer category.",
+  "themes": [
+    "Backup Strategy Development",
+    "Hybrid Environment Management",
+    "Compliance and HIPAA Requirements",
+    "Automated Recovery Testing"
+  ],
+  "sentiment": {
+    "score": 0.7,
+    "trajectory": "The meeting began with a positive tone as Raymond expressed eagerness for the discussion, highlighting a strong desire for clarity on their backup strategy. As the conversation progressed, Raymond's initial concerns about their fragmented backup processes shifted to excitement when Aisha introduced automated recovery testing features, which directly addressed his pain points. By the end of the meeting, there was a clear sense of optimism and confidence in Aegis Protect's capabilities, indicating a productive alignment and a strong potential for partnership."
+  },
+  "strategic_insights": [
+    "Implement a tiered retention policy feature in Aegis Protect specifically tailored for healthcare compliance. This feature should allow Vanta Health to configure retention settings based on data types, ensuring that patient data backups meet varying regulatory requirements. Product Management should own this initiative as it addresses Raymond's concern about compliance complexity and mitigates the risk of non-compliance penalties.",
+    "Develop an automated recovery testing schedule that integrates with Vanta Health's existing operational calendar to allow for seamless testing of the backup and recovery process. This functionality should enable Aegis Protect to automatically schedule and execute restore tests during off-peak hours, minimizing disruption while providing the necessary validation to meet RTO and RPO objectives. Engineering should lead this effort, which will directly enhance the confidence level in their backup strategy, as indicated by Raymond's low confidence in their current testing process."
+  ],
+  "date": "20260228",
+  "startTime": "2026-02-28T17:30:00.000Z"
+}

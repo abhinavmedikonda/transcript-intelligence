@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQD199788883B6F18C81E8",
+  "title": "Aegis / Atlas Precision - Annual Review & Renewal",
+  "host": "daniel.okafor@aegiscloud.com",
+  "duration": 29.7,
+  "allEmails": [
+    "daniel.okafor@aegiscloud.com",
+    "mike.romano@aegiscloud.com",
+    "w.keller@atlasprecision.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting is classified as 'External Customer' because it involves a high-level discussion regarding the annual review and renewal of services with a client (Atlas Precision). The attendees include both Aegis Cloud representatives and a client representative, indicating a focus on account management and renewal discussions. The dialogue covers topics such as service performance, product features, and future needs, which are typical of external customer interactions.",
+  "themes": [
+    "Annual Review and Renewal",
+    "Service Performance and Feedback",
+    "Product Roadmap Discussion",
+    "Identity Management Solutions"
+  ],
+  "sentiment": {
+    "score": 0.5,
+    "trajectory": "The meeting began with a friendly tone, with Wayne expressing satisfaction with the Comply module, indicating a positive start. However, the discussion shifted to the Detect outage, where Wayne candidly shared his frustrations, leading to a moment of concern. The conversation then pivoted back to a positive note as Wayne acknowledged the effective communication during the outage and the subsequent fixes, ultimately ending on a hopeful note regarding future collaboration and product developments."
+  },
+  "strategic_insights": [
+    "Implement a dedicated Identity Management integration session led by the Product Management team with Wayne's IT director, Priya Sanjay. This session should focus on demonstrating how Aegis Identity can streamline their current patchwork IAM setup, addressing specific pain points like SSO and MFA consolidation. This recommendation targets the root cause of inefficiency in their identity solutions, which has been a source of frustration for Wayne's team, ultimately providing a clear path to improved operational efficiency.",
+    "Enhance the communication strategy during incidents by developing an automated incident reporting tool within the Detect module. This tool should allow real-time status updates and post-incident reports to be automatically generated and sent to affected clients, including detailed RCA insights similar to what was provided after the March outage. Ownership should be with the Engineering team to ensure technical feasibility, addressing the concerns raised during the meeting about the impact of outages and improving customer trust through transparency."
+  ],
+  "date": "20260428",
+  "startTime": "2026-04-28T12:45:00.000Z"
+}

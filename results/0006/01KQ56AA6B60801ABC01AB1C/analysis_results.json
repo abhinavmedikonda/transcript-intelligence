@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQ56AA6B60801ABC01AB1C",
+  "title": "Support Case #8179 - Clearwater Medical Overage Charges Dispute",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 21.5,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "marcus.williams@aegiscloud.com",
+    "a.mehta@clearwatermed.com",
+    "n.simmons@clearwatermed.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific billing dispute related to overage charges for Clearwater Medical. The attendees include representatives from Clearwater Medical and Aegis Cloud support staff, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the billing discrepancies, understanding the reasons behind the charges, and discussing potential resolutions, which aligns with the Customer Support category.",
+  "themes": [
+    "Billing Dispute",
+    "Overage Charges",
+    "Comply Module Issues",
+    "Event Ingestion Charges"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with a sense of urgency and concern from Clearwater Medical regarding unexpected overage charges on their invoice, particularly tied to the Comply module. As the discussion progressed, the tone shifted to frustration when it was revealed that the lack of alert notifications contributed to the charges, and the potential for additional charges due to a system outage was raised. By the end of the meeting, while there was a commitment from Aegis to investigate and address the issues, the sentiment remained slightly negative due to the financial implications and the need for further clarification, leaving Clearwater Medical feeling uneasy about their billing situation."
+  },
+  "strategic_insights": [
+    "Implement an automated alert system for overage charges linked to the Comply module. This should include in-app notifications and email alerts that notify users as they approach their report generation limits, especially after significant upgrades like v2. Product Management should own this initiative, as it addresses the lack of communication that led to unexpected charges. By proactively informing users of their usage, we can enhance customer trust and reduce billing disputes.",
+    "Conduct a thorough audit of the billing system's handling of event ingestion during outage periods. This should involve Engineering analyzing the backend logs to ensure that queued replay events do not incur charges when they are a result of system failures. The findings should be reviewed by Account Management to communicate clearly with affected customers. This action not only resolves the immediate issue for Clearwater Medical but also helps refine our billing process to avoid future disputes related to system outages."
+  ],
+  "date": "20260410",
+  "startTime": "2026-04-10T17:30:00.000Z"
+}

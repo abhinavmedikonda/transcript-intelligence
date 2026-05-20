@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ7FA71CF70FAFEE4B6251",
+  "title": "Aegis / Nova Retail Group - Renewal Discussion",
+  "host": "aisha.johnson@aegiscloud.com",
+  "duration": 33.4,
+  "allEmails": [
+    "aisha.johnson@aegiscloud.com",
+    "s.blair@novaretail.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting is focused on a renewal discussion with a client, Nova Retail Group, where the primary topics include addressing past service outages, compliance reporting frustrations, and competitive threats from another vendor. The dialogue indicates a high-level discussion about the client's satisfaction and future relationship with Aegis Cloud, which aligns with the External Customer category. Additionally, one attendee is from Aegis Cloud while the other is from a client organization, further supporting this classification.",
+  "themes": [
+    "Service Outage Impact",
+    "Compliance Reporting Challenges",
+    "Competitive Threats from SentinelShield",
+    "Renewal Negotiation"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with a clear sense of frustration from Stephanie regarding a significant outage that impacted their operations, leading to a negative tone. Aisha acknowledged the issue and provided details on remediation efforts, which shifted the conversation towards a more constructive dialogue. However, underlying concerns about compliance reporting and support issues persisted, leaving the conversation with unresolved tensions and a slight risk of churn."
+  },
+  "strategic_insights": [
+    "Implement an enhanced alert customization feature in the Aegis Detect dashboard that allows customers to tailor alert thresholds and filtering based on their specific environments and risk profiles. This should be owned by the Engineering team, as it directly addresses the clunky user experience and high alert volume that has been frustrating the customer, Nova. By allowing users to prioritize alerts more effectively, we can reduce noise and improve response times to genuine threats, thereby increasing customer satisfaction and retention.",
+    "Launch a dedicated compliance reporting module within Aegis Comply that leverages automation to streamline the generation of PCI DSS and HIPAA reports. This feature should be owned by Product Management and designed with input from key customers like Nova to ensure it meets their specific needs. By providing real-time, on-demand reporting capabilities, we can significantly reduce the manual workload on the customer's compliance team, thus enhancing their overall experience and addressing a critical pain point that has been a driver for considering competitors like SentinelShield."
+  ],
+  "date": "20260321",
+  "startTime": "2026-03-21T11:15:00.000Z"
+}

@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQB3B16F255B65F39597D0",
+  "title": "Comply v2 - Design Review",
+  "host": "hannah.liu@aegiscloud.com",
+  "duration": 31.8,
+  "allEmails": [
+    "hannah.liu@aegiscloud.com",
+    "ananya.sharma@aegiscloud.com",
+    "mike.romano@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees are from the Aegis Cloud domain, indicating that this meeting is an internal design review. The discussion revolves around the design and architecture of the Comply v2 product, which is a planning and development topic rather than customer support or external client discussions.",
+  "themes": [
+    "Comply v2 Design Review",
+    "On-Demand Reporting Architecture",
+    "Multi-Framework Support",
+    "Performance Testing Plan"
+  ],
+  "sentiment": {
+    "score": 0.7,
+    "trajectory": "The meeting started with a focus on design review and addressing open questions, initially creating a neutral atmosphere. As Ananya presented solid solutions for report generation latency and the control mapping layer, the tone shifted positively, with team members expressing relief and satisfaction. By the end, the team felt confident about the April launch date, indicating a productive session with resolved concerns and a clear path forward."
+  },
+  "strategic_insights": [
+    "Implement a performance testing simulation that not only checks concurrent report generation but also incorporates a monitoring dashboard for real-time visibility into system health during peak loads. This should be owned by the Engineering team to ensure proper load testing is done before GA, addressing Mike's concern about system stability under simultaneous report requests.",
+    "Develop a streamlined self-service portal for customers that allows them to request specific report types and track their status, leveraging the async report generation model. This should be owned by Product Management to enhance user experience and reduce support inquiries, directly addressing customer needs highlighted in the meeting regarding report generation latency."
+  ],
+  "date": "20260212",
+  "startTime": "2026-02-12T13:45:00.000Z"
+}

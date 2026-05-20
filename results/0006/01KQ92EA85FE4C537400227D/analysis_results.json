@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ92EA85FE4C537400227D",
+  "title": "Support Case #8811 - Blackridge Investments Custom Compliance Template",
+  "host": "priya.patel@aegiscloud.com",
+  "duration": 9.3,
+  "allEmails": [
+    "priya.patel@aegiscloud.com",
+    "w.beck@blackridgeinvest.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it revolves around a specific support case (Case #8811) where Priya Patel from Aegis is assisting Warren Beck from Blackridge Investments with a feature request related to custom compliance templates in Aegis Comply. The dialogue includes troubleshooting and discussing potential solutions for a specific customer need, which aligns with the Customer Support category.",
+  "themes": [
+    "Custom Compliance Templates",
+    "Feature Request",
+    "Aegis Comply v2",
+    "API Integration"
+  ],
+  "sentiment": {
+    "score": 0.7,
+    "trajectory": "The meeting began with a positive tone as Warren expressed excitement about the new features in Aegis Comply, particularly the on-demand reporting. As they discussed the feature request for custom compliance templates, Warren's initial concern about the lack of this feature shifted to optimism when Priya confirmed it was on the near-term roadmap and offered to log the request formally. The conversation ended on a highly positive note, with Warren feeling satisfied and appreciative of the productive support call, indicating a strong partnership and potential for future collaboration."
+  },
+  "strategic_insights": [
+    "Develop a Custom Compliance Template Builder within Aegis Comply v2. This feature should allow enterprise customers like Blackridge to define their own control categories and evidence requirements. Product Management should own this initiative as it addresses the specific need for tailored compliance reporting, ensuring customers can meet unique regulatory demands without waiting for a generalized feature release.",
+    "Enhance API capabilities to allow for flexible data exports that include custom annotations and control categories. The Engineering team should prioritize this by creating an endpoint that supports custom data structures, enabling clients like Blackridge to integrate compliance data directly into their internal reporting tools. This addresses the immediate need for operational workarounds while paving the way for future enhancements with custom templates."
+  ],
+  "date": "20260425",
+  "startTime": "2026-04-25T17:15:00.000Z"
+}

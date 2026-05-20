@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQC3A2EBC501837E973B16",
+  "title": "Aegis / Frostbyte AI - Identity Module Setup",
+  "host": "james.mitchell@aegiscloud.com",
+  "duration": 32.3,
+  "allEmails": [
+    "james.mitchell@aegiscloud.com",
+    "ananya.sharma@aegiscloud.com",
+    "v.zheng@frostbyte.ai",
+    "o.strand@frostbyte.ai"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves discussions between Aegis Cloud team members and representatives from Frostbyte AI regarding the setup of an Identity module. The attendees include both Aegis Cloud employees and external clients from Frostbyte AI, indicating a customer relationship. The dialogue focuses on technical onboarding, configuration of SSO and MFA, and addressing specific needs and concerns of the client, which aligns with high-level discussions typical of external customer engagements.",
+  "themes": [
+    "Identity Module Setup",
+    "SSO Configuration",
+    "MFA Policies",
+    "Contractor Provisioning"
+  ],
+  "sentiment": {
+    "score": 0.8,
+    "trajectory": "The meeting started with a positive tone as participants expressed excitement about the onboarding process. Key emotional shifts occurred when Ananya addressed Victor's concerns about their current identity provider, Okta, and provided solutions that directly aligned with their needs, particularly around contractor provisioning and MFA policies. The conversation ended on a highly positive note, with clear action items and a sense of confidence in the upcoming implementation, indicating strong partnership potential."
+  },
+  "strategic_insights": [
+    "Implement a tiered contractor provisioning system within the Aegis Identity module. This should be designed to automatically apply differentiated access controls and MFA requirements based on contractor roles. Ownership of this initiative should be with the Product Management team to ensure alignment with user needs, while the Engineering team should focus on the technical implementation. This addresses the identified issue of ineffective contractor access controls, ensuring compliance with security policies and reducing manual oversight.",
+    "Develop a comprehensive SSO configuration guide specifically for the eight tools mentioned (Slack, GitHub, Jira, Confluence, Figma, MetricFlow, Snowflake, and the internal admin portal). This guide should include step-by-step instructions for both prebuilt connectors and custom SAML setups, and should be owned by the Account Management team for customer-facing clarity. This solves the current confusion and inefficiencies in the login experience, streamlining the onboarding process and enhancing user satisfaction."
+  ],
+  "date": "20260219",
+  "startTime": "2026-02-19T10:30:00.000Z"
+}

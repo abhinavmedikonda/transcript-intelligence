@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ6A5CEAAFFBE3B0099E75",
+  "title": "Support Case #6539 - Steelpoint Manufacturing LDAP Sync Failures",
+  "host": "marcus.williams@aegiscloud.com",
+  "duration": 20.9,
+  "allEmails": [
+    "marcus.williams@aegiscloud.com",
+    "h.jensen@steelpointmfg.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it involves troubleshooting a specific technical issue (LDAP sync failures) for a customer (Steelpoint Manufacturing). The dialogue focuses on resolving a critical operational problem that is affecting the customer's ability to access necessary systems, which aligns with the definition of Customer Support.",
+  "themes": [
+    "LDAP Sync Failures",
+    "SSL Certificate Issues",
+    "Active Directory Integration",
+    "Response Time Delays"
+  ],
+  "sentiment": {
+    "score": -0.2,
+    "trajectory": "The meeting began with Harold expressing significant frustration over a critical LDAP sync failure that had left over 200 employees unable to access necessary systems. As Marcus took ownership of the issue and guided Harold through troubleshooting, the tone shifted towards a more collaborative problem-solving approach. However, despite identifying the root cause related to an SSL certificate, Harold remained annoyed about the delay in resolution, indicating a slight improvement in sentiment but still reflecting underlying concerns about the service reliability."
+  },
+  "strategic_insights": [
+    "Implement an enhanced error messaging system within the Aegis Identity LDAP connector that provides specific alerts for SSL certificate issues. This should include tailored error codes and messages that indicate when a certificate is untrusted, as well as guidance on how to resolve it. Ownership of this initiative should be with the Product Management team, as it addresses the root cause of customer frustration and improves the user experience by enabling faster troubleshooting.",
+    "Develop a proactive monitoring and alerting feature for LDAP sync failures that checks for common issues such as SSL certificate trust and firewall accessibility. This feature should automatically notify customers of potential problems before they impact user access. The Engineering team should own this task, as it would help mitigate operational downtime and enhance overall service reliability, especially in critical environments like manufacturing."
+  ],
+  "date": "20260322",
+  "startTime": "2026-03-22T09:15:00.000Z"
+}

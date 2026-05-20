@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQA502E222E2A60330237B",
+  "title": "Aegis / Pineridge Systems - Q1 Business Review",
+  "host": "kevin.obrien@aegiscloud.com",
+  "duration": 41.5,
+  "allEmails": [
+    "kevin.obrien@aegiscloud.com",
+    "daniel.okafor@aegiscloud.com",
+    "ananya.sharma@aegiscloud.com",
+    "y.tanaka@pineridge.io"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting is classified as 'External Customer' because it involves a high-level discussion with a client, Pineridge Systems, regarding their experience with Aegis Cloud's platform, upcoming renewal discussions, and feedback on product features. The presence of an external attendee from Pineridge Systems and the focus on business review, renewal conversations, and product value aligns with the indicators for this category.",
+  "themes": [
+    "Q1 Business Review",
+    "Renewal Discussion",
+    "Aegis Detect Feedback",
+    "Aegis Comply v2 Updates"
+  ],
+  "sentiment": {
+    "score": 0.6,
+    "trajectory": "The meeting began with a positive tone as Yuki expressed satisfaction with the Aegis platform, highlighting significant improvements in threat monitoring and recovery tests. A key emotional shift occurred when Yuki learned about the upcoming on-demand SOC 2 reporting feature, which excited him and changed his perspective on the renewal, making it a more concrete ROI discussion. By the end, Yuki was optimistic about renewing, indicating a strong partnership and a willingness to discuss pricing, which suggests a productive outcome."
+  },
+  "strategic_insights": [
+    "Develop a comprehensive tiered restore playbook specifically tailored for Pineridge's database architecture. This should be owned by Ananya in collaboration with Yuki's team. By addressing the confusion around restore sequencing, this playbook will enhance operational efficiency during DR drills and reduce manual intervention, leading to smoother recovery processes.",
+    "Create a detailed cost-benefit analysis and time savings report for Pineridge, focusing on the transition to Aegis Comply v2 for SOC 2 reporting. This should be owned by Daniel, utilizing a pre-existing template customized for Pineridge's specific use case. This analysis will provide Yuki with concrete data to justify the renewal and budget allocation, directly impacting the customer's perception of ROI."
+  ],
+  "date": "20260303",
+  "startTime": "2026-03-03T15:15:00.000Z"
+}

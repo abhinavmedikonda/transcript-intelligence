@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQ4529010F423FD9DB40BD",
+  "title": "Win/Loss Analysis - Q1",
+  "host": "kevin.obrien@aegiscloud.com",
+  "duration": 16.5,
+  "allEmails": [
+    "kevin.obrien@aegiscloud.com",
+    "brian.cho@aegiscloud.com",
+    "raj.kapoor@aegiscloud.com",
+    "maria.santos@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal discussion among team members. The focus of the meeting is on analyzing Q1 win/loss data, discussing competitive positioning, and identifying internal action items to improve sales processes, which aligns with internal planning and strategy discussions.",
+  "themes": [
+    "Q1 Win/Loss Analysis",
+    "Reliability Perception from March Outage",
+    "Competitive Positioning Against VaultEdge",
+    "Loss Note Quality Improvement"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with a tone of concern as the team discussed troubling Q1 win-loss data, particularly related to a significant outage. As they identified specific issues and proposed actionable solutions, there was a slight shift towards a more constructive atmosphere, especially with the acknowledgment of potential improvements in their product and processes. However, the overall sentiment remained slightly negative due to the lingering impact of the outage and execution gaps, leaving the team with unresolved challenges as they headed into Q2."
+  },
+  "strategic_insights": [
+    "Develop a comprehensive competitive benchmarking report specifically addressing VaultEdge's RTO claims versus Aegis Cloud's strengths in total recovery workflows. This should be owned by Brian Cho, leveraging his informal research. This report will provide sales teams with concrete data to counter VaultEdge's aggressive positioning and allow for more confident and informed conversations during negotiations.",
+    "Implement a structured loss note template in Salesforce that mandates a minimum character count and specific fields for competitors and reasons for loss. Raj Kapoor should lead this initiative by collaborating with the VP of Sales. This will enhance the quality of loss notes, ensuring that the sales team captures detailed insights, which can be systematically analyzed to identify patterns and inform future strategies."
+  ],
+  "date": "20260424",
+  "startTime": "2026-04-24T12:45:00.000Z"
+}

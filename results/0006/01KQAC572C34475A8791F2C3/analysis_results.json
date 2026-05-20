@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQAC572C34475A8791F2C3",
+  "title": "Protect Team - Quarterly Planning",
+  "host": "mike.romano@aegiscloud.com",
+  "duration": 30.8,
+  "allEmails": [
+    "mike.romano@aegiscloud.com",
+    "ananya.sharma@aegiscloud.com",
+    "ravi.gupta@aegiscloud.com",
+    "sofia.petrov@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal planning session. The discussion revolves around quarterly planning for the Protect team, focusing on product improvements and project timelines, which aligns with internal team activities rather than customer-facing issues or support.",
+  "themes": [
+    "Quarterly Planning",
+    "Incremental Backup Performance",
+    "Restore UX Improvements",
+    "Multi-Region Replication"
+  ],
+  "sentiment": {
+    "score": 0.7,
+    "trajectory": "The meeting started with a focus on improving the planning process after a chaotic previous quarter, which set a slightly anxious tone. However, as the team discussed specific improvements, particularly around backup performance and restore UX, excitement and positivity grew, especially with the proposal of a new intuitive restore wizard. By the end, the team felt productive and aligned, with a clear plan moving forward, indicating strong collaboration and optimism for the upcoming quarter."
+  },
+  "strategic_insights": [
+    "Implement a streamlined restore wizard that allows users to search for files or directories directly from the first step, reducing the current multi-step restore process. This initiative should be owned by Sofia Petrov, with collaboration from Ravi Gupta to ensure backend support for frequent index updates. This addresses the root cause of user frustration and support tickets related to the clunky restore UX, enhancing customer satisfaction and retention.",
+    "Prioritize the architectural groundwork for multi-region replication in Q2, specifically by leveraging the improvements made in incremental backup performance. Ananya Sharma should prepare a technical brief outlining how the Q2 enhancements will facilitate the Q3 multi-region rollout. This strategic move will set realistic expectations for the enterprise sales team, ensuring that customer demands are met while maintaining development focus."
+  ],
+  "date": "20260223",
+  "startTime": "2026-02-23T12:45:00.000Z"
+}

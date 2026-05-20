@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ773D68723289E4A98889",
+  "title": "Support Case #7572 - Brightpath Commerce Invoice Discrepancy",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 12.6,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "marcus.williams@aegiscloud.com",
+    "k.wallace@brightpathcommerce.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific billing discrepancy related to an invoice for Brightpath Commerce. The attendees include a customer from Brightpath and Aegis Cloud support staff, indicating a direct support interaction. The dialogue revolves around troubleshooting the invoice issue, discussing the details of the billing charges, and clarifying the customer's usage and policy changes that led to the discrepancy. This aligns with the Customer Support category as it involves addressing a specific operational issue for the customer.",
+  "themes": [
+    "Invoice Discrepancy",
+    "Billing Charges",
+    "Data Retention Overage",
+    "Backup Policy Changes"
+  ],
+  "sentiment": {
+    "score": 0.3,
+    "trajectory": "The meeting began with Kendra expressing concern over an unexpected invoice discrepancy, indicating a slightly negative emotional state. As the discussion progressed, Sarah and Marcus provided clarity on the situation, identifying the root cause as a policy change rather than intentional overuse, which alleviated some of Kendra's concerns. By the end of the call, Kendra felt reassured about the operational status and the next steps for addressing the billing issue, resulting in a slightly positive sentiment."
+  },
+  "strategic_insights": [
+    "Implement a self-service usage dashboard enhancement for Aegis Protect that includes real-time usage alerts and easy-to-understand metrics, specifically distinguishing between raw and compressed data sizes. This feature should be owned by the Product Management team to ensure clarity for users like Brightpath Commerce, who may inadvertently exceed their data retention tiers due to configuration changes. This addresses the root cause of customer confusion over billing charges related to usage spikes resulting from policy changes.",
+    "Establish a proactive account management protocol where account managers, like Devon Park for Brightpath Commerce, are required to conduct quarterly reviews of customer backup configurations and usage patterns. This initiative should be owned by the Account Management team, as it will help identify potential overage risks before they translate into unexpected charges. By fostering better communication and understanding of the product usage, we can prevent similar billing discrepancies from occurring in the future."
+  ],
+  "date": "20260227",
+  "startTime": "2026-02-27T13:00:00.000Z"
+}
