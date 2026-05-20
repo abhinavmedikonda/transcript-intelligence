@@ -699,7 +699,7 @@
             <!-- Sentiment Timeline Panel -->
             <div class="panel" style="margin-top: 1rem;" id="panel-sentiment-score">
                 <div class="panel-header">
-                    <h2 class="panel-title">Sentiment Score Trajectory Timeline</h2>
+                    <h2 class="panel-title">Sentiment by Call Over Time</h2>
                 </div>
                 <div class="chart-wrapper">
                     <canvas id="sentimentChart"></canvas>
@@ -930,6 +930,7 @@
                 return matchesSearch && matchesCategory;
             });
             renderCallList();
+            renderSentimentChart();
         }
 
         function showCallDetail(meetingId) {
@@ -1239,56 +1240,84 @@
             });
         }
 
+        function buildSentimentScatterDataset(label, calls, color) {
+            return {
+                label,
+                data: calls.map(c => ({
+                    x: c.startTime,
+                    y: c.sentiment.score,
+                    call: c
+                })),
+                backgroundColor: color,
+                borderColor: color,
+                borderWidth: 2,
+                pointRadius: 5,
+                pointHoverRadius: 7,
+                pointBackgroundColor: color,
+                pointBorderColor: '#020617'
+            };
+        }
+
         function renderSentimentChart() {
             const ctx = document.getElementById('sentimentChart').getContext('2d');
-            const sortedCalls = sortCallsByStartTime(
-                currentCalls.filter(c => c.startTime)
+            const callsWithTime = sortCallsByStartTime(
+                filteredCallsList.filter(c => c.startTime)
             );
 
-            const timeSeriesData = sortedCalls.map(c => ({
-                x: c.startTime,
-                y: c.sentiment.score
-            }));
+            const categoryStyles = [
+                { category: 'Customer Support', label: 'Customer Support', color: '#EF4444' },
+                { category: 'External Customer', label: 'External Customer', color: '#10B981' },
+                { category: 'Internal', label: 'Internal', color: '#8B5CF6' }
+            ];
+
+            const datasets = categoryStyles
+                .map(({ category, label, color }) => {
+                    const calls = callsWithTime.filter(c => c.category === category);
+                    if (calls.length === 0) return null;
+                    return buildSentimentScatterDataset(label, calls, color);
+                })
+                .filter(Boolean);
 
             if (chartInstance) {
                 chartInstance.destroy();
+                chartInstance = null;
+            }
+
+            if (datasets.length === 0) {
+                return;
             }
 
             chartInstance = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    datasets: [
-                        {
-                            label: 'Sentiment Score',
-                            data: timeSeriesData,
-                            borderColor: '#3B82F6',
-                            borderWidth: 2,
-                            pointBackgroundColor: '#FFF',
-                            pointBorderColor: '#3B82F6',
-                            pointHoverRadius: 6,
-                            fill: true,
-                            backgroundColor: 'rgba(59, 130, 246, 0.05)',
-                            tension: 0.35,
-                            yAxisID: 'y'
-                        }
-                    ]
-                },
+                type: 'scatter',
+                data: { datasets },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            display: false
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                color: '#E5E7EB',
+                                font: {
+                                    family: 'Space Grotesk',
+                                    size: 11,
+                                    weight: '600'
+                                },
+                                padding: 16,
+                                usePointStyle: true,
+                                pointStyle: 'circle'
+                            }
                         },
                         tooltip: {
                             callbacks: {
                                 title: function (context) {
-                                    const call = sortedCalls[context[0].dataIndex];
-                                    return call.title;
+                                    const call = context[0].raw.call;
+                                    return call ? call.title : '';
                                 },
                                 afterLabel: function (context) {
-                                    const call = sortedCalls[context.dataIndex];
-                                    if (!call.startTime) return '';
+                                    const call = context.raw.call;
+                                    if (!call || !call.startTime) return '';
                                     return new Date(call.startTime).toLocaleString('en-US', {
                                         month: 'short',
                                         day: 'numeric',
@@ -1298,9 +1327,8 @@
                                     });
                                 },
                                 label: function (context) {
-                                    const call = sortedCalls[context.dataIndex];
                                     const score = context.parsed.y.toFixed(2);
-                                    return `Sentiment Score: ${score} (${call.category})`;
+                                    return `Sentiment Score: ${score}`;
                                 }
                             }
                         }
@@ -1309,6 +1337,12 @@
                         y: {
                             min: -1.0,
                             max: 1.0,
+                            title: {
+                                display: true,
+                                text: 'Sentiment (-1.0 to +1.0)',
+                                color: '#9CA3AF',
+                                font: { family: 'Space Grotesk', size: 11, weight: '600' }
+                            },
                             grid: {
                                 color: 'rgba(255, 255, 255, 0.05)'
                             },
