@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ25D8AED944B5D2A9FF60",
+  "title": "Support Case #1514 - Meridian Capital Granular Restore Request",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 19.3,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "j.hoffman@meridiancapital.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific support case (Case #1514) related to granular restore capabilities within Aegis Protect for a customer, Meridian Capital. The dialogue involves troubleshooting the limitations of the current restore options and discussing a feature request based on the customer's operational needs. The presence of an Aegis support representative and a customer indicates that this is a support-related call rather than a high-level business discussion or internal meeting.",
+  "themes": [
+    "Granular File-Level Restore",
+    "Feature Request Documentation",
+    "EBS Snapshot Management",
+    "Operational Recovery Time Objectives (RTO)"
+  ],
+  "sentiment": {
+    "score": -0.1,
+    "trajectory": "The meeting began with Jason expressing frustration over the limitations of the Aegis Protect product, specifically regarding the inability to perform granular restores of files. As Sarah acknowledged the shortcomings and documented Jason's feature requests, the tone shifted towards a more constructive dialogue. By the end, while Jason's immediate issue was resolved, he remained concerned about the potential for future operational challenges, indicating a slight negative sentiment overall."
+  },
+  "strategic_insights": [
+    "Implement a granular file-level restore feature within Aegis Protect specifically for EBS-backed EC2 workloads. This feature should enable users to browse snapshot contents, select specific files or directories for restoration, and also allow restoration to an alternate location to validate before overwriting. This recommendation should be owned by the Product Management team to prioritize the development based on the operational recovery needs expressed by enterprise clients like Meridian, ultimately reducing their RTO from two hours to the desired fifteen minutes.",
+    "Develop an automated telemetry system that tracks and analyzes customer support requests related to file-level restores and EBS snapshot management. This system should categorize requests by frequency and urgency, allowing the Engineering team to identify pain points and prioritize enhancements more effectively. By analyzing data on customer workarounds, such as the manual process described by Jason, Aegis Cloud can proactively address feature gaps and improve overall product usability."
+  ],
+  "date": "20260326",
+  "startTime": "2026-03-26T14:00:00.000Z"
+}

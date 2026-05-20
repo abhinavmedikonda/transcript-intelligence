@@ -1,0 +1,557 @@
+[
+  {
+    "meetingId": "01KQ8C5A044F54EE1774D53C",
+    "title": "Aegis / Helix Data - Post-Incident Review",
+    "host": "maria.santos@aegiscloud.com",
+    "duration": 35.8,
+    "allEmails": [
+      "maria.santos@aegiscloud.com",
+      "kevin.obrien@aegiscloud.com",
+      "c.ng@helixdata.io"
+    ],
+    "category": "External Customer",
+    "reasoning": "The meeting involves a post-incident review with a client (Helix Data) discussing a significant operational failure that affected their service. The dialogue focuses on the impact of the incident, technical fixes, and customer concerns about the product's reliability and alerting mechanisms. The presence of an external attendee from Helix Data indicates that this is a high-level discussion about service quality and client satisfaction, which aligns with the External Customer category.",
+    "themes": [
+      "Incident Response",
+      "Alerting Mechanisms",
+      "Service Reliability",
+      "Customer Confidence"
+    ],
+    "sentiment": {
+      "score": -0.3,
+      "trajectory": "The meeting began with Charles expressing frustration over a significant outage that left his team without threat monitoring for six hours, which set a negative tone. As Kevin explained the technical fixes and acknowledged the shortcomings, there was a slight shift towards a more constructive dialogue, but Charles remained concerned about the underlying issues and the impact on their vendor review process. By the end, while there was a plan for follow-up actions, Charles's skepticism about the platform's reliability indicated unresolved issues, leaving a lingering risk of churn."
+    },
+    "strategic_insights": [
+      "Implement an automated self-monitoring and alerting mechanism within Aegis Detect that triggers alerts on internal failures before they affect customer visibility. This should be owned by the Engineering team, focusing on developing telemetry that monitors the health of the event ingestion pipeline. This will ensure that your customers, like Helix, receive immediate notifications about internal issues, improving their confidence in Aegis Cloud's reliability.",
+      "Create a customizable, user-friendly interface for rule configuration within Aegis Detect to reduce the burden of false positives for clients. This should be led by Product Management, who will conduct user research to understand specific pain points and develop a streamlined process. By addressing the cumbersome nature of current custom rule setups, you can significantly enhance user experience and retention for customers like Helix who are considering alternatives."
+    ],
+    "date": "20260317",
+    "startTime": "2026-03-17T11:45:00.000Z"
+  },
+  {
+    "meetingId": "01KQ351E141926AB7CAB668D",
+    "title": "Aegis / Northstar Pharma - Urgent: Detect Outage Impact",
+    "host": "maria.santos@aegiscloud.com",
+    "duration": 48.1,
+    "allEmails": [
+      "maria.santos@aegiscloud.com",
+      "g.yoon@northstarpharma.com"
+    ],
+    "category": "Customer Support",
+    "reasoning": "The meeting involves a direct discussion between Aegis Cloud and Northstar Pharma regarding a significant outage affecting Northstar's security monitoring capabilities. The dialogue focuses on troubleshooting the outage, understanding its impact, and discussing remediation steps. The presence of a customer from Northstar Pharma indicates that this is a support-related call, specifically addressing a critical operational issue that needs resolution.",
+    "themes": [
+      "Outage Impact Analysis",
+      "Event Processing Failure",
+      "SLA Review and Commitment",
+      "Regulatory Compliance Concerns"
+    ],
+    "sentiment": {
+      "score": -0.4,
+      "trajectory": "The meeting began with Grace expressing frustration over a significant outage that left her team without visibility into their security monitoring, indicating a highly negative emotional state. As Maria acknowledged the issues and proposed concrete remediation steps, including a call with the VP of Engineering and a commitment to a detailed incident report, the tone shifted slightly towards a more constructive dialogue. However, Grace remained concerned and skeptical about the reliability of the service, reflecting a slightly negative sentiment by the end, as she emphasized the urgency of her needs before the upcoming renewal."
+    },
+    "strategic_insights": [
+      "Implement an automated alerting system that triggers notifications to both customers and internal teams when event processing failures occur, ensuring immediate awareness and transparency. This should be owned by the Engineering team, with collaboration from Product Management to define the alert criteria and escalation paths. This solution addresses the root cause of the lack of visibility during outages, providing customers like Northstar with real-time updates and reducing anxiety during critical periods.",
+      "Revise the current SLA structure for enterprise customers to include explicit commitments around uptime, incident response times, and penalties for non-compliance. This should be led by the Account Management team in partnership with Product Management to ensure the SLA meets the compliance needs of regulated industries like healthcare. This recommendation directly addresses Grace's concerns about regulatory exposure and builds confidence in Aegis Cloud's commitment to service reliability."
+    ],
+    "date": "20260312",
+    "startTime": "2026-03-12T12:15:00.000Z"
+  },
+  {
+    "meetingId": "01KQ9BCA1794C9472726FFAD",
+    "title": "Comply v2 - Adoption Metrics Review",
+    "host": "jordan.whitfield@aegiscloud.com",
+    "duration": 30.9,
+    "allEmails": [
+      "jordan.whitfield@aegiscloud.com",
+      "tom.bradley@aegiscloud.com",
+      "diana.reeves@aegiscloud.com",
+      "megan.lawson@aegiscloud.com",
+      "brian.cho@aegiscloud.com"
+    ],
+    "category": "Internal",
+    "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal discussion among team members. The conversation revolves around the adoption metrics of Comply v2, internal feedback, and planning for future actions, which aligns with internal syncs and planning discussions.",
+    "themes": [
+      "Comply v2 Adoption Metrics",
+      "Customer Feedback on Reporting UI",
+      "ISO 27001 Formatting Issue",
+      "Future Roadmap for GDPR Integration"
+    ],
+    "sentiment": {
+      "score": 0.8,
+      "trajectory": "The meeting began with a positive vibe check, reflecting optimism about the Comply v2 launch, especially after previous challenges. As the team discussed adoption rates and customer feedback, the tone shifted to excitement, particularly when discussing upsell opportunities and positive customer testimonials. The meeting concluded on a high note, with a strong sense of validation for their efforts and a clear path forward, indicating strong team morale and customer satisfaction."
+    },
+    "strategic_insights": [
+      "Implement a dedicated feedback loop for the ISO 27001 formatting issue by creating a user feedback portal within the Comply v2 reporting UI. This would allow customers to directly submit formatting concerns or suggestions, which would be owned by the Product Management team. This proactive approach addresses the root cause of customer dissatisfaction regarding control numbering discrepancies, ensuring that similar issues are identified and resolved swiftly in the future.",
+      "Accelerate the integration of GDPR into the Comply v2 framework list by allocating additional engineering resources to this initiative. This should be driven by the Engineering team, with direct collaboration from Product Management to align on prioritization. Given the positive adoption metrics and the expressed demand from European customers, fast-tracking GDPR implementation will capitalize on the momentum generated by Comply v2 and enhance customer satisfaction and retention."
+    ],
+    "date": "20260422",
+    "startTime": "2026-04-22T14:45:00.000Z"
+  },
+  {
+    "meetingId": "01KQA7DFCE1285F52192B34B",
+    "title": "Support Case #9856 - Silverline Brands Backup Window Exceeded",
+    "host": "david.kim@aegiscloud.com",
+    "duration": 28.4,
+    "allEmails": [
+      "david.kim@aegiscloud.com",
+      "d.flores@silverlinebrands.com"
+    ],
+    "category": "Customer Support",
+    "reasoning": "The meeting is classified as Customer Support because it involves a specific operational issue being resolved for a customer, Silverline Brands, regarding their backup jobs exceeding scheduled windows. The dialogue focuses on troubleshooting the technical problem, discussing the impact on their operations, and exploring potential solutions, which aligns with the definition of Customer Support.",
+    "themes": [
+      "Backup Window Exceeded",
+      "SQL Server Backup Performance",
+      "Throughput Issues",
+      "Incident Response and Escalation"
+    ],
+    "sentiment": {
+      "score": -0.3,
+      "trajectory": "The meeting began with Dominic expressing frustration over ongoing backup issues that have persisted for two weeks, impacting their operations. David acknowledged the problem and took ownership of the delayed response, which slightly alleviated Dominic's concerns. However, as they delved deeper into the root cause, Dominic's alarm grew when he learned that a separate incident might have affected their backups without prior notification. The conversation ended with a plan for escalation and a follow-up, but the unresolved nature of the issue left a lingering sense of concern about the reliability of the service."
+    },
+    "strategic_insights": [
+      "Implement a proactive notification system for customers regarding backend infrastructure changes that could impact services, particularly around backup operations. This should be owned by the Product Management team, ensuring that customers like Silverline Brands are informed ahead of time to prevent operational disruptions. This addresses the root cause of customer frustration over lack of communication about the incident affecting their backups.",
+      "Develop a tiered backup performance optimization feature within Aegis Protect that allows customers to customize their backup windows and prioritize critical SQL Server backups to avoid performance degradation during business hours. This feature should be owned by the Engineering team, as it provides a concrete solution to the throughput issues while allowing customers to adjust settings based on their specific operational needs."
+    ],
+    "date": "20260412",
+    "startTime": "2026-04-12T09:00:00.000Z"
+  },
+  {
+    "meetingId": "01KQ298F2846EFE59B0D70E2",
+    "title": "Competitive Threat Assessment - Post Outage",
+    "host": "megan.lawson@aegiscloud.com",
+    "duration": 26.2,
+    "allEmails": [
+      "megan.lawson@aegiscloud.com",
+      "tom.bradley@aegiscloud.com",
+      "james.mitchell@aegiscloud.com",
+      "brian.cho@aegiscloud.com",
+      "daniel.okafor@aegiscloud.com"
+    ],
+    "category": "Internal",
+    "reasoning": "All attendees have email addresses from the aegiscloud.com domain, indicating that this meeting is an internal discussion among Aegis Cloud team members. The conversation revolves around a recent outage, competitive threats, and strategies for addressing customer concerns, which are typical topics for internal syncs and planning sessions.",
+    "themes": [
+      "Post-Outage Analysis",
+      "Competitive Threats",
+      "Customer Communication Strategy",
+      "Product Roadmap Alignment"
+    ],
+    "sentiment": {
+      "score": -0.4,
+      "trajectory": "The meeting began with a clear sense of frustration and concern regarding a recent outage that significantly impacted customer trust and competitive positioning. As the team discussed the implications and potential responses, there were moments of constructive dialogue, particularly around transparency and proactive communication strategies. However, the overall sentiment remained slightly negative due to the ongoing challenges and the pressure to regain customer confidence, leaving the team with unresolved issues and a cautious outlook."
+    },
+    "strategic_insights": [
+      "Implement a structured post-mortem report generation tool that automatically compiles outage details, impact assessments, and remediation actions taken. This tool should be owned by the Engineering team to ensure it captures technical specifics, while the Account Management team can leverage these reports in customer conversations to demonstrate transparency and proactive risk management. This directly addresses the request for detailed impact reports from customers and can help rebuild trust by showing that Aegis Cloud is taking the outage seriously and learning from it.",
+      "Develop a competitive battlecard update process that includes a clear narrative on how Aegis Cloud's architecture has been enhanced post-outage, alongside the upcoming Comply v2 launch. This should be owned by Product Management and Marketing, ensuring that sales representatives like Daniel and James have current, relevant information to counter competitor narratives effectively. This recommendation addresses the need for a cohesive counter-narrative in competitive conversations, allowing the sales team to highlight Aegis Cloud's commitment to reliability and ongoing product improvements."
+    ],
+    "date": "20260320",
+    "startTime": "2026-03-20T15:30:00.000Z"
+  },
+  {
+    "meetingId": "01KQ0CAE7F064EC93F0540CA",
+    "title": "Weekly Engineering Standup",
+    "host": "chris.lee@aegiscloud.com",
+    "duration": 29.0,
+    "allEmails": [
+      "chris.lee@aegiscloud.com",
+      "mike.romano@aegiscloud.com",
+      "tyler.washington@aegiscloud.com",
+      "tom.bradley@aegiscloud.com"
+    ],
+    "category": "Internal",
+    "reasoning": "",
+    "themes": [],
+    "sentiment": {
+      "score": 0.0,
+      "trajectory": ""
+    },
+    "strategic_insights": [],
+    "date": "20260216",
+    "startTime": "2026-02-16T10:00:00.000Z"
+  },
+  {
+    "meetingId": "01KQ5F364545B542671FF9CE",
+    "title": "Support Case #3546 - Meridian Capital SCIM Provisioning Request",
+    "host": "sarah.chen@aegiscloud.com",
+    "duration": 21.3,
+    "allEmails": [
+      "sarah.chen@aegiscloud.com",
+      "marcus.williams@aegiscloud.com",
+      "j.hoffman@meridiancapital.com",
+      "s.nakamura@meridiancapital.com"
+    ],
+    "category": "Customer Support",
+    "reasoning": "The meeting is focused on resolving a specific support case (Case #3546) related to SCIM provisioning for Meridian Capital. The attendees include representatives from both Aegis Cloud and Meridian Capital, indicating a direct customer support interaction. The dialogue revolves around troubleshooting and discussing technical requirements for automating user provisioning and deprovisioning, which aligns with the Customer Support category.",
+    "themes": [
+      "SCIM Provisioning Request",
+      "Automated User Provisioning",
+      "Compliance and Deprovisioning Controls",
+      "API Integration Options"
+    ],
+    "sentiment": {
+      "score": 0.4,
+      "trajectory": "The meeting began with a clear identification of the challenges faced by Meridian Capital regarding their identity infrastructure, leading to a slightly negative tone due to compliance concerns. However, as Sarah and Marcus provided potential solutions, particularly the API approach, the tone shifted to a more positive outlook, with Jason expressing appreciation for the clarity and actionable next steps. The conversation ended on a constructive note, with a commitment to follow up on the feature request and roadmap discussions, indicating a productive engagement."
+    },
+    "strategic_insights": [
+      "Implement a dedicated SCIM 2.0 integration feature for Aegis Identity, prioritizing it based on the regulatory needs expressed by Meridian Capital and similar clients in the financial services sector. Product Management should take ownership of this initiative, as it addresses the critical gap in automated provisioning and deprovisioning controls that is becoming increasingly necessary for compliance. This will not only enhance customer satisfaction but also position Aegis Cloud as a more competitive player in the IAM market.",
+      "Develop a comprehensive, self-service resource on the Aegis Cloud Developer Portal specifically for API integration with Okta, including detailed guides, best practices, and example workflows for SCIM provisioning via REST API. This should be managed by the Engineering team, leveraging the existing documentation and community knowledge. Providing these resources will empower clients like Meridian Capital to implement interim solutions effectively while awaiting the full SCIM integration, thereby reducing operational bottlenecks in user management."
+    ],
+    "date": "20260307",
+    "startTime": "2026-03-07T13:30:00.000Z"
+  },
+  {
+    "meetingId": "01KQ410FB7E434BA3F99EE7D",
+    "title": "Aegis / Axiom Labs - Multi-Year Renewal",
+    "host": "aisha.johnson@aegiscloud.com",
+    "duration": 48.8,
+    "allEmails": [
+      "aisha.johnson@aegiscloud.com",
+      "r.caldwell@axiomlabs.dev",
+      "m.joshi@axiomlabs.dev"
+    ],
+    "category": "External Customer",
+    "reasoning": "The meeting is focused on discussing a multi-year renewal of services between Aegis Cloud and Axiom Labs. The dialogue includes topics such as contract renewal, customer satisfaction with the platform, and specific features that have been beneficial, indicating a high-level discussion about the ongoing relationship and future commitments. Additionally, the presence of an external attendee from Axiom Labs further supports the classification as External Customer.",
+    "themes": [
+      "Multi-Year Contract Renewal",
+      "Customer Satisfaction and Feedback",
+      "API Access and Integrations",
+      "Service Outage and Communication"
+    ],
+    "sentiment": {
+      "score": 0.5,
+      "trajectory": "The meeting began with a positive tone as the participants expressed appreciation for each other's presence and acknowledged the improvements in the platform. However, the conversation shifted to a more serious note when the March outage was discussed, revealing some frustration but also recognition of the effective communication during the incident. The tone lightened again as they discussed the new features of Comply v2 and the renewal structure, ultimately leading to a slightly positive sentiment as they addressed concerns about growth and API access, indicating a willingness to continue the partnership."
+    },
+    "strategic_insights": [
+      "Implement an elastic API access model that allows customers to customize their API rate limits based on their specific needs. This should be owned by the Engineering team to develop and the Product Management team to market. By addressing the rate limit issues that Mina raised, this will enhance customer satisfaction and prevent potential churn, particularly for clients experiencing rapid growth and custom tooling needs.",
+      "Develop a proactive communication strategy for service outages that includes real-time notifications and post-incident analysis accessible through the Aegis Cloud dashboard. This should be led by the Account Management team in collaboration with Engineering. By ensuring that clients can access detailed outage reports and real-time updates, Aegis Cloud will solidify trust and transparency with customers, addressing concerns raised during the meeting about the recent service outage."
+    ],
+    "date": "20260417",
+    "startTime": "2026-04-17T09:45:00.000Z"
+  },
+  {
+    "meetingId": "01KQ2D93184912F0147315E7",
+    "title": "URGENT: Blackridge Investments - Complete Loss of Threat Visibility",
+    "host": "marcus.williams@aegiscloud.com",
+    "duration": 21.1,
+    "allEmails": [
+      "marcus.williams@aegiscloud.com",
+      "j.tran@blackridgeinvest.com"
+    ],
+    "category": "Internal",
+    "reasoning": "",
+    "themes": [],
+    "sentiment": {
+      "score": 0.0,
+      "trajectory": ""
+    },
+    "strategic_insights": [],
+    "date": "20260312",
+    "startTime": "2026-03-12T15:45:00.000Z"
+  },
+  {
+    "meetingId": "01KQ0C1280EDA4E70AAD7C35",
+    "title": "Support Case #9279 - Summit Trust Billing Inquiry",
+    "host": "sarah.chen@aegiscloud.com",
+    "duration": 23.8,
+    "allEmails": [
+      "sarah.chen@aegiscloud.com",
+      "g.fisk@summittrust.com"
+    ],
+    "category": "Internal",
+    "reasoning": "",
+    "themes": [],
+    "sentiment": {
+      "score": 0.0,
+      "trajectory": ""
+    },
+    "strategic_insights": [],
+    "date": "20260206",
+    "startTime": "2026-02-06T09:15:00.000Z"
+  },
+  {
+    "meetingId": "01KQA502E222E2A60330237B",
+    "title": "Aegis / Pineridge Systems - Q1 Business Review",
+    "host": "kevin.obrien@aegiscloud.com",
+    "duration": 41.5,
+    "allEmails": [
+      "kevin.obrien@aegiscloud.com",
+      "daniel.okafor@aegiscloud.com",
+      "ananya.sharma@aegiscloud.com",
+      "y.tanaka@pineridge.io"
+    ],
+    "category": "External Customer",
+    "reasoning": "The meeting is classified as 'External Customer' because it involves a high-level discussion with a client, Pineridge Systems, regarding their experience with Aegis Cloud's platform, upcoming renewal discussions, and feedback on product features. The presence of an external attendee from Pineridge Systems and the focus on business review, renewal conversations, and product value aligns with the indicators for this category.",
+    "themes": [
+      "Q1 Business Review",
+      "Renewal Discussion",
+      "Aegis Detect Feedback",
+      "Aegis Comply v2 Updates"
+    ],
+    "sentiment": {
+      "score": 0.6,
+      "trajectory": "The meeting began with a positive tone as Yuki expressed satisfaction with the Aegis platform, highlighting significant improvements in threat monitoring and recovery tests. A key emotional shift occurred when Yuki learned about the upcoming on-demand SOC 2 reporting feature, which excited him and changed his perspective on the renewal, making it a more concrete ROI discussion. By the end, Yuki was optimistic about renewing, indicating a strong partnership and a willingness to discuss pricing, which suggests a productive outcome."
+    },
+    "strategic_insights": [
+      "Develop a comprehensive tiered restore playbook specifically tailored for Pineridge's database architecture. This should be owned by Ananya in collaboration with Yuki's team. By addressing the confusion around restore sequencing, this playbook will enhance operational efficiency during DR drills and reduce manual intervention, leading to smoother recovery processes.",
+      "Create a detailed cost-benefit analysis and time savings report for Pineridge, focusing on the transition to Aegis Comply v2 for SOC 2 reporting. This should be owned by Daniel, utilizing a pre-existing template customized for Pineridge's specific use case. This analysis will provide Yuki with concrete data to justify the renewal and budget allocation, directly impacting the customer's perception of ROI."
+    ],
+    "date": "20260303",
+    "startTime": "2026-03-03T15:15:00.000Z"
+  },
+  {
+    "meetingId": "01KQ68FB3E9E60C4477CDAB4",
+    "title": "Comply v2 - GA Deployment Plan",
+    "host": "ananya.sharma@aegiscloud.com",
+    "duration": 29.5,
+    "allEmails": [
+      "ananya.sharma@aegiscloud.com",
+      "ravi.gupta@aegiscloud.com",
+      "mike.romano@aegiscloud.com",
+      "nina.kowalski@aegiscloud.com"
+    ],
+    "category": "Internal",
+    "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal sync among team members. The discussion revolves around the deployment plan for Comply v2, including technical details about infrastructure changes, testing, and rollout strategies, which are typical topics for internal planning meetings.",
+    "themes": [
+      "GA Deployment Plan",
+      "Infrastructure Changes",
+      "Testing and QA",
+      "Rollback Strategy"
+    ],
+    "sentiment": {
+      "score": 0.8,
+      "trajectory": "The meeting started with a positive tone as team members expressed excitement about the upcoming GA deployment of Comply v2. Key emotional shifts occurred when concerns about potential issues were addressed constructively, particularly regarding the reporting service's performance and redundancy measures. The meeting concluded on a high note, with team members feeling proud and optimistic about the deployment, indicating strong alignment and readiness for the launch."
+    },
+    "strategic_insights": [
+      "Implement a concurrent request monitoring dashboard for the on-demand report generation feature. This dashboard should provide real-time metrics on latency and queue depth, specifically targeting the p99 latency during peak concurrent requests. Ownership should lie with Nina Kowalski in QA, working alongside Ravi Gupta in Engineering to integrate this into MetricFlow. This addresses the identified risk of latency creeping up during concurrent report generation, ensuring that any issues can be detected and resolved proactively before they impact customers.",
+      "Establish a post-launch review protocol focused on the performance of the new reporting service, particularly around the two-week window following the GA release. This should include gathering feedback from initial tier-one customers on their experience, as well as analyzing the performance metrics collected from the concurrent request monitoring dashboard. Ownership should rest with Ananya Sharma in Product Management, with support from Nina and Ravi to compile data and insights. This will help identify any necessary adjustments or enhancements early in the lifecycle of the new feature, reducing the likelihood of customer complaints and improving service reliability."
+    ],
+    "date": "20260401",
+    "startTime": "2026-04-01T17:45:00.000Z"
+  },
+  {
+    "meetingId": "01KQ5BB8521F99E55470206E",
+    "title": "Detect Team - Sprint Planning",
+    "host": "sofia.petrov@aegiscloud.com",
+    "duration": 25.1,
+    "allEmails": [
+      "sofia.petrov@aegiscloud.com",
+      "nina.kowalski@aegiscloud.com",
+      "tyler.washington@aegiscloud.com",
+      "ravi.gupta@aegiscloud.com",
+      "ananya.sharma@aegiscloud.com"
+    ],
+    "category": "Internal",
+    "reasoning": "",
+    "themes": [],
+    "sentiment": {
+      "score": 0.0,
+      "trajectory": ""
+    },
+    "strategic_insights": [],
+    "date": "20260302",
+    "startTime": "2026-03-02T09:15:00.000Z"
+  },
+  {
+    "meetingId": "01KQADC32D89E2B76B698E84",
+    "title": "Support Case #6635 - Nova Retail Group SSO Login Failures",
+    "host": "sarah.chen@aegiscloud.com",
+    "duration": 24.1,
+    "allEmails": [
+      "sarah.chen@aegiscloud.com",
+      "elena.vasquez@aegiscloud.com",
+      "s.blair@novaretail.com",
+      "a.coleman@novaretail.com"
+    ],
+    "category": "Customer Support",
+    "reasoning": "The meeting is focused on resolving a specific technical issue related to SSO login failures for Nova Retail Group, which falls under customer support. The attendees include representatives from Aegis Cloud and Nova Retail Group, and the dialogue revolves around troubleshooting the login failures, discussing the impact on users, and exploring workarounds. The nature of the conversation is operational and technical, aimed at resolving a support case, which aligns with the Customer Support category.",
+    "themes": [
+      "SSO Login Failures",
+      "Aegis Identity Configuration",
+      "User Access Issues",
+      "Temporary Authentication Workaround"
+    ],
+    "sentiment": {
+      "score": -0.4,
+      "trajectory": "The meeting began with a sense of frustration as Nova Retail Group faced significant login issues affecting a large portion of their user base. As the conversation progressed, the Aegis team acknowledged the problem and proposed a temporary workaround, which provided a slight lift in morale. However, the overall sentiment remained negative due to the prolonged outage and lack of proactive communication, leaving the customer feeling concerned about responsiveness and the impact on their operations."
+    },
+    "strategic_insights": [
+      "Implement a dedicated status update feature in the Aegis Identity module that automatically notifies users of known issues and progress updates. This should be managed by the Product Management team to ensure timely communication and transparency with customers like Nova Retail Group, thereby alleviating frustration during incidents and minimizing inquiries to support.",
+      "Enhance the SSO configuration testing protocol in the Engineering team to include regression tests specifically for SAML assertion attributes after any update. This would prevent similar issues from arising post-release, ensuring that changes do not unintentionally disrupt user access, as seen with the recent update that led to SSO login failures."
+    ],
+    "date": "20260214",
+    "startTime": "2026-02-14T13:00:00.000Z"
+  },
+  {
+    "meetingId": "01KQEDB92E33CF9945A7F71B",
+    "title": "URGENT: Cobalt Software - Aegis Detect Dashboard Down",
+    "host": "david.kim@aegiscloud.com",
+    "duration": 13.4,
+    "allEmails": [
+      "david.kim@aegiscloud.com",
+      "l.bishop@cobaltsoftware.com"
+    ],
+    "category": "Customer Support",
+    "reasoning": "The meeting involves a critical support issue where the Aegis Detect dashboard is down for the customer, Cobalt Software. The dialogue focuses on troubleshooting the issue, understanding the impact on the customer's operations, and escalating the incident internally. The presence of a customer from Cobalt Software and the nature of the discussion about resolving a specific technical problem indicates that this is a customer support call.",
+    "themes": [
+      "Aegis Detect Dashboard Outage",
+      "Incident Response and Escalation",
+      "Customer Service Level Agreements (SLAs)",
+      "Root Cause Analysis and Service Credits"
+    ],
+    "sentiment": {
+      "score": -0.5,
+      "trajectory": "The meeting began with Lauren expressing urgent frustration over a critical system outage, indicating a highly negative emotional state. As David provided updates and escalated the issue, there were moments of slight relief when he confirmed the engineering team was addressing the problem, but Lauren's concerns about the lack of proactive communication and the potential impact on their business kept the tone tense. Ultimately, while there was a commitment to resolve the issue and provide updates, the conversation ended with lingering dissatisfaction and a clear risk of churn, as Lauren mentioned evaluating alternatives."
+    },
+    "strategic_insights": [
+      "Implement an automated incident detection and alerting system for the Aegis Detect dashboard that monitors the health of the event processing pipeline. This should be owned by the Engineering team. By proactively identifying issues before they impact customers and sending automated alerts to both internal teams and customers, we can significantly reduce the response time and improve customer satisfaction, addressing the root cause of the dashboard outage and communication failures.",
+      "Develop a structured post-incident review process that includes a detailed root cause analysis and a follow-up communication plan for affected clients. This process should be owned by Product Management and Account Management teams. This will ensure that customers, like Cobalt Software, receive timely updates and actionable insights on the incident, including service credit discussions, thus restoring trust and transparency while also preventing similar issues in the future."
+    ],
+    "date": "20260310",
+    "startTime": "2026-03-10T13:15:00.000Z"
+  },
+  {
+    "meetingId": "01KQ25D8AED944B5D2A9FF60",
+    "title": "Support Case #1514 - Meridian Capital Granular Restore Request",
+    "host": "sarah.chen@aegiscloud.com",
+    "duration": 19.3,
+    "allEmails": [
+      "sarah.chen@aegiscloud.com",
+      "j.hoffman@meridiancapital.com"
+    ],
+    "category": "Customer Support",
+    "reasoning": "The meeting is focused on resolving a specific support case (Case #1514) related to granular restore capabilities within Aegis Protect for a customer, Meridian Capital. The dialogue involves troubleshooting the limitations of the current restore options and discussing a feature request based on the customer's operational needs. The presence of an Aegis support representative and a customer indicates that this is a support-related call rather than a high-level business discussion or internal meeting.",
+    "themes": [
+      "Granular File-Level Restore",
+      "Feature Request Documentation",
+      "EBS Snapshot Management",
+      "Operational Recovery Time Objectives (RTO)"
+    ],
+    "sentiment": {
+      "score": -0.1,
+      "trajectory": "The meeting began with Jason expressing frustration over the limitations of the Aegis Protect product, specifically regarding the inability to perform granular restores of files. As Sarah acknowledged the shortcomings and documented Jason's feature requests, the tone shifted towards a more constructive dialogue. By the end, while Jason's immediate issue was resolved, he remained concerned about the potential for future operational challenges, indicating a slight negative sentiment overall."
+    },
+    "strategic_insights": [
+      "Implement a granular file-level restore feature within Aegis Protect specifically for EBS-backed EC2 workloads. This feature should enable users to browse snapshot contents, select specific files or directories for restoration, and also allow restoration to an alternate location to validate before overwriting. This recommendation should be owned by the Product Management team to prioritize the development based on the operational recovery needs expressed by enterprise clients like Meridian, ultimately reducing their RTO from two hours to the desired fifteen minutes.",
+      "Develop an automated telemetry system that tracks and analyzes customer support requests related to file-level restores and EBS snapshot management. This system should categorize requests by frequency and urgency, allowing the Engineering team to identify pain points and prioritize enhancements more effectively. By analyzing data on customer workarounds, such as the manual process described by Jason, Aegis Cloud can proactively address feature gaps and improve overall product usability."
+    ],
+    "date": "20260326",
+    "startTime": "2026-03-26T14:00:00.000Z"
+  },
+  {
+    "meetingId": "01KQAC572C34475A8791F2C3",
+    "title": "Protect Team - Quarterly Planning",
+    "host": "mike.romano@aegiscloud.com",
+    "duration": 30.8,
+    "allEmails": [
+      "mike.romano@aegiscloud.com",
+      "ananya.sharma@aegiscloud.com",
+      "ravi.gupta@aegiscloud.com",
+      "sofia.petrov@aegiscloud.com"
+    ],
+    "category": "Internal",
+    "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal planning session. The discussion revolves around quarterly planning for the Protect team, focusing on product improvements and project timelines, which aligns with internal team activities rather than customer-facing issues or support.",
+    "themes": [
+      "Quarterly Planning",
+      "Incremental Backup Performance",
+      "Restore UX Improvements",
+      "Multi-Region Replication"
+    ],
+    "sentiment": {
+      "score": 0.7,
+      "trajectory": "The meeting started with a focus on improving the planning process after a chaotic previous quarter, which set a slightly anxious tone. However, as the team discussed specific improvements, particularly around backup performance and restore UX, excitement and positivity grew, especially with the proposal of a new intuitive restore wizard. By the end, the team felt productive and aligned, with a clear plan moving forward, indicating strong collaboration and optimism for the upcoming quarter."
+    },
+    "strategic_insights": [
+      "Implement a streamlined restore wizard that allows users to search for files or directories directly from the first step, reducing the current multi-step restore process. This initiative should be owned by Sofia Petrov, with collaboration from Ravi Gupta to ensure backend support for frequent index updates. This addresses the root cause of user frustration and support tickets related to the clunky restore UX, enhancing customer satisfaction and retention.",
+      "Prioritize the architectural groundwork for multi-region replication in Q2, specifically by leveraging the improvements made in incremental backup performance. Ananya Sharma should prepare a technical brief outlining how the Q2 enhancements will facilitate the Q3 multi-region rollout. This strategic move will set realistic expectations for the enterprise sales team, ensuring that customer demands are met while maintaining development focus."
+    ],
+    "date": "20260223",
+    "startTime": "2026-02-23T12:45:00.000Z"
+  },
+  {
+    "meetingId": "01KQC1267BEB344076DD7656",
+    "title": "Aegis / Ironclad Financial - Account Recovery Check-in",
+    "host": "maria.santos@aegiscloud.com",
+    "duration": 35.3,
+    "allEmails": [
+      "maria.santos@aegiscloud.com",
+      "kevin.obrien@aegiscloud.com",
+      "r.langston@ironcladfinancial.com",
+      "t.desai@ironcladfinancial.com"
+    ],
+    "category": "External Customer",
+    "reasoning": "The meeting involves a discussion between Aegis Cloud representatives and Ironclad Financial regarding a significant outage that affected their platform, which is a critical concern for the client. The dialogue includes technical explanations and a focus on the client's confidence in the platform, renewal discussions, and specific requests for documentation and configuration reviews. The presence of an external client (Ironclad Financial) and the nature of the conversation, which revolves around platform concerns and contract renewal, clearly categorize this as an External Customer meeting.",
+    "themes": [
+      "Platform Outage Impact",
+      "Contract Renewal Discussion",
+      "Technical Documentation Requests",
+      "Configuration Review for Detect"
+    ],
+    "sentiment": {
+      "score": -0.2,
+      "trajectory": "The meeting began with a clear expression of frustration from Robert regarding a significant outage, setting a negative tone. However, as Maria and Kevin provided detailed explanations and solutions, the conversation shifted towards a more constructive dialogue, with Tanya engaging positively about upcoming features. By the end, while concerns about the renewal remained, there was a sense of collaborative problem-solving, indicating a slight improvement in sentiment but still leaving unresolved issues that could impact future decisions."
+    },
+    "strategic_insights": [
+      "Implement a dedicated, self-service configuration wizard for Detect that guides customers through recommended settings, including alert persistence and offline buffering. This tool should be owned by the Product Management team, as it directly addresses the onboarding gap that Tanya highlighted during the outage, ensuring that customers are adequately prepared to leverage the platform's capabilities and avoid similar issues in the future.",
+      "Create a formal incident post-mortem template that includes clear SLA terms and a robust documentation process for outages. This should be spearheaded by the Account Management team in collaboration with Engineering. By proactively providing this documentation to clients like Robert, it not only addresses their immediate concerns regarding the March outage but also reinforces Aegis Cloud's commitment to transparency and reliability in high-stakes environments such as financial services."
+    ],
+    "date": "20260328",
+    "startTime": "2026-03-28T12:30:00.000Z"
+  },
+  {
+    "meetingId": "01KQ54917E3931712516916D",
+    "title": "Aegis / Nimbus Platform - Comply v2 Preview",
+    "host": "kevin.obrien@aegiscloud.com",
+    "duration": 54.3,
+    "allEmails": [
+      "kevin.obrien@aegiscloud.com",
+      "k.donovan@nimbusplatform.com"
+    ],
+    "category": "External Customer",
+    "reasoning": "The meeting involves a discussion between Aegis Cloud and Nimbus Platform regarding the preview of Comply v2, which is a new product feature. The dialogue focuses on compliance reporting improvements and how these changes will benefit Nimbus, indicating a high-level discussion about product adoption and customer needs. The presence of an external attendee from Nimbus, whose email domain is not associated with Aegis Cloud, further supports the classification as an External Customer meeting.",
+    "themes": [
+      "Comply v2 Preview",
+      "On-Demand Compliance Reporting",
+      "SOC 2 Audit Improvements",
+      "Integration with Nimbus Platform"
+    ],
+    "sentiment": {
+      "score": 0.7,
+      "trajectory": "The meeting began with a positive tone as both parties expressed eagerness to connect after scheduling delays. As Kevin introduced the new Comply v2 features, Keith's initial concerns about compliance reporting transformed into excitement upon realizing the significant time savings and operational improvements. The conversation ended on a high note, with Keith feeling reassured about the product's capabilities and the proactive communication regarding past issues, indicating a strengthened partnership."
+    },
+    "strategic_insights": [
+      "Implement a dedicated compliance integration feature within Comply v2 that allows Nimbus to automatically sync their compliance requirements and frameworks directly from their new data platform partnership. This should be owned by the Product Management team to ensure it aligns with customer needs and leverages the new partnership for better compliance reporting. This addresses the root cause of Nimbus's current compliance headaches by streamlining the reporting process and reducing manual workload.",
+      "Develop a proactive alert system that notifies Nimbus users of any anomalies or issues within the Detect module that could affect compliance reporting. This should be the responsibility of the Engineering team to create an automated telemetry system that triggers alerts based on performance metrics. This solution tackles the concern raised by Keith regarding the previous availability issues with Detect, ensuring that Nimbus has real-time insights into their compliance posture and can take action before audits."
+    ],
+    "date": "20260401",
+    "startTime": "2026-04-01T16:15:00.000Z"
+  },
+  {
+    "meetingId": "01KQFEEFFF8E80B0DFD10880",
+    "title": "SOC 2 Type II - Final Review",
+    "host": "ravi.gupta@aegiscloud.com",
+    "duration": 40.4,
+    "allEmails": [
+      "ravi.gupta@aegiscloud.com",
+      "nina.kowalski@aegiscloud.com",
+      "diana.reeves@aegiscloud.com",
+      "tyler.washington@aegiscloud.com"
+    ],
+    "category": "Internal",
+    "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal sync among team members. The discussion revolves around the final review of SOC 2 Type II materials, which is a preparatory step for an audit, and involves planning and coordination among the team rather than direct customer interaction or support.",
+    "themes": [
+      "SOC 2 Type II Audit Preparation",
+      "Incident Response Documentation",
+      "Change Management Controls",
+      "Customer Commitments and Timelines"
+    ],
+    "sentiment": {
+      "score": 0.8,
+      "trajectory": "The meeting started with a positive tone as the team expressed confidence in their SOC 2 Type II materials. Key emotional shifts occurred when they discussed the improvements made since the last audit, particularly the transparency around the March outage, which alleviated initial concerns. By the end, the team felt relieved and optimistic about their timeline and collaboration, indicating strong morale and a successful team effort."
+    },
+    "strategic_insights": [
+      "Implement a dedicated incident response playbook within the Aegis Cloud platform, specifically focused on SOC 2 Type II audit requirements. This playbook should include step-by-step guidelines for documenting incidents, including required evidence and remediation actions. Ownership should be assigned to the Product Management team, ensuring it aligns with the audit framework. This addresses the complexity and transparency required for incident handling, which was highlighted in the meeting, particularly regarding the March outage.",
+      "Create a real-time status dashboard within the Comply v2 module that tracks the progress of SOC 2 Type II audit preparation and highlights any dependencies or risks related to customer commitments. This dashboard should be owned by the Engineering team, integrating with current project management tools. This solution directly addresses the urgency expressed by Diana regarding enterprise prospects and renewal terms, ensuring all stakeholders have visibility into the audit timeline and associated customer commitments."
+    ],
+    "date": "20260420",
+    "startTime": "2026-04-20T09:30:00.000Z"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ8C5A044F54EE1774D53C",
+  "title": "Aegis / Helix Data - Post-Incident Review",
+  "host": "maria.santos@aegiscloud.com",
+  "duration": 35.8,
+  "allEmails": [
+    "maria.santos@aegiscloud.com",
+    "kevin.obrien@aegiscloud.com",
+    "c.ng@helixdata.io"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a post-incident review with a client (Helix Data) discussing a significant operational failure that affected their service. The dialogue focuses on the impact of the incident, technical fixes, and customer concerns about the product's reliability and alerting mechanisms. The presence of an external attendee from Helix Data indicates that this is a high-level discussion about service quality and client satisfaction, which aligns with the External Customer category.",
+  "themes": [
+    "Incident Response",
+    "Alerting Mechanisms",
+    "Service Reliability",
+    "Customer Confidence"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with Charles expressing frustration over a significant outage that left his team without threat monitoring for six hours, which set a negative tone. As Kevin explained the technical fixes and acknowledged the shortcomings, there was a slight shift towards a more constructive dialogue, but Charles remained concerned about the underlying issues and the impact on their vendor review process. By the end, while there was a plan for follow-up actions, Charles's skepticism about the platform's reliability indicated unresolved issues, leaving a lingering risk of churn."
+  },
+  "strategic_insights": [
+    "Implement an automated self-monitoring and alerting mechanism within Aegis Detect that triggers alerts on internal failures before they affect customer visibility. This should be owned by the Engineering team, focusing on developing telemetry that monitors the health of the event ingestion pipeline. This will ensure that your customers, like Helix, receive immediate notifications about internal issues, improving their confidence in Aegis Cloud's reliability.",
+    "Create a customizable, user-friendly interface for rule configuration within Aegis Detect to reduce the burden of false positives for clients. This should be led by Product Management, who will conduct user research to understand specific pain points and develop a streamlined process. By addressing the cumbersome nature of current custom rule setups, you can significantly enhance user experience and retention for customers like Helix who are considering alternatives."
+  ],
+  "date": "20260317",
+  "startTime": "2026-03-17T11:45:00.000Z"
+}

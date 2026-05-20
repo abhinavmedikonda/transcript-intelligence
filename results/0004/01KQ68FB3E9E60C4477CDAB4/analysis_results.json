@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQ68FB3E9E60C4477CDAB4",
+  "title": "Comply v2 - GA Deployment Plan",
+  "host": "ananya.sharma@aegiscloud.com",
+  "duration": 29.5,
+  "allEmails": [
+    "ananya.sharma@aegiscloud.com",
+    "ravi.gupta@aegiscloud.com",
+    "mike.romano@aegiscloud.com",
+    "nina.kowalski@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal sync among team members. The discussion revolves around the deployment plan for Comply v2, including technical details about infrastructure changes, testing, and rollout strategies, which are typical topics for internal planning meetings.",
+  "themes": [
+    "GA Deployment Plan",
+    "Infrastructure Changes",
+    "Testing and QA",
+    "Rollback Strategy"
+  ],
+  "sentiment": {
+    "score": 0.8,
+    "trajectory": "The meeting started with a positive tone as team members expressed excitement about the upcoming GA deployment of Comply v2. Key emotional shifts occurred when concerns about potential issues were addressed constructively, particularly regarding the reporting service's performance and redundancy measures. The meeting concluded on a high note, with team members feeling proud and optimistic about the deployment, indicating strong alignment and readiness for the launch."
+  },
+  "strategic_insights": [
+    "Implement a concurrent request monitoring dashboard for the on-demand report generation feature. This dashboard should provide real-time metrics on latency and queue depth, specifically targeting the p99 latency during peak concurrent requests. Ownership should lie with Nina Kowalski in QA, working alongside Ravi Gupta in Engineering to integrate this into MetricFlow. This addresses the identified risk of latency creeping up during concurrent report generation, ensuring that any issues can be detected and resolved proactively before they impact customers.",
+    "Establish a post-launch review protocol focused on the performance of the new reporting service, particularly around the two-week window following the GA release. This should include gathering feedback from initial tier-one customers on their experience, as well as analyzing the performance metrics collected from the concurrent request monitoring dashboard. Ownership should rest with Ananya Sharma in Product Management, with support from Nina and Ravi to compile data and insights. This will help identify any necessary adjustments or enhancements early in the lifecycle of the new feature, reducing the likelihood of customer complaints and improving service reliability."
+  ],
+  "date": "20260401",
+  "startTime": "2026-04-01T17:45:00.000Z"
+}
