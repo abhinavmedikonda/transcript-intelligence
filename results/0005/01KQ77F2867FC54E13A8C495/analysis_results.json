@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ77F2867FC54E13A8C495",
+  "title": "Aegis / Brightpath Commerce - Detect Module Deployment",
+  "host": "james.mitchell@aegiscloud.com",
+  "duration": 45.8,
+  "allEmails": [
+    "james.mitchell@aegiscloud.com",
+    "k.wallace@brightpathcommerce.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud and Brightpath Commerce regarding the deployment of the Aegis Detect module. The dialogue focuses on onboarding steps, technical details, and deployment timelines, indicating a high-level engagement with the client about their specific needs and concerns. The presence of an external attendee from Brightpath Commerce further supports the classification as an External Customer meeting, as it revolves around the implementation of a product and addresses customer-specific requirements and feedback.",
+  "themes": [
+    "Aegis Detect Deployment",
+    "Onboarding Process",
+    "Integration with PagerDuty and LogVault",
+    "Security Incident Transparency"
+  ],
+  "sentiment": {
+    "score": 0.3,
+    "trajectory": "The meeting began with a positive tone as both parties expressed appreciation for each other's time and discussed the deployment plan for Aegis Detect. As they delved into technical details, Kendra showed concern regarding alert fatigue and reliability issues, which introduced a slight negative shift. However, James's transparency about past issues and the robust solutions implemented helped restore confidence, leading to a slightly positive conclusion as Kendra felt reassured about the deployment timeline and integration capabilities."
+  },
+  "strategic_insights": [
+    "Implement a dedicated onboarding checklist within the Aegis Cloud platform that includes specific IAM permission requirements and a streamlined process for integrating with third-party tools like PagerDuty and LogVault. This should be owned by Product Management and Engineering, as it will reduce onboarding time and complexity for new customers like Brightpath, ultimately leading to smoother deployments and higher customer satisfaction.",
+    "Create a proactive communication strategy for customers regarding past reliability issues, including regular updates on system performance and improvements made to Aegis Detect. This should be managed by Account Management and Marketing, ensuring that customers are aware of enhancements and can trust the system's reliability, thus alleviating concerns about dependency on Aegis Detect for monitoring."
+  ],
+  "date": "20260211",
+  "startTime": "2026-02-11T09:15:00.000Z"
+}

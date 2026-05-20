@@ -1,0 +1,31 @@
+{
+  "meetingId": "01KQ298F2846EFE59B0D70E2",
+  "title": "Competitive Threat Assessment - Post Outage",
+  "host": "megan.lawson@aegiscloud.com",
+  "duration": 26.2,
+  "allEmails": [
+    "megan.lawson@aegiscloud.com",
+    "tom.bradley@aegiscloud.com",
+    "james.mitchell@aegiscloud.com",
+    "brian.cho@aegiscloud.com",
+    "daniel.okafor@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have email addresses from the aegiscloud.com domain, indicating that this meeting is an internal discussion among Aegis Cloud team members. The conversation revolves around a recent outage, competitive threats, and strategies for addressing customer concerns, which are typical topics for internal syncs and planning sessions.",
+  "themes": [
+    "Post-Outage Analysis",
+    "Competitive Threats",
+    "Customer Communication Strategy",
+    "Product Roadmap Alignment"
+  ],
+  "sentiment": {
+    "score": -0.4,
+    "trajectory": "The meeting began with a clear sense of frustration and concern regarding a recent outage that significantly impacted customer trust and competitive positioning. As the team discussed the implications and potential responses, there were moments of constructive dialogue, particularly around transparency and proactive communication strategies. However, the overall sentiment remained slightly negative due to the ongoing challenges and the pressure to regain customer confidence, leaving the team with unresolved issues and a cautious outlook."
+  },
+  "strategic_insights": [
+    "Implement a structured post-mortem report generation tool that automatically compiles outage details, impact assessments, and remediation actions taken. This tool should be owned by the Engineering team to ensure it captures technical specifics, while the Account Management team can leverage these reports in customer conversations to demonstrate transparency and proactive risk management. This directly addresses the request for detailed impact reports from customers and can help rebuild trust by showing that Aegis Cloud is taking the outage seriously and learning from it.",
+    "Develop a competitive battlecard update process that includes a clear narrative on how Aegis Cloud's architecture has been enhanced post-outage, alongside the upcoming Comply v2 launch. This should be owned by Product Management and Marketing, ensuring that sales representatives like Daniel and James have current, relevant information to counter competitor narratives effectively. This recommendation addresses the need for a cohesive counter-narrative in competitive conversations, allowing the sales team to highlight Aegis Cloud's commitment to reliability and ongoing product improvements."
+  ],
+  "date": "20260320",
+  "startTime": "2026-03-20T15:30:00.000Z"
+}

@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQDD5172176D02DB51360A",
+  "title": "Support Case #3286 - Vanta Health Systems API Integration Error",
+  "host": "priya.patel@aegiscloud.com",
+  "duration": 21.0,
+  "allEmails": [
+    "priya.patel@aegiscloud.com",
+    "l.cheng@vantahealth.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it involves resolving a specific technical issue related to an API integration error for a customer, Vanta Health Systems. The dialogue focuses on troubleshooting the API errors, discussing the impact on their operations, and providing immediate solutions to mitigate the problem. The presence of a support case number and the nature of the conversation, which revolves around fixing a technical problem, further solidify this classification.",
+  "themes": [
+    "API Integration Error",
+    "Backup Workflow Disruption",
+    "Service Availability Issues",
+    "Compliance and Data Integrity"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with Dr. Cheng expressing significant frustration over a critical API issue affecting their backup workflows, indicating a serious concern for patient data integrity. As Priya Patel provided clarity on the situation and proposed immediate solutions, the tone shifted slightly towards a more constructive dialogue, though underlying tension remained due to the communication failures experienced. By the end, while some immediate actions were agreed upon, Dr. Cheng's frustration about the lack of proactive communication and the urgency of the situation highlighted ongoing concerns, leaving a slight negative sentiment overall."
+  },
+  "strategic_insights": [
+    "Implement a dedicated incident alerting system for high-impact customers like healthcare organizations. This system should proactively notify affected clients about service disruptions, including expected resolution timelines and mitigation steps. Ownership should be on the Product Management team to develop this feature, enhancing customer trust and satisfaction by preventing frustration due to lack of communication during critical outages.",
+    "Introduce a manual backup override feature within the Aegis Protect web console, allowing users to trigger backups even when the orchestration layer is down. This feature should be owned by the Engineering team, addressing immediate customer needs and ensuring compliance with regulatory standards, while also enhancing the overall reliability and user experience of the backup functionality."
+  ],
+  "date": "20260203",
+  "startTime": "2026-02-03T10:00:00.000Z"
+}

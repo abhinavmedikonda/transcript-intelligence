@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQAFB8DBF6E1E2FDEF0B75",
+  "title": "Aegis / Maplewood Goods - SOC 2 Prep Review",
+  "host": "aisha.johnson@aegiscloud.com",
+  "duration": 22.4,
+  "allEmails": [
+    "aisha.johnson@aegiscloud.com",
+    "sofia.petrov@aegiscloud.com",
+    "n.perry@maplewoodgoods.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud representatives and a client (Maplewood Goods) regarding their SOC 2 compliance preparation. The dialogue focuses on how Aegis's Comply product can assist Maplewood in streamlining their compliance processes, which indicates a high-level engagement about product adoption and support. The presence of an external client and the nature of the conversation about compliance solutions further solidify this classification.",
+  "themes": [
+    "SOC 2 Compliance Preparation",
+    "Evidence Collection Process",
+    "Onboarding and Integration Support",
+    "Continuous Compliance Across Frameworks"
+  ],
+  "sentiment": {
+    "score": 0.7,
+    "trajectory": "The meeting began with a positive tone as Nathan expressed excitement about the call, indicating a proactive approach to their SOC 2 preparation. As the discussion progressed, Nathan revealed challenges with their current manual processes, which introduced a slight concern. However, the introduction of Aegis Comply's features, particularly the upcoming v2 launch, shifted the tone to highly positive as Nathan recognized the potential for significant time savings and efficiency improvements. The meeting concluded with Nathan expressing strong interest in moving forward, indicating a resolved and optimistic outlook for their compliance efforts."
+  },
+  "strategic_insights": [
+    {
+      "recommendation": "Develop a tailored onboarding program that includes a detailed integration roadmap for retail clients like Maplewood. The Account Management team should create a structured plan with estimated timelines, key milestones, and dedicated technical support resources to guide clients through the initial setup. This will alleviate Nathan's concerns about resource allocation and time investment, ensuring his team understands the process and can effectively manage their compliance workload while minimizing disruption."
+    }
+  ],
+  "date": "20260227",
+  "startTime": "2026-02-27T14:45:00.000Z"
+}

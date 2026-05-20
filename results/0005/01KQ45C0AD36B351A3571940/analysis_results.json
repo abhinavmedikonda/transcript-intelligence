@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ45C0AD36B351A3571940",
+  "title": "Aegis / Silverline Brands - Comply v2 Early Access Demo",
+  "host": "kevin.obrien@aegiscloud.com",
+  "duration": 50.3,
+  "allEmails": [
+    "kevin.obrien@aegiscloud.com",
+    "d.flores@silverlinebrands.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involved a demo of the Comply v2 product specifically tailored for Silverline Brands, focusing on compliance reporting and features relevant to their upcoming PCI DSS audit. The discussion centered around product capabilities, customer needs, and feedback, indicating a high-level engagement with a client rather than a technical support issue. The presence of an external attendee from Silverline Brands further supports the classification as an External Customer meeting.",
+  "themes": [
+    "Comply v2 Product Demo",
+    "PCI DSS Compliance Reporting",
+    "On-Demand Reporting Features",
+    "Integration with Aegis Detect"
+  ],
+  "sentiment": {
+    "score": 0.8,
+    "trajectory": "The meeting began with a positive tone as both parties expressed satisfaction with the connection and acknowledged the busy quarter. As the demo progressed, Dominic's initial concerns about compliance reporting transformed into excitement upon seeing the new features of Comply v2, particularly the on-demand reporting and gap analysis capabilities. By the end of the conversation, Dominic was enthusiastic about the upcoming release and its potential to significantly improve their compliance processes, indicating a strong alignment and positive momentum for the partnership."
+  },
+  "strategic_insights": [
+    "Implement a tailored onboarding and training program specifically for the Comply v2 on-demand reporting features, led by the Account Management team. This program should focus on educating Silverline's compliance and audit teams on how to utilize the new reporting engine effectively, including practical sessions on generating PCI DSS reports and interpreting gap analyses. This addresses the root cause of slow evidence turnaround during audits and empowers Silverline to take full advantage of the new capabilities, ultimately leading to improved compliance management.",
+    "Develop a real-time alert system within the Aegis Comply platform that notifies users when compliance control statuses change due to events detected by Aegis Detect. The Engineering team should own this initiative. This will help Silverline proactively manage compliance gaps as they arise, rather than reacting to them after the fact. This recommendation directly addresses the customer's need for dynamic compliance management, especially in a fast-paced retail environment where transaction conditions are constantly changing."
+  ],
+  "date": "20260403",
+  "startTime": "2026-04-03T15:15:00.000Z"
+}

@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ46A9DE0AECB006D897A0",
+  "title": "Detect Outage - Escalation Bridge",
+  "host": "tyler.washington@aegiscloud.com",
+  "duration": 17.1,
+  "allEmails": [
+    "tyler.washington@aegiscloud.com",
+    "diana.reeves@aegiscloud.com",
+    "marcus.williams@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees are from the Aegis Cloud domain, indicating that this meeting is an internal discussion. The dialogue revolves around a critical incident affecting the Detect service, focusing on troubleshooting and remediation efforts, which aligns with internal operational discussions rather than customer-facing issues.",
+  "themes": [
+    "Service Outage",
+    "Incident Response",
+    "Customer Communication",
+    "Redundancy Architecture"
+  ],
+  "sentiment": {
+    "score": -0.4,
+    "trajectory": "The meeting began with a sense of urgency and frustration as Diana expressed her concerns over the service outage affecting customers. As Tyler provided updates on the situation, the tone shifted to a more collaborative approach, with the team discussing immediate next steps and communication strategies. However, the overall sentiment remained negative due to the severity of the incident and the potential impact on customer relationships, leaving a lingering concern about customer retention."
+  },
+  "strategic_insights": [
+    "Implement a multi-node redundancy architecture for the ingestion layer of the Detect module. This should be owned by the Engineering team to ensure that the new architecture is resilient against single points of failure. By distributing the load across multiple nodes, we can prevent cascading failures and maintain service continuity, addressing the root cause of the current outage and enhancing our SLA commitments to enterprise customers.",
+    "Establish a structured incident response protocol that includes a dedicated incident commander role for major outages. This role should be owned by Product Management, with clear guidelines for customer communication during incidents. This will ensure that all stakeholders are aligned on messaging and status updates, preventing confusion and maintaining customer trust, as demonstrated by the current issues with communication during the outage."
+  ],
+  "date": "20260311",
+  "startTime": "2026-03-11T11:00:00.000Z"
+}

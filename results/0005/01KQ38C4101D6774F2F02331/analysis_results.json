@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQ38C4101D6774F2F02331",
+  "title": "INCIDENT: Detect Pipeline Failure - War Room",
+  "host": "brian.cho@aegiscloud.com",
+  "duration": 29.9,
+  "allEmails": [
+    "brian.cho@aegiscloud.com",
+    "tom.bradley@aegiscloud.com",
+    "ananya.sharma@aegiscloud.com",
+    "sofia.petrov@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have `@aegiscloud.com` email addresses, indicating that this meeting is strictly internal. The discussion revolves around a technical incident involving a pipeline failure, focusing on troubleshooting, coordination of responses, and internal processes rather than customer-facing issues.",
+  "themes": [
+    "Pipeline Failure",
+    "Technical Incident Response",
+    "Customer Communication Strategy",
+    "Data Loss Management"
+  ],
+  "sentiment": {
+    "score": -0.4,
+    "trajectory": "The meeting began with a sense of urgency and frustration due to a significant technical failure affecting customer service. As the team discussed the issues, there were moments of accountability and recognition of systemic problems, which slightly alleviated the tension. However, the overall sentiment remained negative due to ongoing customer escalations and the potential for significant data loss, leaving the team with a challenging path ahead."
+  },
+  "strategic_insights": [
+    "Implement a dual-node ingestion architecture with automatic failover capabilities. This should be owned by the Engineering team and can be prioritized immediately to prevent future pipeline failures like the one experienced. This change addresses the root cause of the OOM errors and single point of failure in the current setup, ensuring that a backup node can seamlessly take over and maintain throughput during incidents.",
+    "Develop a real-time customer communication protocol that includes a pre-approved template for common incident responses. This should be owned by the Product Management team and rolled out as part of the customer communication strategy. By having these templates ready, the team can provide timely and accurate updates during incidents, reducing customer anxiety and preventing escalations, as seen with Harmon Financial and TerraLogix during the recent outage."
+  ],
+  "date": "20260310",
+  "startTime": "2026-03-10T13:15:00.000Z"
+}

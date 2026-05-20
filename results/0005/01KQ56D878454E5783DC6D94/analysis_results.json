@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ56D878454E5783DC6D94",
+  "title": "Support Case #3536 - Stratos Cloud LogVault Integration Timeout",
+  "host": "david.kim@aegiscloud.com",
+  "duration": 12.8,
+  "allEmails": [
+    "david.kim@aegiscloud.com",
+    "priya.patel@aegiscloud.com",
+    "d.rowe@stratoscloud.io"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific technical issue related to a timeout error in the integration between Aegis Detect and Stratos Cloud's LogVault. The attendees include a support representative from Aegis Cloud and a customer representative from Stratos Cloud, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the timeout issue, discussing potential causes, and planning a fix, which aligns with the Customer Support category.",
+  "themes": [
+    "LogVault Integration Timeout",
+    "Circuit Breaker Implementation",
+    "Event Processing Volume",
+    "Data Backfill Options"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with Damien expressing urgency and frustration over a significant issue affecting their operations, indicating a negative emotional state. As the conversation progressed, David and Priya identified the root cause of the problem, which was linked to a previous fix, leading to further frustration from Damien. However, the discussion shifted positively when a solution was proposed, including a backfill of missed data and a configuration change to prevent future issues. Despite the resolution steps, the lingering concern over repeated disruptions left the overall sentiment slightly negative."
+  },
+  "strategic_insights": [
+    "Implement a tailored circuit breaker threshold adjustment specifically for Stratos Cloud's Aegis Detect tenant. This should be owned by the Engineering team, focusing on enhancing the outbound connector's resilience to the high event processing volume. By customizing the threshold, we can prevent the circuit breaker from tripping unnecessarily, ensuring consistent data flow to LogVault and mitigating future disruptions.",
+    "Transition Stratos Cloud's LogVault integration to a streaming mode instead of the current batched push configuration. This change should be managed by Product Management, who will oversee the implementation to ensure it can handle their event volume efficiently. Streaming will distribute the load more evenly, preventing timeout issues and enhancing the reliability of data transmission, which is critical for their security monitoring."
+  ],
+  "date": "20260422",
+  "startTime": "2026-04-22T12:30:00.000Z"
+}

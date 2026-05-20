@@ -1,0 +1,24 @@
+{
+  "meetingId": "01KQCF9872BF130D33B1B5EC",
+  "title": "Comply v2 - Launch Day Checklist",
+  "host": "alex.reyes@aegiscloud.com",
+  "duration": 41.6,
+  "allEmails": [
+    "alex.reyes@aegiscloud.com",
+    "nina.kowalski@aegiscloud.com",
+    "jordan.whitfield@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "",
+  "themes": [],
+  "sentiment": {
+    "score": 0.9,
+    "trajectory": "The meeting started with excitement and anticipation for the upcoming launch, with team members expressing eagerness and positivity. As they reviewed the launch checklist, they encountered minor issues but quickly resolved them, leading to a strong sense of alignment and confidence in the product's readiness. By the end, the team was highly motivated and optimistic about the launch, indicating a successful and productive meeting."
+  },
+  "strategic_insights": [
+    "Implement a dedicated launch communication strategy to address potential customer concerns regarding the recent Detect outage. The Marketing team should draft a clear statement highlighting that Comply v2 operates on independent infrastructure and is not affected by previous stability issues. This proactive measure will mitigate confusion and build trust with customers on launch day.",
+    "Establish a post-launch feedback loop to gather insights on the usability of the new features, especially the on-demand reporting UI and the in-app guidance for first-time users. Product Management should create a structured survey targeting users who interacted with these features in the first month post-launch. This will help to validate assumptions about accessibility and usability, ensuring that future iterations of the Comply module are user-centric and continuously improving."
+  ],
+  "date": "20260404",
+  "startTime": "2026-04-04T16:45:00.000Z"
+}

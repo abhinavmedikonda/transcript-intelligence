@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ54917E3931712516916D",
+  "title": "Aegis / Nimbus Platform - Comply v2 Preview",
+  "host": "kevin.obrien@aegiscloud.com",
+  "duration": 54.3,
+  "allEmails": [
+    "kevin.obrien@aegiscloud.com",
+    "k.donovan@nimbusplatform.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud and Nimbus Platform regarding the preview of Comply v2, which is a new product feature. The dialogue focuses on compliance reporting improvements and how these changes will benefit Nimbus, indicating a high-level discussion about product adoption and customer needs. The presence of an external attendee from Nimbus, whose email domain is not associated with Aegis Cloud, further supports the classification as an External Customer meeting.",
+  "themes": [
+    "Comply v2 Preview",
+    "On-Demand Compliance Reporting",
+    "SOC 2 Audit Improvements",
+    "Integration with Nimbus Platform"
+  ],
+  "sentiment": {
+    "score": 0.7,
+    "trajectory": "The meeting began with a positive tone as both parties expressed eagerness to connect after scheduling delays. As Kevin introduced the new Comply v2 features, Keith's initial concerns about compliance reporting transformed into excitement upon realizing the significant time savings and operational improvements. The conversation ended on a high note, with Keith feeling reassured about the product's capabilities and the proactive communication regarding past issues, indicating a strengthened partnership."
+  },
+  "strategic_insights": [
+    "Implement a dedicated compliance integration feature within Comply v2 that allows Nimbus to automatically sync their compliance requirements and frameworks directly from their new data platform partnership. This should be owned by the Product Management team to ensure it aligns with customer needs and leverages the new partnership for better compliance reporting. This addresses the root cause of Nimbus's current compliance headaches by streamlining the reporting process and reducing manual workload.",
+    "Develop a proactive alert system that notifies Nimbus users of any anomalies or issues within the Detect module that could affect compliance reporting. This should be the responsibility of the Engineering team to create an automated telemetry system that triggers alerts based on performance metrics. This solution tackles the concern raised by Keith regarding the previous availability issues with Detect, ensuring that Nimbus has real-time insights into their compliance posture and can take action before audits."
+  ],
+  "date": "20260401",
+  "startTime": "2026-04-01T16:15:00.000Z"
+}

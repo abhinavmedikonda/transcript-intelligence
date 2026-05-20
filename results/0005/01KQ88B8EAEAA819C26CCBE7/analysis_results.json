@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ88B8EAEAA819C26CCBE7",
+  "title": "ESCALATION: Northstar Pharma - Detect Outage Impact on Compliance",
+  "host": "elena.vasquez@aegiscloud.com",
+  "duration": 13.3,
+  "allEmails": [
+    "elena.vasquez@aegiscloud.com",
+    "g.yoon@northstarpharma.com",
+    "f.delaney@northstarpharma.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting involves a direct escalation of a technical issue related to a platform-wide outage affecting Northstar Pharma's security monitoring service. The attendees include representatives from Northstar Pharma and Aegis Cloud, with the discussion focused on troubleshooting the outage, its implications for compliance, and the urgency of restoring service. The dialogue indicates that specific operational issues are being addressed, which aligns with the Customer Support category.",
+  "themes": [
+    "Platform Outage",
+    "Compliance Impact",
+    "Incident Escalation",
+    "Event Processing Failure"
+  ],
+  "sentiment": {
+    "score": -0.6,
+    "trajectory": "The meeting began with Frank expressing significant frustration over a platform-wide outage affecting their security monitoring, which is critical for their compliance needs. As the conversation progressed, Elena acknowledged the communication failures and provided some reassurance about the queued data, but the acknowledgment of a systemic issue with a single point of failure in Aegis's infrastructure heightened concerns. The meeting ended with a commitment to escalate the issue and schedule a follow-up call, but the overall sentiment remained negative due to the severity of the outage and the potential implications for the customer's compliance and security posture."
+  },
+  "strategic_insights": [
+    "Implement a redundancy feature in the event ingestion pipeline to eliminate single points of failure. This should be owned by the Engineering team, specifically the architecture group, to ensure that the Aegis Detect platform has multiple processing nodes. This change will address the root cause of the current outage and significantly reduce the risk of future incidents that could impact customers' compliance requirements, especially in regulated industries like healthcare.",
+    "Establish a proactive communication protocol for outages that includes direct alerts to affected enterprise customers, particularly in sensitive sectors like healthcare. This recommendation should be owned by the Account Management team in collaboration with Product Management. The goal is to create a system that automatically notifies customers of outages and provides status updates every 30 minutes. This will enhance transparency and trust, especially in situations where compliance is critical, and help mitigate customer frustration during incidents."
+  ],
+  "date": "20260315",
+  "startTime": "2026-03-15T14:30:00.000Z"
+}

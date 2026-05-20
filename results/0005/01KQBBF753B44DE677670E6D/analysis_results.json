@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQBBF753B44DE677670E6D",
+  "title": "Support Case #6147 - Summit Trust Detect Alert Delays",
+  "host": "david.kim@aegiscloud.com",
+  "duration": 16.7,
+  "allEmails": [
+    "david.kim@aegiscloud.com",
+    "a.monroe@summittrust.com",
+    "g.fisk@summittrust.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific technical issue related to alert delays for Summit Trust, which falls under the category of customer support. The attendees include a support representative from Aegis Cloud and representatives from Summit Trust, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the delays in threat alerts, discussing the technical aspects of the issue, and addressing a previous outage that affected service, which aligns with the indicators of customer support.",
+  "themes": [
+    "Alert Delay Troubleshooting",
+    "Incident Communication Failure",
+    "Tenant Processing Node Imbalance",
+    "Regulatory Compliance Concerns"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with Alicia and Gregory expressing significant frustration over delayed threat alerts, which they attributed to a lack of communication regarding a previous outage. As David provided insights into the technical issues and proposed a solution, the tone shifted towards a more collaborative problem-solving approach. By the end, while there was still concern over the communication failure, the discussion concluded with a clear action plan, leaving the situation somewhat resolved but with lingering dissatisfaction regarding the prior lack of notification."
+  },
+  "strategic_insights": [
+    "Implement a real-time alert communication protocol that integrates with Aegis Detect. The Account Management team should own this initiative, ensuring that all primary contacts for high-risk sectors, like financial services, receive timely notifications during any platform outages or significant incidents. This will address the root cause of the communication failure highlighted in the meeting, ensuring that customers are informed of issues that could impact their compliance obligations.",
+    "Develop a dynamic tenant distribution algorithm for Aegis Detect's processing nodes. The Engineering team should lead this effort to ensure that tenant workloads are balanced effectively, preventing any single node from becoming overloaded. This algorithm would automatically redistribute tenants based on current processing loads and alert frequencies, thereby mitigating the latency issues experienced by Summit Trust and enhancing overall system responsiveness."
+  ],
+  "date": "20260415",
+  "startTime": "2026-04-15T12:30:00.000Z"
+}

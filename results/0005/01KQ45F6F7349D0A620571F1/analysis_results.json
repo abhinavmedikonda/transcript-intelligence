@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ45F6F7349D0A620571F1",
+  "title": "Aegis / Brightpath Commerce - Competitive Evaluation",
+  "host": "aisha.johnson@aegiscloud.com",
+  "duration": 21.0,
+  "allEmails": [
+    "aisha.johnson@aegiscloud.com",
+    "k.wallace@brightpathcommerce.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud and Brightpath Commerce regarding a competitive evaluation of security vendors, specifically focusing on Aegis Detect's performance issues and the potential for renewal of their contract. The dialogue centers around customer concerns, product features, and the competitive landscape, indicating a high-level discussion about the relationship and future business decisions.",
+  "themes": [
+    "Vendor Evaluation",
+    "Aegis Detect Performance Issues",
+    "Contract Renewal Timeline",
+    "Technical Session Planning"
+  ],
+  "sentiment": {
+    "score": -0.2,
+    "trajectory": "The meeting began with Kendra expressing frustration over a recent outage that severely impacted their operations, leading to a low confidence in Aegis Detect. Aisha acknowledged the issue and proposed a technical session to address concerns, which shifted the tone towards a more collaborative approach. By the end, while Kendra remained cautious and emphasized the need for concrete solutions, there was a willingness to engage further, indicating a slight improvement in sentiment but still reflecting underlying concerns."
+  },
+  "strategic_insights": [
+    "Implement a customized alert configuration workshop for Brightpath, led by Aegis Detect's engineering team. This session should focus on real-time adjustments to the alert tuning based on Brightpath's specific operational context, demonstrating the effectiveness of the adaptive thresholding feature. Ownership should be with the Aegis Detect product team, ensuring that they directly address the alert fatigue issue and rebuild trust with Kendra's team by showing tangible improvements.",
+    "Propose a dedicated follow-up plan that includes a pilot phase for the new redundancy features implemented in Aegis Detect. During this phase, Aegis should offer Brightpath a discounted rate or extended trial period for the Detect module while they evaluate performance improvements. This will be managed by the Account Management team, aimed at solidifying the customer relationship and providing a clear path to regain confidence in the product before the July contract renewal."
+  ],
+  "date": "20260422",
+  "startTime": "2026-04-22T15:30:00.000Z"
+}

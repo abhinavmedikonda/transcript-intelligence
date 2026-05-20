@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQADC32D89E2B76B698E84",
+  "title": "Support Case #6635 - Nova Retail Group SSO Login Failures",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 24.1,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "elena.vasquez@aegiscloud.com",
+    "s.blair@novaretail.com",
+    "a.coleman@novaretail.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific technical issue related to SSO login failures for Nova Retail Group, which falls under customer support. The attendees include representatives from Aegis Cloud and Nova Retail Group, and the dialogue revolves around troubleshooting the login failures, discussing the impact on users, and exploring workarounds. The nature of the conversation is operational and technical, aimed at resolving a support case, which aligns with the Customer Support category.",
+  "themes": [
+    "SSO Login Failures",
+    "Aegis Identity Configuration",
+    "User Access Issues",
+    "Temporary Authentication Workaround"
+  ],
+  "sentiment": {
+    "score": -0.4,
+    "trajectory": "The meeting began with a sense of frustration as Nova Retail Group faced significant login issues affecting a large portion of their user base. As the conversation progressed, the Aegis team acknowledged the problem and proposed a temporary workaround, which provided a slight lift in morale. However, the overall sentiment remained negative due to the prolonged outage and lack of proactive communication, leaving the customer feeling concerned about responsiveness and the impact on their operations."
+  },
+  "strategic_insights": [
+    "Implement a dedicated status update feature in the Aegis Identity module that automatically notifies users of known issues and progress updates. This should be managed by the Product Management team to ensure timely communication and transparency with customers like Nova Retail Group, thereby alleviating frustration during incidents and minimizing inquiries to support.",
+    "Enhance the SSO configuration testing protocol in the Engineering team to include regression tests specifically for SAML assertion attributes after any update. This would prevent similar issues from arising post-release, ensuring that changes do not unintentionally disrupt user access, as seen with the recent update that led to SSO login failures."
+  ],
+  "date": "20260214",
+  "startTime": "2026-02-14T13:00:00.000Z"
+}

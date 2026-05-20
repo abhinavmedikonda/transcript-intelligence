@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQEDB92E33CF9945A7F71B",
+  "title": "URGENT: Cobalt Software - Aegis Detect Dashboard Down",
+  "host": "david.kim@aegiscloud.com",
+  "duration": 13.4,
+  "allEmails": [
+    "david.kim@aegiscloud.com",
+    "l.bishop@cobaltsoftware.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting involves a critical support issue where the Aegis Detect dashboard is down for the customer, Cobalt Software. The dialogue focuses on troubleshooting the issue, understanding the impact on the customer's operations, and escalating the incident internally. The presence of a customer from Cobalt Software and the nature of the discussion about resolving a specific technical problem indicates that this is a customer support call.",
+  "themes": [
+    "Aegis Detect Dashboard Outage",
+    "Incident Response and Escalation",
+    "Customer Service Level Agreements (SLAs)",
+    "Root Cause Analysis and Service Credits"
+  ],
+  "sentiment": {
+    "score": -0.5,
+    "trajectory": "The meeting began with Lauren expressing urgent frustration over a critical system outage, indicating a highly negative emotional state. As David provided updates and escalated the issue, there were moments of slight relief when he confirmed the engineering team was addressing the problem, but Lauren's concerns about the lack of proactive communication and the potential impact on their business kept the tone tense. Ultimately, while there was a commitment to resolve the issue and provide updates, the conversation ended with lingering dissatisfaction and a clear risk of churn, as Lauren mentioned evaluating alternatives."
+  },
+  "strategic_insights": [
+    "Implement an automated incident detection and alerting system for the Aegis Detect dashboard that monitors the health of the event processing pipeline. This should be owned by the Engineering team. By proactively identifying issues before they impact customers and sending automated alerts to both internal teams and customers, we can significantly reduce the response time and improve customer satisfaction, addressing the root cause of the dashboard outage and communication failures.",
+    "Develop a structured post-incident review process that includes a detailed root cause analysis and a follow-up communication plan for affected clients. This process should be owned by Product Management and Account Management teams. This will ensure that customers, like Cobalt Software, receive timely updates and actionable insights on the incident, including service credit discussions, thus restoring trust and transparency while also preventing similar issues in the future."
+  ],
+  "date": "20260310",
+  "startTime": "2026-03-10T13:15:00.000Z"
+}

@@ -1,0 +1,25 @@
+{
+  "meetingId": "01KQ9772B2348F500FB09D1E",
+  "title": "Support Case #3677 - Coastal Living Co MFA Token Failures",
+  "host": "elena.vasquez@aegiscloud.com",
+  "duration": 13.9,
+  "allEmails": [
+    "elena.vasquez@aegiscloud.com",
+    "v.cruz@coastalliving.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific technical issue related to MFA token failures for Coastal Living Co, which falls under the Customer Support category. The dialogue involves troubleshooting the problem, discussing error codes, and providing a temporary workaround, indicating that the call is centered around operational support rather than high-level discussions or internal planning.",
+  "themes": [
+    "MFA Token Failures",
+    "TOTP Validation Issues",
+    "Okta SSO Integration",
+    "P1 Escalation"
+  ],
+  "sentiment": {
+    "score": 0.0,
+    "trajectory": ""
+  },
+  "strategic_insights": [],
+  "date": "20260224",
+  "startTime": "2026-02-24T16:45:00.000Z"
+}

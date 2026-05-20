@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQ2331EFD78BF3B1CAB747",
+  "title": "Detect Outage - Customer Impact Assessment",
+  "host": "lisa.park@aegiscloud.com",
+  "duration": 48.0,
+  "allEmails": [
+    "lisa.park@aegiscloud.com",
+    "priya.patel@aegiscloud.com",
+    "diana.reeves@aegiscloud.com",
+    "aisha.johnson@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees are from the Aegis Cloud domain, indicating that this meeting is an internal discussion. The focus of the dialogue is on assessing the impact of a customer-facing outage, discussing customer communications, and planning next steps internally, which aligns with internal operational discussions rather than direct customer support or external client engagement.",
+  "themes": [
+    "Customer Outage Assessment",
+    "Incident Communication Strategy",
+    "Root Cause Analysis",
+    "Customer Retention Risks"
+  ],
+  "sentiment": {
+    "score": -0.5,
+    "trajectory": "The meeting began with a sense of urgency and concern as the team addressed a significant outage affecting multiple customer accounts. Initial frustration was evident, particularly regarding the lack of internal monitoring and communication failures. As the discussion progressed, the team identified steps to address the issues and improve communication, but the overall sentiment remained negative due to the potential churn risk and dissatisfaction from key customers, leaving the situation unresolved and concerning."
+  },
+  "strategic_insights": [
+    "Implement an automated internal alerting system that operates independently of the event ingestion pipeline to ensure that outages are detected by our own systems before customers report them. This should be owned by the Engineering team, focusing on creating a robust monitoring solution that includes redundant alert mechanisms. This directly addresses the root cause of our inability to monitor our own product during the outage, preventing future occurrences and enhancing our reliability as a security monitoring provider.",
+    "Develop a comprehensive incident communication framework that includes proactive outreach for all customers, particularly those with contractual SLAs, to ensure they are informed of outages and remedial actions taken. This should be led by Account Management and Marketing teams, incorporating clear messaging about our response, timelines for fixes, and assurance of service reliability. This will help mitigate customer churn risk by rebuilding trust and demonstrating our commitment to transparency and accountability."
+  ],
+  "date": "20260312",
+  "startTime": "2026-03-12T13:45:00.000Z"
+}

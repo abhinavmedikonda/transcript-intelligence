@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ410FB7E434BA3F99EE7D",
+  "title": "Aegis / Axiom Labs - Multi-Year Renewal",
+  "host": "aisha.johnson@aegiscloud.com",
+  "duration": 48.8,
+  "allEmails": [
+    "aisha.johnson@aegiscloud.com",
+    "r.caldwell@axiomlabs.dev",
+    "m.joshi@axiomlabs.dev"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting is focused on discussing a multi-year renewal of services between Aegis Cloud and Axiom Labs. The dialogue includes topics such as contract renewal, customer satisfaction with the platform, and specific features that have been beneficial, indicating a high-level discussion about the ongoing relationship and future commitments. Additionally, the presence of an external attendee from Axiom Labs further supports the classification as External Customer.",
+  "themes": [
+    "Multi-Year Contract Renewal",
+    "Customer Satisfaction and Feedback",
+    "API Access and Integrations",
+    "Service Outage and Communication"
+  ],
+  "sentiment": {
+    "score": 0.5,
+    "trajectory": "The meeting began with a positive tone as the participants expressed appreciation for each other's presence and acknowledged the improvements in the platform. However, the conversation shifted to a more serious note when the March outage was discussed, revealing some frustration but also recognition of the effective communication during the incident. The tone lightened again as they discussed the new features of Comply v2 and the renewal structure, ultimately leading to a slightly positive sentiment as they addressed concerns about growth and API access, indicating a willingness to continue the partnership."
+  },
+  "strategic_insights": [
+    "Implement an elastic API access model that allows customers to customize their API rate limits based on their specific needs. This should be owned by the Engineering team to develop and the Product Management team to market. By addressing the rate limit issues that Mina raised, this will enhance customer satisfaction and prevent potential churn, particularly for clients experiencing rapid growth and custom tooling needs.",
+    "Develop a proactive communication strategy for service outages that includes real-time notifications and post-incident analysis accessible through the Aegis Cloud dashboard. This should be led by the Account Management team in collaboration with Engineering. By ensuring that clients can access detailed outage reports and real-time updates, Aegis Cloud will solidify trust and transparency with customers, addressing concerns raised during the meeting about the recent service outage."
+  ],
+  "date": "20260417",
+  "startTime": "2026-04-17T09:45:00.000Z"
+}

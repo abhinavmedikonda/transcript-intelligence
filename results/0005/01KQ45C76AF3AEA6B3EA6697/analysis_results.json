@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ45C76AF3AEA6B3EA6697",
+  "title": "Aegis / Steelpoint Manufacturing - Contract Review",
+  "host": "daniel.okafor@aegiscloud.com",
+  "duration": 34.6,
+  "allEmails": [
+    "daniel.okafor@aegiscloud.com",
+    "sofia.petrov@aegiscloud.com",
+    "h.jensen@steelpointmfg.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a contract review with a client (Steelpoint Manufacturing) and discusses renewal terms, service level agreements (SLAs), and product roadmap commitments. The presence of an external attendee from Steelpoint Manufacturing indicates that this is a high-level discussion focused on maintaining and strengthening the business relationship, rather than resolving specific operational issues.",
+  "themes": [
+    "Contract Renewal Terms",
+    "Service Level Agreement (SLA) Enhancements",
+    "CMMC Compliance Roadmap",
+    "Customer Relationship Management"
+  ],
+  "sentiment": {
+    "score": -0.2,
+    "trajectory": "The meeting began with a neutral tone, but quickly shifted to a slightly negative sentiment as Harold raised concerns about a recent outage that severely impacted his team's operations. As Sofia provided technical details and reassurances about improvements made, the tone improved slightly, but Harold's need for solid justifications for renewal pricing and product capabilities kept the conversation cautious. By the end, while there was a willingness to continue the partnership, the unresolved issues and need for written commitments left a lingering concern about the relationship's stability."
+  },
+  "strategic_insights": [
+    "Implement a dedicated CMMC Compliance Support Module within the Comply product that includes a detailed project timeline and resources for customers undergoing audits, ensuring real-time updates on the roadmap. This should be owned by Product Management to enhance customer confidence and address specific gaps identified by Harold, making it easier for him to justify continued partnership with Aegis Cloud to his leadership.",
+    "Create a tiered SLA framework that allows customers to opt for different levels of service based on their specific operational needs and risk appetite. This should be owned by Engineering and Product Management, enabling more customized service options for customers like Harold, who may be balancing cost with the need for higher reliability in mission-critical environments."
+  ],
+  "date": "20260324",
+  "startTime": "2026-03-24T17:45:00.000Z"
+}

@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ7F58A2E07B857C24624D",
+  "title": "Competitive Landscape Review",
+  "host": "jordan.whitfield@aegiscloud.com",
+  "duration": 20.2,
+  "allEmails": [
+    "jordan.whitfield@aegiscloud.com",
+    "tom.bradley@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "The meeting is classified as Internal because all attendees have email addresses from the @aegiscloud.com domain. The discussion revolves around analyzing the competitive landscape, which is a strategic planning topic among team members rather than a customer-facing issue or support ticket.",
+  "themes": [
+    "Competitive Analysis",
+    "SentinelShield Threat",
+    "VaultEdge Compliance Features",
+    "CyberNova Pricing Strategy"
+  ],
+  "sentiment": {
+    "score": 0.3,
+    "trajectory": "The meeting began with a neutral tone as Jordan and Tom discussed the competitive landscape, acknowledging the need for a more structured approach. As they delved into specific competitors, the conversation shifted to a slightly negative sentiment when discussing the shortcomings of their product compared to SentinelShield, highlighting a perception gap. However, the tone improved towards the end as they agreed on actionable next steps and expressed appreciation for each other's contributions, leaving the meeting with a collaborative spirit and a plan to address the identified risks."
+  },
+  "strategic_insights": [
+    "Prioritize a streamlined configuration experience for the LogVault connector in the Detect module. Product Management should take ownership to enhance the user interface and reduce manual steps, addressing the perception gap highlighted in competitive comparisons with SentinelShield. By simplifying the setup process to match their three-click integration, Aegis Cloud can better compete and improve customer satisfaction.",
+    "Accelerate the development of on-demand compliance reporting features in the Comply module to preempt VaultEdge's market positioning. Product Management should collaborate with Engineering to ensure these features are prioritized in the roadmap. By delivering robust compliance capabilities ahead of competitors, Aegis Cloud can strengthen its market position and capture potential customers concerned about compliance reporting."
+  ],
+  "date": "20260219",
+  "startTime": "2026-02-19T09:15:00.000Z"
+}

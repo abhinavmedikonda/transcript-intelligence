@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ764171AC27A3A94DC695",
+  "title": "Detect Reliability - 30-Day Review",
+  "host": "tyler.washington@aegiscloud.com",
+  "duration": 45.8,
+  "allEmails": [
+    "tyler.washington@aegiscloud.com",
+    "diana.reeves@aegiscloud.com",
+    "chris.lee@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees are from the Aegis Cloud domain, indicating that this meeting is an internal review. The discussion revolves around a post-incident review of a technical outage, including root cause analysis, customer impact, and follow-up actions, which are typical topics for internal team syncs.",
+  "themes": [
+    "Post-Incident Review",
+    "Technical Outage Analysis",
+    "Customer Impact Assessment",
+    "Action Items for Customer Success"
+  ],
+  "sentiment": {
+    "score": 0.3,
+    "trajectory": "The meeting began with a focus on the technical issues stemming from the Detect outage, creating a slightly negative atmosphere due to the previous incident's impact on customers. As the team discussed the fixes implemented and the positive outcomes since then, the tone shifted to a more collaborative and slightly positive sentiment, especially when exploring ways to improve customer relations and leverage new features. By the end, while there were still concerns about specific customer relationships, the team left with actionable steps and a sense of proactive engagement."
+  },
+  "strategic_insights": [
+    "Implement a proactive customer notification system that triggers alerts to Customer Success whenever the circuit breaker activates. This system should automatically send a message detailing the incident and resolution to key account contacts. Ownership should lie with the Engineering team, specifically Chris, to develop and integrate this feature. This addresses the root cause of Diana being caught off guard during customer inquiries and enhances transparency with clients during technical disruptions.",
+    "Develop a beta program for the expanded event telemetry dashboard and include Meridian Financial as an early access participant. This initiative should be spearheaded by Chris, in collaboration with product management, to ensure that the dashboard is ready for demonstration by mid-May. This recommendation directly addresses the customer impact from the previous outage by providing enhanced visibility and may help rebuild trust with Meridian ahead of their renewal."
+  ],
+  "date": "20260407",
+  "startTime": "2026-04-07T13:45:00.000Z"
+}

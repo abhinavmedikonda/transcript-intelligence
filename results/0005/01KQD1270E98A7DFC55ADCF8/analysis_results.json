@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQD1270E98A7DFC55ADCF8",
+  "title": "Protect Performance - Scalability Concerns",
+  "host": "tyler.washington@aegiscloud.com",
+  "duration": 23.5,
+  "allEmails": [
+    "tyler.washington@aegiscloud.com",
+    "nina.kowalski@aegiscloud.com",
+    "chris.lee@aegiscloud.com",
+    "sofia.petrov@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have `@aegiscloud.com` email addresses, indicating that this meeting is an internal discussion among Aegis Cloud team members. The conversation revolves around scalability concerns related to the Protect module, focusing on technical issues and potential solutions, which aligns with internal planning and engineering discussions.",
+  "themes": [
+    "Scalability Concerns",
+    "Scheduler Concurrency Issues",
+    "Async Deduplication",
+    "Customer Onboarding Strategy"
+  ],
+  "sentiment": {
+    "score": -0.3,
+    "trajectory": "The meeting began with a sense of urgency and concern as alarming performance issues were discussed, leading to a tense atmosphere. Nina expressed frustration over the lack of action on previously flagged issues, which heightened the discomfort among the team. However, as solutions were proposed, particularly the idea of a temporary throttle and a quicker fix for the deduplication issue, the tone shifted slightly towards a more collaborative and proactive stance, though the underlying anxiety about customer impact and credibility remained."
+  },
+  "strategic_insights": [
+    "Implement a temporary throttling mechanism on job concurrency limits per tenant to alleviate pressure on the job scheduler while the full refactor is being developed. This should be owned by the Engineering team, specifically Tyler and Sofia, as they can quickly adjust the configuration settings to ensure stability without a complete overhaul. This addresses the immediate risk of long queue times and potential outages as new customers onboard, thus protecting Aegis Cloud's credibility with enterprise clients.",
+    "Accelerate the async deduplication prototype to decouple the deduplication check from the job execution flow. Sofia should lead this initiative, working closely with Tyler to prototype and test the async worker solution. This quick win, estimated at one to two weeks, will help reduce blocking I/O during backup jobs, improving throughput and mitigating the cascading effects on the job scheduler, which directly addresses the core issues identified in the meeting."
+  ],
+  "date": "20260415",
+  "startTime": "2026-04-15T16:45:00.000Z"
+}

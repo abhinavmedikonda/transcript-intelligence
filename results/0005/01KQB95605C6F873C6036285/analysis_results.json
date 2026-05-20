@@ -1,0 +1,21 @@
+{
+  "meetingId": "01KQB95605C6F873C6036285",
+  "title": "Aegis / Forge Industries - PCI DSS Compliance Review",
+  "host": "maria.santos@aegiscloud.com",
+  "duration": 24.4,
+  "allEmails": [
+    "maria.santos@aegiscloud.com",
+    "ananya.sharma@aegiscloud.com",
+    "g.hutchins@forgeindustries.com"
+  ],
+  "category": "Internal",
+  "reasoning": "",
+  "themes": [],
+  "sentiment": {
+    "score": 0.0,
+    "trajectory": ""
+  },
+  "strategic_insights": [],
+  "date": "20260409",
+  "startTime": "2026-04-09T11:15:00.000Z"
+}

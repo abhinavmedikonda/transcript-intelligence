@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ85D10E82A26A8F754FB8",
+  "title": "Aegis / Bridgeport Health - Compliance Review",
+  "host": "maria.santos@aegiscloud.com",
+  "duration": 33.4,
+  "allEmails": [
+    "maria.santos@aegiscloud.com",
+    "kevin.obrien@aegiscloud.com",
+    "e.park@bridgeporthealth.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud representatives and a client (Bridgeport Health) regarding compliance issues, specifically related to HIPAA and SOC 2. The attendees include both Aegis Cloud employees and a client representative, indicating that this is an external customer meeting. The dialogue focuses on the client's needs, product features, and upcoming audits, which aligns with high-level discussions typical of external customer engagements.",
+  "themes": [
+    "HIPAA Compliance Challenges",
+    "SOC 2 and HIPAA Framework Overlap",
+    "Aegis Comply v2 Features",
+    "Audit Preparation Strategies"
+  ],
+  "sentiment": {
+    "score": 0.6,
+    "trajectory": "The meeting began with a positive tone as both parties expressed eagerness to collaborate, but it quickly revealed significant pain points regarding compliance processes, leading to a slight dip in sentiment. However, as Kevin introduced upcoming features in Comply v2 that directly addressed these concerns, the mood shifted to excitement and relief, culminating in a productive discussion about next steps and a preview session, leaving the customer feeling optimistic about future improvements."
+  },
+  "strategic_insights": [
+    "Implement a unified evidence collection framework within Aegis Comply that allows for cross-framework mapping between SOC 2 and HIPAA controls. This initiative should be spearheaded by the Product Management team to enhance the Comply v2 features. By streamlining the evidence collection process and reducing the manual effort involved, this will directly address Evelyn's team's pain points and improve audit preparedness ahead of their upcoming HIPAA audit.",
+    "Develop a targeted compliance reporting feature that enables on-demand reporting for audits and board presentations. This feature should be led by the Engineering team and focus on integrating existing evidence libraries with customizable reporting templates. This will alleviate the burden of manual report generation and ensure that the compliance team can present timely and accurate information, ultimately saving them time and resources as they prepare for the upcoming audit."
+  ],
+  "date": "20260213",
+  "startTime": "2026-02-13T11:00:00.000Z"
+}

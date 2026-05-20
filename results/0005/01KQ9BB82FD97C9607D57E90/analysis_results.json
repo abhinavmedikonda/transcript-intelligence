@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ9BB82FD97C9607D57E90",
+  "title": "Aegis / Coastal Living Co - Onboarding Kickoff",
+  "host": "maria.santos@aegiscloud.com",
+  "duration": 30.8,
+  "allEmails": [
+    "maria.santos@aegiscloud.com",
+    "v.cruz@coastalliving.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting is an onboarding kickoff between Aegis Cloud and Coastal Living, indicating a high-level discussion about the implementation of Aegis Protect, a backup and recovery solution. The presence of an external attendee from Coastal Living and the focus on onboarding, project timelines, and specific customer needs further solidify this classification as an External Customer call.",
+  "themes": [
+    "Onboarding Process",
+    "Backup and Recovery Solutions",
+    "Retention Policies",
+    "Compliance Requirements"
+  ],
+  "sentiment": {
+    "score": 0.8,
+    "trajectory": "The meeting began with a positive tone as both parties expressed excitement about finally connecting and the potential of Aegis Protect. As they discussed the onboarding process and the capabilities of the solution, Vanessa's concerns about recovery times and fragmentation were alleviated, leading to a more enthusiastic outlook. By the end, both Maria and Vanessa were aligned on next steps, with Vanessa expressing eagerness for the implementation, indicating a strong partnership and high customer satisfaction."
+  },
+  "strategic_insights": [
+    "Implement a customized onboarding timeline that includes a dedicated onboarding checklist for Coastal Living, detailing the steps, resources, and timelines specific to their infrastructure setup, including their hybrid environment. This should be owned by the Product Management team to ensure clarity in the onboarding process. This recommendation addresses the customer\u2019s concerns about fragmentation and competing priorities by providing a tailored approach that keeps them aligned with their operational requirements.",
+    "Develop a feature within Aegis Protect that allows users to set and manage retention policies based on compliance requirements directly from the dashboard. This should be owned by the Engineering team and would allow Coastal Living to easily configure their data retention settings according to PCI DSS and other regulatory needs. This solution alleviates their compliance concerns by giving them granular control and visibility over their data management practices."
+  ],
+  "date": "20260204",
+  "startTime": "2026-02-04T11:00:00.000Z"
+}

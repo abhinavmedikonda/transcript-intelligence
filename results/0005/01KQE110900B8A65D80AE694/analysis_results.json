@@ -1,0 +1,31 @@
+{
+  "meetingId": "01KQE110900B8A65D80AE694",
+  "title": "Detect Outage - Root Cause Analysis",
+  "host": "sofia.petrov@aegiscloud.com",
+  "duration": 15.9,
+  "allEmails": [
+    "sofia.petrov@aegiscloud.com",
+    "mike.romano@aegiscloud.com",
+    "tyler.washington@aegiscloud.com",
+    "nina.kowalski@aegiscloud.com",
+    "ananya.sharma@aegiscloud.com"
+  ],
+  "category": "Internal",
+  "reasoning": "All attendees have email addresses from the @aegiscloud.com domain, indicating that this meeting is an internal discussion among team members. The dialogue focuses on a technical root cause analysis of an outage, which is a typical internal operational matter rather than customer-facing support or external discussions.",
+  "themes": [
+    "Cascading Failure in Event Ingestion Layer",
+    "Health Check Limitations",
+    "Circuit Breaker Implementation",
+    "Chaos Engineering Coverage"
+  ],
+  "sentiment": {
+    "score": -0.4,
+    "trajectory": "The meeting began with a sense of urgency and frustration as the team addressed a significant failure in their system, which had left customers without visibility for hours. As they discussed the technical details and acknowledged past oversights, the tone shifted from frustration to a more constructive focus on solutions, although concerns about accountability and the need for transparency remained. By the end, while the team was still grappling with the aftermath of the incident, they established clear action items and a commitment to prevent future issues, indicating a path forward despite the negative circumstances."
+  },
+  "strategic_insights": [
+    "Implement a dual-node redundancy system for the event ingestion layer, focusing on active load balancing to eliminate the single point of failure. This recommendation should be owned by the Engineering team, specifically Mike, with a target completion within two to three weeks. This will directly address the cascading failure issue by ensuring that if one node fails, the other can continue processing events, thereby maintaining threat monitoring visibility for customers.",
+    "Establish a comprehensive chaos engineering framework to regularly test the resilience of the event ingestion pipeline by simulating node failures. Nina, with assistance from Tyler, should lead this initiative. By proactively testing the system under failure conditions, we can ensure that the health checks are genuinely reflective of service readiness, thus preventing future incidents where the service appears operational but is unresponsive."
+  ],
+  "date": "20260314",
+  "startTime": "2026-03-14T14:30:00.000Z"
+}

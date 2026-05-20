@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ7BF0D56037FF89DC89B6",
+  "title": "Support Case #3266 - Trailhead Marketplace Detect Alerts Not Firing",
+  "host": "elena.vasquez@aegiscloud.com",
+  "duration": 10.0,
+  "allEmails": [
+    "elena.vasquez@aegiscloud.com",
+    "david.kim@aegiscloud.com",
+    "i.brennan@trailheadmkt.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it involves troubleshooting a specific technical issue related to the Aegis Detect alerts not firing for the customer, Trailhead Marketplace. The dialogue focuses on resolving a critical operational problem, with the customer expressing dissatisfaction and urgency regarding the failure of the product to function as expected. The attendees include a customer from Trailhead Marketplace and Aegis Cloud support representatives, indicating a direct support interaction.",
+  "themes": [
+    "Detect Alerts Failure",
+    "Platform-Wide Issue",
+    "Customer Communication Breakdown",
+    "Incident Reporting Request"
+  ],
+  "sentiment": {
+    "score": -0.6,
+    "trajectory": "The meeting began with Isaac expressing significant frustration over a critical failure in the Aegis Detect system, which left him feeling blindsided and concerned about potential security risks. As the conversation progressed, Elena and David acknowledged the severity of the issue and committed to escalating the case, which provided some reassurance, but the overall tone remained tense and unresolved. By the end, while there was a promise of follow-up and prioritization, Isaac's threat to reconsider their contract indicated a high churn risk, leaving the situation precarious."
+  },
+  "strategic_insights": [
+    "Implement a dedicated incident communication protocol for platform-wide issues that includes automated notifications via email and SMS to affected customers. The Product Management team should own this initiative to ensure that customers like Trailhead Marketplace receive timely updates during critical incidents, addressing the root cause of the communication breakdown observed in the meeting.",
+    "Enhance the event processing architecture of Aegis Detect to incorporate real-time telemetry and health checks that can proactively flag issues in the ingestion layer. The Engineering team should prioritize this architectural improvement to prevent cascading failures and ensure that customers maintain visibility over their threat monitoring, effectively solving the underlying issue of alert failures."
+  ],
+  "date": "20260311",
+  "startTime": "2026-03-11T17:45:00.000Z"
+}

@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ5D47170D4828E89EDE37",
+  "title": "Support Case #7537 - Forge Industries Detect Recovery Confirmation",
+  "host": "elena.vasquez@aegiscloud.com",
+  "duration": 27.8,
+  "allEmails": [
+    "elena.vasquez@aegiscloud.com",
+    "d.moretti@forgeindustries.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it involves troubleshooting a specific support case (Case #7537) related to a technical issue with the Detect platform for Forge Industries. The dialogue focuses on confirming the recovery status, discussing the root cause of an outage, and detailing the steps taken to resolve the issue, which are all indicative of a customer support interaction.",
+  "themes": [
+    "Detect Platform Outage",
+    "Root Cause Analysis",
+    "Data Recovery Summary",
+    "Post-Incident Report"
+  ],
+  "sentiment": {
+    "score": -0.2,
+    "trajectory": "The meeting began with Dana expressing frustration over a significant outage that caused a loss of visibility for six hours, indicating a negative emotional state. As Elena provided detailed explanations about the root cause and the architectural changes made to prevent future issues, Dana's tone shifted to a more constructive and engaged demeanor, although concerns about the implications of the outage remained. By the end of the conversation, while Dana felt reassured by the confirmation of system health and the follow-up actions promised by Elena, the initial frustration over the outage left a slight negative sentiment overall."
+  },
+  "strategic_insights": [
+    "Implement a robust automated alert system for the Detect platform that notifies users in real-time about any outages or degradation in service. This should be owned by the Engineering team, as it addresses the root cause of the lack of visibility during the outage. By alerting users immediately when an issue arises, it allows them to take proactive measures rather than reactively managing the fallout of a complete service failure.",
+    "Develop a self-service portal feature that allows customers like Forge Industries to access real-time health metrics and historical data recovery summaries. This initiative should be led by Product Management to ensure users can independently verify their system's status and historical performance. This addresses the concern raised by Dana regarding the need for confirmation of tenant health and reduces reliance on support for routine inquiries."
+  ],
+  "date": "20260318",
+  "startTime": "2026-03-18T14:45:00.000Z"
+}

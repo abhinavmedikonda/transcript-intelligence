@@ -1,0 +1,20 @@
+{
+  "meetingId": "01KQ0C1280EDA4E70AAD7C35",
+  "title": "Support Case #9279 - Summit Trust Billing Inquiry",
+  "host": "sarah.chen@aegiscloud.com",
+  "duration": 23.8,
+  "allEmails": [
+    "sarah.chen@aegiscloud.com",
+    "g.fisk@summittrust.com"
+  ],
+  "category": "Internal",
+  "reasoning": "",
+  "themes": [],
+  "sentiment": {
+    "score": 0.0,
+    "trajectory": ""
+  },
+  "strategic_insights": [],
+  "date": "20260206",
+  "startTime": "2026-02-06T09:15:00.000Z"
+}

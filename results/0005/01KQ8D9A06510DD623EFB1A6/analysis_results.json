@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ8D9A06510DD623EFB1A6",
+  "title": "Aegis / Pinnacle Insurance - Detect Roadmap Review",
+  "host": "rachel.torres@aegiscloud.com",
+  "duration": 47.9,
+  "allEmails": [
+    "rachel.torres@aegiscloud.com",
+    "s.keating@pinnacleins.com"
+  ],
+  "category": "External Customer",
+  "reasoning": "The meeting involves a discussion between Aegis Cloud and Pinnacle Insurance regarding the Detect product roadmap, feature requests, and specific customer needs. The dialogue focuses on high-level topics such as product enhancements, compliance concerns, and feedback on past outages, which are indicative of an external customer engagement rather than a support issue. Additionally, the presence of an attendee from Pinnacle Insurance, which does not use an Aegis domain, further supports the classification as an external customer meeting.",
+  "themes": [
+    "Detect Roadmap Review",
+    "Feature Requests for Alerting",
+    "Product Outage Discussion",
+    "SIEM Integration Enhancements"
+  ],
+  "sentiment": {
+    "score": 0.3,
+    "trajectory": "The meeting began with a neutral tone as both parties acknowledged their busy schedules, but it quickly shifted to a slightly negative sentiment when Sandra raised concerns about the lack of granular alerting thresholds, highlighting the issue of alert fatigue. As Rachel acknowledged the problem and provided updates on the product roadmap, including a commitment to address the outage concerns, the conversation transitioned to a more positive note, ending with a collaborative spirit and a sense of progress on feature requests."
+  },
+  "strategic_insights": [
+    "Implement granular alerting thresholds based on entity types to reduce alert fatigue for Sandra's SOC team. This should be owned by Product Management to define the specifications and work with Engineering to develop the feature. By creating separate baseline models for different user categories (e.g., claims adjusters vs. network admins), we can minimize false positives and ensure high-value systems receive appropriate attention, directly addressing the root cause of the noise in alerting.",
+    "Develop an in-product health status indicator for the Detect pipeline to enhance visibility during outages. This should be a collaborative effort between Product Management and Engineering. By adding a status banner that alerts users to any reduced capacity or downtime, we can improve the customer experience and ensure that teams like Sandra's are informed proactively, which addresses the issue of delayed awareness during critical incidents."
+  ],
+  "date": "20260416",
+  "startTime": "2026-04-16T13:00:00.000Z"
+}

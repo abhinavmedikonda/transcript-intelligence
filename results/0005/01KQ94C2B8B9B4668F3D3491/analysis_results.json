@@ -1,0 +1,29 @@
+{
+  "meetingId": "01KQ94C2B8B9B4668F3D3491",
+  "title": "Support Case #6573 - Ridgeline Logistics Detect Data Gaps",
+  "host": "elena.vasquez@aegiscloud.com",
+  "duration": 17.6,
+  "allEmails": [
+    "elena.vasquez@aegiscloud.com",
+    "sarah.chen@aegiscloud.com",
+    "m.ellison@ridgelinelogistics.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific technical issue related to the Detect module for Ridgeline Logistics, which is experiencing data gaps in their monitoring dashboard. The attendees include Aegis Cloud support staff and a representative from Ridgeline Logistics, indicating a direct customer support interaction. The dialogue revolves around troubleshooting the issue, understanding the root cause, and ensuring timely updates, which aligns with the Customer Support category.",
+  "themes": [
+    "Detect Module Data Gaps",
+    "Event Processing Pipeline Failure",
+    "Sev 1 Incident Escalation",
+    "Compliance and Historical Data Concerns"
+  ],
+  "sentiment": {
+    "score": 0.0,
+    "trajectory": ""
+  },
+  "strategic_insights": [
+    "Implement a dedicated internal monitoring and alerting system for the event processing pipeline in the Detect module. This should include automated telemetry that can trigger alerts for any anomalies or failures in real-time. The Engineering team should own this initiative as it directly addresses the root cause of the current ingestion failure, preventing future lapses in visibility for clients like Ridgeline Logistics.",
+    "Develop a robust backfill mechanism for event data in the Detect module to ensure compliance and historical data integrity during outages. This feature would allow for automatic retrieval and integration of locally queued event data into the dashboard once the ingestion issue is resolved. Product Management should lead this effort to meet client requirements for a complete audit trail, thus enhancing customer trust and satisfaction."
+  ],
+  "date": "20260313",
+  "startTime": "2026-03-13T10:30:00.000Z"
+}

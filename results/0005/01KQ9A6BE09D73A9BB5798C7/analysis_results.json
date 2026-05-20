@@ -1,0 +1,28 @@
+{
+  "meetingId": "01KQ9A6BE09D73A9BB5798C7",
+  "title": "Support Case #3615 - Nimbus Platform Custom Report Request",
+  "host": "david.kim@aegiscloud.com",
+  "duration": 14.1,
+  "allEmails": [
+    "david.kim@aegiscloud.com",
+    "k.donovan@nimbusplatform.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is classified as Customer Support because it involves a specific support case (Case #3615) where the customer, Keith Donovan from Nimbus Platform, is seeking assistance with a custom reporting feature in the Aegis Comply platform. The dialogue focuses on troubleshooting the limitations of the current reporting capabilities and discussing potential workarounds, which aligns with the definition of resolving operational or technical issues for a customer.",
+  "themes": [
+    "Custom Reporting Request",
+    "Cross-Framework Control Mapping",
+    "Feature Escalation",
+    "Exportable Report Requirements"
+  ],
+  "sentiment": {
+    "score": 0.3,
+    "trajectory": "The meeting began with Keith expressing a specific need for a feature that Aegis Comply currently lacks, indicating some frustration with the manual workaround they have been using. As David provided clarity on the situation and assured that the feature request would be escalated, Keith's tone shifted to a more collaborative and hopeful stance, especially when discussing potential early access to new features. The conversation ended on a positive note, with both parties feeling aligned on the next steps, though the lack of a clear timeline for the requested feature still leaves some uncertainty."
+  },
+  "strategic_insights": [
+    "Develop a cross-framework reporting module within Aegis Comply that allows users to create a control mapping matrix across SOC 2, ISO 27001, and PCI DSS, showcasing the relationships between equivalent controls. This feature should be prioritized by the Product Management team given the specific request from Nimbus Platform, which highlights a critical gap in the current reporting capabilities and would significantly reduce manual effort and error for users during audit preparations.",
+    "Establish a dedicated beta program for early access to new features in Aegis Comply, specifically targeting customers like Nimbus Platform who have expressed interest in participating. This program should be managed by Account Management, with clear guidelines on how customers can provide feedback on new features, ensuring that the development team receives actionable insights that can inform product prioritization and improve overall customer satisfaction."
+  ],
+  "date": "20260210",
+  "startTime": "2026-02-10T15:30:00.000Z"
+}
