@@ -1,0 +1,30 @@
+{
+  "meetingId": "01KQ56786DD1E8A1BF174FDD",
+  "title": "Support Case #1993 - Forge Industries Comply v2 Early Access Question",
+  "host": "david.kim@aegiscloud.com",
+  "duration": 25.6,
+  "allEmails": [
+    "david.kim@aegiscloud.com",
+    "elena.vasquez@aegiscloud.com",
+    "g.hutchins@forgeindustries.com",
+    "d.moretti@forgeindustries.com"
+  ],
+  "category": "Customer Support",
+  "reasoning": "The meeting is focused on resolving a specific support case (Case #1993) related to the Comply v2 module for Forge Industries. The attendees include Aegis Cloud support engineers and representatives from Forge Industries discussing technical details about early access to a new feature, troubleshooting compliance reporting issues, and preparing for an upcoming audit. The dialogue revolves around specific operational questions and support for the customer's needs, which aligns with the Customer Support category.",
+  "themes": [
+    "Comply v2 Early Access",
+    "On-Demand Reporting for Compliance",
+    "Multi-Framework Support",
+    "Feature Request for Custom Control Labeling"
+  ],
+  "sentiment": {
+    "score": 0.8,
+    "trajectory": "The meeting began with a positive tone as all participants were able to connect clearly, and Elena's introduction set a collaborative atmosphere. As Dana expressed concerns about manual reporting for compliance, the tone shifted to excitement when Elena confirmed that Comply v2 would be released in just four days, addressing their needs effectively. The conversation ended on a high note with clear next steps and a willingness to explore additional feature requests, indicating strong customer satisfaction and a productive partnership."
+  },
+  "strategic_insights": [
+    "Implement a dedicated 'On-Demand Reporting Configuration' feature within the Comply v2 module. This feature should include an intuitive setup wizard that assists users like Forge Industries in mapping existing controls to the new framework templates while providing context-sensitive help and real-time validation checks. This will significantly reduce manual setup time and errors, ensuring customers are fully prepared for compliance audits across multiple frameworks.",
+    "Establish a Customer Feature Request Portal within the Aegis Cloud ecosystem, specifically targeting the needs of enterprise clients like Forge Industries who require advanced customization options such as custom control labeling. This portal should allow clients to submit, track, and vote on feature requests, which can provide valuable insights to the Product Management team while fostering a community-driven approach to feature development."
+  ],
+  "date": "20260403",
+  "startTime": "2026-04-03T15:30:00.000Z"
+}
